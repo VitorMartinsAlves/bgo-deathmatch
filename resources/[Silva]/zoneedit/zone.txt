@@ -1,0 +1,4 @@
+addEventHandler('onResourceStart', resourceRoot,
+    function()
+        local zone = createColCuboid(-1350.36963, -50.20752, 13.14844, 7.2628173828125, 6.408130645752, 2.6838622093201)
+    end)

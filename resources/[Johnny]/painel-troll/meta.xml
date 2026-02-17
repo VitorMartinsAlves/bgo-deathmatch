@@ -1,0 +1,7 @@
+<meta>
+    <info type="script" version="1.0.0" author="+Tawan"></info>
+	<script src="server.lua" type="server"/>
+	<script src="client.lua" type="client"/>
+	 <file src="scream.jpg" download="true"/>
+	 <file src="shout.mp3" download="true"/>
+</meta>

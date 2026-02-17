@@ -1,0 +1,222 @@
+local sprintSpeed = 0.7 -- analog control state
+local lastSpaceClick = 0
+--local sprintTime = 20000 -- 20s
+local sprintClicks = 0
+local sprintClicksLimit = 20000 -- przerabiamy to na czas w MS
+--[[
+addEventHandler ( "onClientPlayerSpawn", getLocalPlayer(), 
+	function ()
+		local stat = getPedStat (getLocalPlayer(),22) -- sprint
+		--outputChatBox ("sprint stat: " .. stat)
+		--sprintTime = 20000 + 100000*(stat/999)
+		--outputChatBox ("sprint: " .. sprintTime/1000)
+		sprintClicksLimit = 20000 + 100000*(stat/999)--40 + 120*stat/999
+		--outputChatBox ("limit: " .. sprintClicksLimit/1000)
+	end
+)
+
+
+function onKey (button,press)
+	if isCursorShowing () == false and isControlEnabled (button) == true then
+		if press == "down" then
+			local sprintKey = false
+			for i,v in pairs(getBoundKeys ("sprint")) do
+				if getKeyState (i) then
+					sprintKey = true
+					break
+				end
+			end
+			if sprintKey == false then
+				setControlState ("walk",true)
+			end
+		else
+			local f = false
+			local keys = {"forwards","backwards","left","right"}
+			for k,v in ipairs(keys) do
+				local bound = getBoundKeys (v)
+				for i,key in pairs(bound) do
+					if getKeyState (i) then
+						f = true
+						break
+					end
+				end
+			end
+			if f == false then
+				--if isControlEnabled ("sprint") then
+					setControlState ("walk",false)
+				--end
+			end
+		end
+	end
+end
+
+addEventHandler ("onClientResourceStart",getResourceRootElement(),
+	function ()
+		local keys = {"forwards","backwards","left","right"}
+		for k,v in ipairs(keys) do
+			bindKey (v,"both",onKey)
+		end
+		bindKey ("walk","both",
+			function ()
+				setControlState ("walk",true)
+			end
+		)
+		bindKey ("sprint","both",
+			function (button,press)
+				if press == "down" then
+					setControlState ("sprint",false)
+					--setAnalogControlState ("sprint",0)
+					if isControlEnabled ("sprint") then
+						setControlState ("walk",false)
+					end
+					local cTick = getTickCount ()
+					local delay = cTick - lastSpaceClick
+					if delay <= 500 then
+						--sprintClicks = sprintClicks+1
+						sprintClicks = sprintClicks+delay
+						if sprintClicks < sprintClicksLimit then
+							if isControlEnabled ("sprint") then
+								setControlState ("sprint",true)
+								--setAnalogControlState ("sprint",sprintSpeed)
+							end
+						else
+							sprintClicks = sprintClicksLimit
+							setControlState ("sprint",false)
+							--setAnalogControlState ("sprint",0)
+						end
+						
+					end
+					lastSpaceClick = getTickCount ()
+				else
+					if getTickCount()-lastSpaceClick > 500 then
+						setControlState ("walk",true)
+					else
+						lastSpaceClick = getTickCount ()
+					end
+				end
+			end
+		)
+		setTimer (
+			function ()
+				local st = false
+				local keys = {"forwards","backwards","left","right"}
+				for k,v in ipairs(keys) do
+					if getControlState (v) then
+						st = true
+						break
+					end
+				end
+				if st then
+					local sprintKey = false
+					for i,v in pairs(getBoundKeys ("sprint")) do
+						if getKeyState (i) then
+							sprintKey = true
+							break
+						end
+					end
+					local cTick = getTickCount ()
+					local delay = cTick-lastSpaceClick
+					if delay > 500 then
+						if sprintKey == false then
+							setControlState ("walk",true)
+							setControlState ("sprint",false)
+							--setAnalogControlState ("sprint",0)
+						else
+							setControlState ("sprint",false)
+							if isControlEnabled ("sprint") == false then
+								setControlState ("walk",true)
+							end
+							--setAnalogControlState ("sprint",0)
+						end
+					end
+					
+				end
+			end
+		,500,0)
+		setTimer (
+			function ()
+				if sprintClicks > 0 then
+					--sprintClicks = sprintClicks-1
+					sprintClicks = sprintClicks-100
+					if sprintClicks < 0 then
+						sprintClicks = 0
+					end
+				end
+			end
+		,1000,0)
+	end
+)
+]]--
+
+
+
+
+function onRender()
+	if not getPedAnimation(localPlayer) and getPedControlState ( "jump" ) and getPedControlState ( "sprint" ) and getPedControlState ( "forwards" ) then -- W + SPACE + SHIFT
+	if isTimer(timer) then return end
+	if not getPedAnimation(localPlayer) then
+		setPedAnimation( localPlayer, "ped", "EV_dive", 2000, false, true, false)
+		triggerServerEvent("sejogar", localPlayer, localPlayer)
+		timer = setTimer(function() end, 5000, 1)
+	end
+	end
+end
+--addEventHandler("onClientRender", getRootElement(), onRender)
+
+
+
+
+
+local blockedTasks =
+{
+    "TASK_SIMPLE_IN_AIR", -- We're falling or in a jump.
+    "TASK_SIMPLE_JUMP", -- We're beginning a jump
+    "TASK_SIMPLE_LAND", -- We're landing from a jump
+    "TASK_SIMPLE_GO_TO_POINT", -- In MTA, this is the player probably walking to a car to enter it
+    "TASK_SIMPLE_NAMED_ANIM", -- We're performing a setPedAnimation
+    "TASK_SIMPLE_CAR_OPEN_DOOR_FROM_OUTSIDE", -- Opening a car door
+    "TASK_SIMPLE_CAR_GET_IN", -- Entering a car
+    "TASK_SIMPLE_CLIMB", -- We're climbing or holding on to something
+    "TASK_SIMPLE_SWIM",
+    "TASK_SIMPLE_HIT_HEAD", -- When we try to jump but something hits us on the head
+    "TASK_SIMPLE_FALL", -- We fell
+    "TASK_SIMPLE_GET_UP", -- We're getting up from a fall
+    "TASK_COMPLEX_GO_TO_POINT_AIMING"
+}
+
+
+
+--[[
+function teste()
+	if not getPedAnimation(localPlayer) then
+	local task = getPedSimplestTask (localPlayer)
+	for idx, badTask in ipairs(blockedTasks) do
+	if (task == badTask) then
+		return
+	end
+	end
+	
+			triggerServerEvent("checkAnim", localPlayer, localPlayer)
+	end
+end
+setTimer(teste, 30000, 0)
+
+--]]
+
+
+
+
+
+
+addEvent("syncSongtapa", true)
+addEventHandler("syncSongtapa", root,
+	function(xp, yp, zp, int, dim, peido)
+		local song = playSound3D("tapa.wav", xp, yp, zp) --playSound3D("data/sound.mp3", xp, yp, zp)
+		setSoundVolume(song, 1)
+		setElementInterior(song, int)
+		setElementDimension(song, dim)
+		
+		--CGlitch:show(1000); 
+		
+
+	end)

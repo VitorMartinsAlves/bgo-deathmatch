@@ -1,0 +1,6 @@
+<meta>
+    <info author="BVH" version="2.0" name="Carro Replacement" autostart="true" />
+	<file src="securicar.txd" />
+	<file src="securicar.dff" />
+	<script type="client" src="Replace.lua" />		
+</meta>

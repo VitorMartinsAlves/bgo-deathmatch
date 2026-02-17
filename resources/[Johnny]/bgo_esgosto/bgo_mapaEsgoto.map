@@ -1,0 +1,7 @@
+<map edf:definitions="editor_main">
+    <object id="object (vgsSelecfence12) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="8210" scale="1" doublesided="false" collisions="true" frozen="false" posX="2393.2002" posY="-2294.8994" posZ="5.8" rotX="0" rotY="0" rotZ="44.747"></object>
+    <object id="object (trashcan) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="1574" scale="1" doublesided="false" collisions="true" frozen="false" posX="2301" posY="-1822" posZ="9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (vgsSelecfence12) (2)" breakable="true" interior="0" alpha="255" dimension="0" model="8210" scale="1" doublesided="false" collisions="true" frozen="false" posX="2587.8" posY="-2248.7" posZ="1.9" rotX="0" rotY="0" rotZ="0.747"></object>
+    <object id="object (vgsSelecfence12) (3)" breakable="true" interior="0" alpha="255" dimension="0" model="8210" scale="1" doublesided="false" collisions="true" frozen="false" posX="2553.8" posY="-2248.3" posZ="1.9" rotX="0" rotY="0" rotZ="358.497"></object>
+    <object id="object (a51_jetdoor) (1)" breakable="true" interior="0" alpha="255" dimension="0" model="3095" scale="1" doublesided="false" collisions="true" frozen="false" posX="2747.6001" posY="-1423.4" posZ="19.7" rotX="0" rotY="87.995" rotZ="0"></object>
+</map>

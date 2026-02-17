@@ -1,0 +1,6 @@
+<meta>
+	<info author="Gothem" name="Rayos" version="1" type="script" description="THUNDER! SHANANA NA NANA NA NANA!" />
+	<script src="main.lua" />
+	<script src="cmain.lua" type="client"/>
+	<file src="trueno.ogg" />
+</meta>

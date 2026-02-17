@@ -1,0 +1,13 @@
+<meta>
+
+	<script src="client/main.lua" type="client" protected="true"/>
+	
+	<file src="gfx/sans-pro-regular.ttf" />
+	<file src="shaders/BlurShader.fx" type="client"/>
+
+	<file src="gfx/logo.png" />	
+	<file src="gfx/2.png" />	
+		<file src="gfx/play.png" />
+		<file src="gfx/pause.png" />
+	<download_priority_group>1</download_priority_group>
+</meta>

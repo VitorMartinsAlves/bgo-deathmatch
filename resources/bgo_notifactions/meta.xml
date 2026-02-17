@@ -1,0 +1,18 @@
+<meta>
+
+    <script src="notificationsc.lua" type="client"/>
+	<script src="notificationss.lua" type="server"/>
+
+	
+	<file src="files/1.png" />
+	<file src="files/2.png" />
+	<file src="files/3.png" />
+	<file src="files/map.jpg" />
+	<file src="files/myriadproregular.ttf" />
+	<file src="files/notification.png" />
+
+	<export function="createDebugNotification" />
+	<export function="createDebugNotification" type="client"/>
+
+
+</meta>

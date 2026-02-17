@@ -1,0 +1,5 @@
+<meta>
+	<info type="misc" name="txdpscinao" author="darthvalter" version="1.0" />
+	<script src="Script.lua" type="client" />
+	<file src="des_nwtown.txd" />
+</meta>

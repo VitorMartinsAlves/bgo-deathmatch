@@ -1,0 +1,4 @@
+<bgo>
+	<script src="charC.lua" type="client" cashe="false"/>
+	<script src="charS.lua" type="server" cashe="false"/>
+</bgo>

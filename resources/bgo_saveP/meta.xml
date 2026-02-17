@@ -1,0 +1,6 @@
+<meta>
+<script src="async.lua" type="shared" />
+    <script src="codeServer.lua" type="server" />
+	<oop>true</oop>
+	<export function="loadCharacter" type="server"/>
+</meta>

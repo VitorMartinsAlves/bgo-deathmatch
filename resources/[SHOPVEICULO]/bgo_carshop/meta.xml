@@ -1,0 +1,17 @@
+<meta>
+<script src="async.lua" type="shared" />
+    <script src="sourceC.lua" type="client" protected="true"/>
+    <script src="sourceG.lua" type="shared" />
+    <script src="sourceS.lua" type="server" />
+	
+	
+     <file src="myriadproregular.ttf"/>   
+    <export function="getVehicleRealName" type="shared" />
+    <export function="getVehicleShopCost" type="shared" />
+         <file src="files/bg.png"/>  
+    <oop>true</oop>
+	
+
+    
+    <min_mta_version client="1.5.7"></min_mta_version>
+</meta>

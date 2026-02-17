@@ -1,0 +1,5 @@
+<meta>
+    <info type="script" name="ground missiles" author="Extreme" version="1.3" description="Race" />
+    <script src="ad_base_s.lua" type="server" />
+    <script src="ad_base_c.lua" type="client" />
+</meta>

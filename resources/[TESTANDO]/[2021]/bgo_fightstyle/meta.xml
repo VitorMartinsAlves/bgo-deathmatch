@@ -1,0 +1,21 @@
+<meta>
+    <script src="selectC.lua"    type="client"  protected="true"/>
+    <script src="sourceC.lua"   type="client" protected="true" />
+    <script src="sourceS.lua" type="server" />
+    
+    <script src="minigames/arrowsC.lua"    type="client"  protected="true"/>
+    <script src="minigames/balanceC.lua"    type="client"  protected="true"/>
+    <file src="files/arch.png"   type="client" />
+    <file src="files/arrow_d.png"   type="client" />
+    <file src="files/arrow_l.png"   type="client" />
+    <file src="files/arrow_r.png"   type="client" />
+    <file src="files/arrow_u.png"   type="client" />
+    <file src="files/circle.png"   type="client" />
+    <file src="files/mainCircle.png"   type="client" />
+    <file src="files/pointer.png"   type="client" />
+    <file src="files/progressbg.png"   type="client" />
+    <file src="files/progressoff.png"   type="client" />
+    <file src="files/progresson.png"   type="client" />
+	
+	<oop>true</oop>
+</meta>

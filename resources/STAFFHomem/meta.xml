@@ -1,0 +1,6 @@
+<meta>
+	<info type="" name="Convertido por" author="Johnny" description="" version="1" />
+	<file src="quad.txd" />
+	<file src="quad.dff" />
+	<script type="client" src="replace.lua" />
+</meta>

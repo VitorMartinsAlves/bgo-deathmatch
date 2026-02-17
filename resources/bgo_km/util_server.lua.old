@@ -1,0 +1,19 @@
+﻿local rovid = "#7cc576[BGOMTA - Veiculo]:#FFFFFF"		
+function greetingHandler(seat)
+    local thePlayer = getPedOccupiedVehicle(source)
+    if(thePlayer) then
+		if getElementData(source, "veh:ov") == false then
+		outputChatBox(rovid.." Você foi removido do veiculo por não está de cinto de segurança!", source, 255, 255, 255, true)
+		removePlayerFromVehicle ( source ) 
+	
+		local x,y,z = getElementPosition(source)
+		setElementPosition(source, x,y,z+3)	
+		setPedAnimation( source, "CRACK", "crckidle2", -1, true, false, false)
+		setTimer(setPedAnimation,2000,1, source)
+		setTimer(setPedAnimation,2100,1, source)
+	end
+	end
+end
+addEvent( "removerdoveiculo", true )
+addEventHandler( "removerdoveiculo", root, greetingHandler ) 
+

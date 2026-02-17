@@ -1,0 +1,6 @@
+<meta>
+<info name='SubaruDrift' type='misc' />
+<script src='script.lua' type='client' />
+<file src='subarao.txd' />
+<file src='subarao.dff' />
+</meta>

@@ -1,0 +1,242 @@
+﻿function createGUI()
+    local X = 10
+    local Y = 10
+    local W = 300
+    local H = 300
+    sillystuff = guiCreateWindow(X, Y, W, H, "Painel Troll", false)
+	guiWindowSetSizable ( sillystuff, false )
+    
+    gridlistPlayers = guiCreateGridList(5,25,200,240,false,sillystuff)
+    column = guiGridListAddColumn(gridlistPlayers,"Players",0.9)
+    guiGridListSetSortingEnabled ( gridlistPlayers, false )
+	infolabel = guiCreateLabel (15, 270, 285, 20, "Traduzido Por +Tawan", false,sillystuff)
+	
+	closeButton = guiCreateButton(225,245,55,20,"Fechar",false,sillystuff)
+    addEventHandler ( "onClientGUIClick", closeButton, closeGUI, false )
+	
+    forceButton = guiCreateButton(225,25,55,20,"Morrer",false,sillystuff)
+    addEventHandler ( "onClientGUIClick", forceButton, forceButtonClient, false )
+	
+	forceText = guiCreateEdit ( 225, 50, 55 , 20, "1-100", false,sillystuff)
+    
+	fixButton =  guiCreateButton(225,75,55,20,"Reparar",false,sillystuff)
+    addEventHandler ( "onClientGUIClick", fixButton, fixButtonClient, false )
+	
+	screamerButton =  guiCreateButton(225,100,55,20,"Susto",false,sillystuff)
+    addEventHandler ( "onClientGUIClick", screamerButton, screamerButtonClient, false )
+	
+	drugsOnButton =  guiCreateButton(225,125,55,20,"Luzes On",false,sillystuff)
+    addEventHandler ( "onClientGUIClick", drugsOnButton, drugsOnButtonClient, false )
+	
+	drugsOffButton =  guiCreateButton(225,150,55,20,"Luzes Off",false,sillystuff)
+    addEventHandler ( "onClientGUIClick", drugsOffButton, drugsOffButtonClient, false )
+	
+	randomButton =  guiCreateButton(225,175,55,20,"Carros",false,sillystuff)
+    addEventHandler ( "onClientGUIClick", randomButton, randomButtonClient, false )
+	
+    guiSetVisible(sillystuff, false)
+    showCursor(false,false)
+end
+local confirm=0 --confirmar screamer
+
+function closeGUI()
+	guiSetVisible(sillystuff,false)
+	showCursor(false,false)
+end
+
+addEvent("openGUI",true)
+function showGUI(source)
+	if source == getLocalPlayer() then
+		guiSetVisible(sillystuff,true)
+		showCursor(true,false)
+		addPlayers()
+	end
+end
+addEventHandler("openGUI",getRootElement(),showGUI)
+
+function addPlayers ()
+	guiGridListClear (gridlistPlayers)
+        if ( column ) then
+                for id, playeritem in ipairs(getElementsByType("player")) do 
+                    local row = guiGridListAddRow ( gridlistPlayers )
+                    guiGridListSetItemText ( gridlistPlayers, row, column, getPlayerName ( playeritem ), false, false )
+                end
+        end
+end
+
+addEventHandler("onClientResourceStart", getResourceRootElement(getThisResource()), 
+    function ()
+        createGUI()
+    end
+)
+
+function forceButtonClient(button, state, sx, sy, x, y, z, elem, gui)
+    if state == "up" then
+				confirm = 0
+				local row,col = guiGridListGetSelectedItem ( gridlistPlayers )
+                local playerName = guiGridListGetItemText ( gridlistPlayers, row , col )
+				local localPlayerName = getPlayerName(getLocalPlayer())
+				if playerName=="" then
+					guiSetText ( infolabel, "Choose a player." )
+				else
+					local forcestring = guiGetText ( forceText )
+					local force = tonumber(forcestring)
+					if force > 0 then
+						if force <= 100 then
+							triggerServerEvent("forceButtonInfo",root, playerName,force,localPlayerName,iterator )
+							guiSetText(infolabel,playerName .. " Foi Sucesso")
+						else
+							guiSetText(infolabel," Força Deve Estar Entre 1 a 100")
+						end
+					else
+						guiSetText(infolabel,"Force must be between 1 and 100.")
+					end
+				end
+    end
+end
+
+function fixButtonClient(button, state, sx, sy, x, y, z, elem, gui)
+    if state == "up" then
+				confirm = 0
+				local row,col = guiGridListGetSelectedItem ( gridlistPlayers )
+                local playerName = guiGridListGetItemText ( gridlistPlayers, row , col )
+				if playerName=="" then
+					guiSetText ( infolabel, "Choose a player." )
+				else
+					triggerServerEvent("fixButtonInfo",root, playerName)
+					guiSetText ( infolabel,playerName .. " Carro Reparado" )
+				end
+    end
+end
+
+function screamerButtonClient(button, state, sx, sy, x, y, z, elem, gui)
+    if state == "up" then
+				local row,col = guiGridListGetSelectedItem ( gridlistPlayers )
+                local playerName = guiGridListGetItemText ( gridlistPlayers, row , col )
+				local localPlayerName = getPlayerName(getLocalPlayer())
+				if playerName=="" then
+					guiSetText ( infolabel, "Choose a player." )
+				else
+				local targetPlayer=getPlayerFromName (playerName)
+					if confirm == 1 then
+							guiSetText ( infolabel, " Susto Ativado Para " .. playerName )
+							triggerServerEvent("screamButtonInfo",root,playerName,localPlayerName)
+							confirm = 0
+					else
+							guiSetText ( infolabel, " Susto Desativado" )
+							confirm = 1
+					end
+				end
+    end
+end
+
+addEvent("render",true)
+function renderScreamer(targetPlayer,localPlayerName)
+	local localPlayer = getLocalPlayer ( )
+	if targetPlayer==localPlayer then
+		setTimer ( function()
+			removeEventHandler("onClientRender",  getRootElement(), drawScreamer )
+			stopSound ( sound )
+			showChat ( true )
+			setSoundVolume(song,1)
+		end, 10000, 1 )
+--		outputChatBox(localPlayerName .. " #FF0000sent you a screamer.",255,255,255,true)
+		addEventHandler ( "onClientRender", getRootElement(), drawScreamer )
+		showChat ( false )
+		sound = playSound("shout.mp3")
+		setSoundVolume(song,0)
+	end
+end
+addEventHandler ( "render", getRootElement(), renderScreamer )
+
+function drawScreamer()
+	local Width,Height = guiGetScreenSize()
+	dxDrawImage( 0,0,Width,Height,"scream.jpg")
+end
+
+function drugsOnButtonClient(button, state, sx, sy, x, y, z, elem, gui)
+    if state == "up" then
+				confirm = 0
+				local localPlayerName = getPlayerName(getLocalPlayer())
+				local localPlayer = getLocalPlayer()
+				local row,col = guiGridListGetSelectedItem ( gridlistPlayers )
+                local playerName = guiGridListGetItemText ( gridlistPlayers, row , col )
+				if playerName=="" then
+					guiSetText ( infolabel, "Choose a player." )
+				else
+					guiSetText ( infolabel," Luzes Ativada Para " .. playerName .."." )
+					local targetPlayer=getPlayerFromName (playerName)
+					triggerServerEvent("drugsOnButtonInfo",root,playerName,localPlayerName,localPlayer)
+				end
+    end
+end
+
+
+addEvent("drugsOn",true)
+function turnDrugsOn(targetPlayer,playerName,localPlayerName)
+	local localPlayer = getLocalPlayer ( )
+	if targetPlayer==localPlayer then
+		if not isTimer ( shakeTimer ) then
+			local x,y,z = getCameraMatrix()
+			createExplosion(x, y, z, 0, false, 5.0, false)
+			shakeTimer = setTimer ( function()
+				x,y,z = getCameraMatrix()
+				createExplosion(x, y, z, 0, false, 5.0, false)
+			end, 5000, 0 )
+			colorTimer = setTimer ( function()
+			fadeCamera (false, 1.0, math.random(0,255), math.random(0,255), math.random(0,255) )
+			end, 250, 0 )
+			resetTimer = setTimer ( function()
+				fadeCamera (true, 0.5 )
+			end, 750, 0 )
+		end
+	end
+end
+addEventHandler ( "drugsOn", getRootElement(),turnDrugsOn )
+
+function drugsOffButtonClient(button, state, sx, sy, x, y, z, elem, gui)
+    if state == "up" then
+				confirm = 0
+				local localPlayerName = getPlayerName(getLocalPlayer())
+				local localPlayer = getLocalPlayer()
+				local row,col = guiGridListGetSelectedItem ( gridlistPlayers )
+                local playerName = guiGridListGetItemText ( gridlistPlayers, row , col )
+				if playerName=="" then
+					guiSetText ( infolabel, "Choose a player." )
+				else
+					guiSetText ( infolabel, "Luzes Desativado " .. playerName .. "." )
+					local targetPlayer=getPlayerFromName (playerName)
+					triggerServerEvent("drugsOffButtonInfo",root,playerName,localPlayerName,localPlayer)
+				end
+    end
+end
+
+addEvent("drugsOff",true)
+function turnDrugsOff(targetPlayer,playerName,localPlayerName)
+	local localPlayer = getLocalPlayer ( )
+	if targetPlayer==localPlayer then
+		if isTimer ( shakeTimer ) then
+			fadeCamera (true, 0.5 )
+			killTimer(shakeTimer)
+			killTimer(colorTimer)
+			killTimer(resetTimer)
+		end
+	end
+end
+addEventHandler ( "drugsOff", getRootElement(),turnDrugsOff )
+
+function randomButtonClient(button, state, sx, sy, x, y, z, elem, gui)
+    if state == "up" then
+				confirm = 0
+				local row,col = guiGridListGetSelectedItem ( gridlistPlayers )
+                local playerName = guiGridListGetItemText ( gridlistPlayers, row , col )
+				local localPlayerName = getPlayerName(getLocalPlayer())
+				if playerName=="" then
+					guiSetText ( infolabel, "Choose a player." )
+				else
+				local targetPlayer=getPlayerFromName (playerName)
+							guiSetText ( infolabel, " Voçe Deu Para " .. playerName .. " Veiculo" )
+							triggerServerEvent("randomButtonInfo",root,playerName,localPlayerName)
+				end
+    end
+end

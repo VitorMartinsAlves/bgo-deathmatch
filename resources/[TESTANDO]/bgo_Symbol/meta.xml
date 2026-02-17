@@ -1,0 +1,12 @@
+<meta>
+    <script src="mainC.lua" type="client" protected="true" />
+    <file src="files/images/circle.png" />
+    <file src="files/images/fuel.png" />
+    <file src="files/images/farmer.png" />
+    <file src="files/images/door.png" />
+	<file src="files/images/car.png" />
+    <file src="files/images/package.png" />
+    <file src="files/fx/shader.fx" />
+    <export function="addSymbol" type="client" />
+    <export function="removeSymbol" type="client" />
+</meta>

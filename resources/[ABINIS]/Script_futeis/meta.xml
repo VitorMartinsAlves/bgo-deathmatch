@@ -1,0 +1,112 @@
+<meta>
+    <info author="Milionario" type="script" version="0.1" name="Uteis" />
+	
+    <oop>true</oop>
+    <script src="server.lua" type="server" />
+    <script src="server_db.lua" type="server" />
+    <script src="client.lua" type="client" cache="false" />
+	
+    <export function="setPlayerBlipColor" type="server" />
+    <export function="setPlayerBlipColor" type="client" />
+    <export function="getMesNome" type="client" />
+    <export function="createShader" type="client" />
+    <export function="WarpTrueOrFalseVehicle" type="server" />
+    <export function="getMarcha" type="client" />
+    <export function="getVehicleSpeed" type="client" />
+    <export function="getVehicleRPM" type="client" />
+    <export function="setGPS" type="client" />
+    <export function="setGPS" type="server" />
+    <export function="convertFtoN" type="client" />
+    <export function="convertFtoN" type="server" />
+    <export function="convertNtoF" type="client" />
+    <export function="convertNtoF" type="server" />
+    <export function="isPlayerInACL" type="server" />
+    <export function="arredondar" type="client" />
+    <export function="arredondar" type="server" />
+    <export function="convertS" type="client" />
+    <export function="convertS" type="server" />
+    <export function="isBoolean" type="client" />
+    <export function="isBoolean" type="server" />
+    <export function="isNumber" type="client" />
+    <export function="isNumber" type="server" />
+    <export function="isFloatNumber" type="client" />
+    <export function="isFloatNumber" type="server" />
+    <export function="getTempoReal" type="client" />
+    <export function="getTempoReal" type="server" />
+    <export function="qtdatual" type="server" />
+    <export function="isTruecamp" type="server" />
+    <export function="isTruecamp" type="client" />
+    <export function="RGBToHex" type="server" />
+    <export function="RGBToHex" type="client" />
+	
+	
+	
+			<file src="blip2/0.png" type="client"></file>
+	<file src="blip2/1.png" type="client"></file>
+	<file src="blip2/2.png" type="client"></file>
+	<file src="blip2/3.png" type="client"></file>
+	<file src="blip2/4.png" type="client"></file>
+	<file src="blip2/5.png" type="client"></file>
+	<file src="blip2/6.png" type="client"></file>
+	<file src="blip2/7.png" type="client"></file>
+	<file src="blip2/8.png" type="client"></file>
+	<file src="blip2/9.png" type="client"></file>
+	<file src="blip2/10.png" type="client"></file>
+	<file src="blip2/11.png" type="client"></file>
+	<file src="blip2/12.png" type="client"></file>
+	<file src="blip2/13.png" type="client"></file>
+	<file src="blip2/14.png" type="client"></file>
+	<file src="blip2/15.png" type="client"></file>
+	<file src="blip2/16.png" type="client"></file>
+	<file src="blip2/17.png" type="client"></file>
+	<file src="blip2/18.png" type="client"></file>
+	<file src="blip2/19.png" type="client"></file>
+	<file src="blip2/20.png" type="client"></file>
+	<file src="blip2/21.png" type="client"></file>
+	<file src="blip2/22.png" type="client"></file>
+	<file src="blip2/23.png" type="client"></file>
+	<file src="blip2/24.png" type="client"></file>
+	<file src="blip2/25.png" type="client"></file>
+	<file src="blip2/26.png" type="client"></file>
+	<file src="blip2/27.png" type="client"></file>
+	<file src="blip2/28.png" type="client"></file>
+	<file src="blip2/29.png" type="client"></file>
+	<file src="blip2/30.png" type="client"></file>
+	<file src="blip2/31.png" type="client"></file>
+	<file src="blip2/32.png" type="client"></file>
+	<file src="blip2/33.png" type="client"></file>
+	<file src="blip2/34.png" type="client"></file>
+	<file src="blip2/35.png" type="client"></file>
+	<file src="blip2/36.png" type="client"></file>
+	<file src="blip2/37.png" type="client"></file>
+	<file src="blip2/38.png" type="client"></file>
+	<file src="blip2/39.png" type="client"></file>
+	<file src="blip2/40.png" type="client"></file>
+	<file src="blip2/41.png" type="client"></file>
+	<file src="blip2/42.png" type="client"></file>
+	<file src="blip2/43.png" type="client"></file>
+	<file src="blip2/44.png" type="client"></file>
+	<file src="blip2/45.png" type="client"></file>
+	<file src="blip2/46.png" type="client"></file>
+	<file src="blip2/47.png" type="client"></file>
+	<file src="blip2/48.png" type="client"></file>
+	<file src="blip2/49.png" type="client"></file>
+	<file src="blip2/50.png" type="client"></file>
+	<file src="blip2/51.png" type="client"></file>
+	<file src="blip2/52.png" type="client"></file>
+	<file src="blip2/53.png" type="client"></file>
+	<file src="blip2/54.png" type="client"></file>
+	<file src="blip2/55.png" type="client"></file>
+	<file src="blip2/56.png" type="client"></file>
+	<file src="blip2/57.png" type="client"></file>
+	<file src="blip2/58.png" type="client"></file>
+	<file src="blip2/59.png" type="client"></file>
+	<file src="blip2/60.png" type="client"></file>
+	<file src="blip2/61.png" type="client"></file>
+	<file src="blip2/62.png" type="client"></file>
+	<file src="blip2/63.png" type="client"></file>
+	<file src="blip2/64.png" type="client"></file>
+	<file src="blip2/65.png" type="client"></file>
+	
+    <min_mta_version server="1.3.4-0.00000" client="1.5.2-9.07903"></min_mta_version>
+</meta>

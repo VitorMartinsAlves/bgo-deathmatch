@@ -1,0 +1,11 @@
+<meta>
+	<info author="!Patrick" name="hifi (radio)" type="script" version="1.0" />
+	<min_mta_version client="1.5.0" />
+	<oop>true</oop>
+	
+	<script src="settings.lua"	type="shared" />
+	<script src="client.lua"	type="client" />
+	<script src="server.lua"	type="server" />
+
+	<file src="click.wav" />
+</meta>

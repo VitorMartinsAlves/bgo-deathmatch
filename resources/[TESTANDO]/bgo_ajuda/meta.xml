@@ -1,0 +1,20 @@
+﻿ <meta>
+	<script src="Kliens.lua" type="client" protected="true" />
+	
+<script src="server.lua" type="server" protected="true" />
+	<!-- GUI -->
+	<file src="ui/comandos.html" protected="true"/>
+	<file src="ui/cpenal.html" protected="true"/>
+	<file src="ui/index.html" protected="true"/>
+	<file src="ui/inicio.html" protected="true"/>
+	<file src="ui/regras.html" protected="true"/>
+	
+	<file src="ui/jquery.js" protected="true"/>
+	<file src="ui/css.css" protected="true"/>
+
+	<file src="ui/images/background.png" />
+
+	
+
+<oop>true</oop>
+</meta>

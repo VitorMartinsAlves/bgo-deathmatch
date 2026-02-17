@@ -1,0 +1,68 @@
+----------------------------------------->>
+-- Grand Theft International (GTI)
+-- Author: JT Pennington (JTPenn)
+-- Date: 24 Dec 2014
+-- Resource: GTIhousing/manage.slua
+-- Version: 1.0
+----------------------------------------->>
+
+-- Toggle Lock State
+--------------------->>
+
+addEvent("GTIhousing.toggleLockState", true)
+addEventHandler("GTIhousing.toggleLockState", root, function(house)
+	local locked = not isHouseLocked(house)
+	setHouseLocked(house, locked)
+	exports.bgo_hud:dm("Você "..(locked and "locked" or "unlocked").." sua casa.", client, 25, 255, 25)
+	triggerClientEvent(client, "GTIhousing.updateLockState", resourceRoot, locked)
+end)
+
+-- Transfer House
+------------------>>
+
+addEvent("GTIhousing.transferHouse", true)
+addEventHandler("GTIhousing.transferHouse", root, function(house, account, password)
+
+	local targetPlayer, targetPlayerName = exports.bgo_core:findPlayer(client, account)
+			
+	if targetPlayer then
+	local toAccount = getPlayerAccount(targetPlayer)
+	--if (not toAccount or isGuestAccount(toAccount)) then
+	--	exports.bgo_hud:dm("Essa conta não existe. Por favor insira um nome de conta válido.", client, 255, 125, 0)
+	--	return
+	--end
+	
+	local fromAccount = getPlayerAccount(client)
+	if (toAccount == fromAccount) then
+		exports.bgo_hud:dm("Você não pode transferir uma casa para si mesmo. Isso não faria qualquer sentido.", client, 255, 125, 0)
+		return
+	end
+	
+	local fromAccName = getAccountName(fromAccount)
+	if (not getAccount(fromAccName, password)) then
+		exports.bgo_hud:dm("senha inválida. Digite sua senha de conta correta.", client, 255, 125, 0)
+		return
+	end
+	
+	local houses = #getAccountTotalHouses(toAccount)
+	if (houses >= HOUSE_LIMIT) then
+		exports.bgo_hud:dm("Você não pode transferir esta casa. O destinatário atingiu o limite de casa máximo de "..HOUSE_LIMIT.." por jogador", client, 255, 125, 0)
+		return
+	end
+	local c = getAccountName(toAccount)
+	setHouseOwner(house, c)
+	local address = getHouseAddress(house)
+	exports.bgo_hud:dm("Você transferiu com sucesso"..address.." para '"..targetPlayerName.."'.", client, 30, 160, 115)
+	local player = getAccountPlayer(toAccount)
+	if (player) then
+		exports.bgo_hud:dm("Casa: "..getPlayerName(client).." tem dado "..address.." para você! Vá dar uma olhada!", player, 30, 160, 115)
+	end
+	
+	addOwnerCache(getAccountName(toAccount), house)
+	removeOwnerCache(getAccountName(fromAccount), house)
+	
+	triggerClientEvent(client, "GTIhousing.closePanel", resourceRoot)
+	else
+	exports.bgo_hud:dm("Essa conta não existe. Por favor insira um nome de conta válido.", client, 255, 125, 0)
+	end
+end)

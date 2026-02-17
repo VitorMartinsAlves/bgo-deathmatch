@@ -1,0 +1,8 @@
+-- Generated using GM2MC ( GTA:SA Models To MTA:SA Converter ) by SoRa
+
+addEventHandler('onClientResourceStart',resourceRoot,function () 
+txd = engineLoadTXD( 'copcarsf.txd' ) 
+engineImportTXD( txd, 2 ) 
+dff = engineLoadDFF('copcarsf.dff', 2) 
+engineReplaceModel( dff, 2 )
+end)

@@ -1,0 +1,11 @@
+<meta>
+    <script src="global.lua" type="shared" />
+    <script src="client.lua" type="client" protected="true" />
+    <script src="server.lua" type="server" />
+    
+    <file src="files/font.otf" />
+    <file src="files/bear_01.mp3" />
+    <file src="files/bear_02.mp3" />
+    <file src="files/wolf_01.mp3" />
+    <file src="files/wolf_02.mp3" />
+</meta>

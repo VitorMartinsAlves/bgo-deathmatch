@@ -1,0 +1,7 @@
+<meta>  
+<info author='Jvz3D' description='Aff' version='1.0' type='script' />  
+<script src='replace.lua' type='client' /> 
+<file src='hsp.dff' type='client' /> 
+<file src='hsp.txd' type='client' />  
+<file src='hsp.col' type='client' />  
+</meta>

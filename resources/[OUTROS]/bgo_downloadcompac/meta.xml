@@ -1,0 +1,204 @@
+﻿<meta>
+    <info author="xXMADEXx" type="script" version="1.2.1" name="Mod Downloader" />
+    
+    <oop>true</oop>
+    <script src="server/sLoader.lua" type="server" />
+    <script src="server/sUpdater.lua" type="server" />
+    
+    <script src="client/cFunctions.lua" type="client" />
+    <script src="client/cDownloader.lua" type="client" />
+    <script src="client/cMods.lua" type="client" />
+    <script src="client/cInter.lua" type="client" />
+    
+    <aclrequest>
+        <!-- Access to restart self after meta.xml has been modified (sLoader.lua) -->
+        <right name="function.restartResource" access="true"></right>
+        
+        <!-- Access to check for updates (sUpdater.lua) -->
+        <right name="function.callRemote" access="true"></right>
+    </aclrequest>
+    
+    <!-- <file src="mods/vehicles/jato.txd" download="false"></file>
+    <file src="mods/vehicles/jato.dff" download="false"></file>
+    <file src="mods/skins/[DRVV]SkinFem.txd" download="false"></file>
+    <file src="mods/skins/[DRVV]SkinFem.dff" download="false"></file> -->
+    
+    
+    <!-- CARRO LOJA -->
+    
+    <file src="mods/vehicles/BRASILIAR.txd" download="false"></file>
+    <file src="mods/vehicles/BRASILIAR.dff" download="false"></file>
+    <file src="mods/vehicles/GOLQUAD.txd" download="false"></file>
+    <file src="mods/vehicles/GOLQUAD.dff" download="false"></file>
+    <file src="mods/vehicles/Chevete.txd" download="false"></file>
+    <file src="mods/vehicles/Chevete.dff" download="false"></file>
+    <file src="mods/vehicles/GolfGTI.txd" download="false"></file>
+    <file src="mods/vehicles/GolfGTI.dff" download="false"></file>
+    <file src="mods/vehicles/ToroR.txd" download="false"></file>
+    <file src="mods/vehicles/ToroR.dff" download="false"></file>
+    <file src="mods/vehicles/Jeep.txd" download="false"></file>
+    <file src="mods/vehicles/Jeep.dff" download="false"></file>
+    <file src="mods/vehicles/Lamborghini.txd" download="false"></file>
+    <file src="mods/vehicles/Lamborghini.dff" download="false"></file>
+    <file src="mods/vehicles/Outlander.txd" download="false"></file>
+    <file src="mods/vehicles/Outlander.dff" download="false"></file>
+    <file src="mods/vehicles/MercedesR.txd" download="false"></file>
+    <file src="mods/vehicles/MercedesR.dff" download="false"></file>
+    <file src="mods/vehicles/Sonata.txd" download="false"></file>
+    <file src="mods/vehicles/Sonata.dff" download="false"></file>
+    <file src="mods/vehicles/Capitiva.txd" download="false"></file>
+    <file src="mods/vehicles/Capitiva.dff" download="false"></file>
+    <file src="mods/vehicles/Dodge.txd" download="false"></file>
+    <file src="mods/vehicles/Dodge.dff" download="false"></file>
+    <file src="mods/vehicles/Camaro.txd" download="false"></file>
+    <file src="mods/vehicles/Camaro.dff" download="false"></file>
+    <file src="mods/vehicles/Ferrari.txd" download="false"></file>
+    <file src="mods/vehicles/Ferrari.dff" download="false"></file>
+    <file src="mods/vehicles/BMWX6.txd" download="false"></file>
+    <file src="mods/vehicles/BMWX6.dff" download="false"></file>
+    <file src="mods/vehicles/AudiR8.txd" download="false"></file>
+    <file src="mods/vehicles/AudiR8.dff" download="false"></file>
+    <file src="mods/vehicles/Titan.txd" download="false"></file>
+    <file src="mods/vehicles/Titan.dff" download="false"></file>
+    <file src="mods/vehicles/KOMBI.txd" download="false"></file>
+    <file src="mods/vehicles/KOMBI.dff" download="false"></file>
+    <file src="mods/vehicles/velosterR.txd" download="false"></file>
+    <file src="mods/vehicles/velosterR.dff" download="false"></file>
+    <file src="mods/vehicles/H2R.txd" download="false"></file>
+    <file src="mods/vehicles/H2R.dff" download="false"></file>
+    <file src="mods/vehicles/XJ6.txd" download="false"></file>
+    <file src="mods/vehicles/XJ6.dff" download="false"></file>
+    
+    
+    <!-- CARRO CORPS -->
+    
+    <file src="mods/vehicles/HELIP.txd" download="false"></file>
+    <file src="mods/vehicles/HELIP.dff" download="false"></file>
+    <file src="mods/vehicles/MOTOPOLICIA.txd" download="false"></file>
+    <file src="mods/vehicles/MOTOPOLICIA.dff" download="false"></file>
+    <file src="mods/vehicles/HSAMU.txd" download="false"></file>
+    <file src="mods/vehicles/HSAMU.dff" download="false"></file>
+    <file src="mods/vehicles/VAN.txd" download="false"></file>
+    <file src="mods/vehicles/VAN.dff" download="false"></file>
+    <file src="mods/vehicles/LIXEIROR.txd" download="false"></file>
+    <file src="mods/vehicles/LIXEIROR.dff" download="false"></file>
+    <file src="mods/vehicles/taxiR.txd" download="false"></file>
+    <file src="mods/vehicles/taxiR.dff" download="false"></file>
+    <file src="mods/vehicles/mecanicoR.txd" download="false"></file>
+    <file src="mods/vehicles/mecanicoR.dff" download="false"></file>
+    
+    
+    <!-- FACÇÕES -->
+    
+    <file src="mods/skins/[ADA]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[ADA]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[BDM]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[BDM]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[BDM]SkinFR.txd" download="false"></file>
+    <file src="mods/skins/[BDM]SkinFR.dff" download="false"></file>
+    <file src="mods/skins/[CV]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[CV]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[FDN]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[FDN]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[MLC]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[MLC]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[MLC]SkinFR.txd" download="false"></file>
+    <file src="mods/skins/[MLC]SkinFR.dff" download="false"></file>
+    <file src="mods/skins/[ODR]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[ODR]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[PCC]skinR.txd" download="false"></file>
+    <file src="mods/skins/[PCC]skinR.dff" download="false"></file>
+    <file src="mods/skins/[RODO]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[RODO]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[TCP]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[TCP]SkinR.dff" download="false"></file>
+    
+    
+    <!-- CORPS SKIN -->
+    
+    
+    <file src="mods/skins/[BOPE]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[BOPE]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[CHOQUE]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[CHOQUE]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[EB]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[EB]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[UPP]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[UPP]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[GTM]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[GTM]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[FN]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[FN]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[PC]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[PC]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[RECOM]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[RECOM]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[FUZ]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[FUZ]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[RP1]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[RP1]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[RP2]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[RP2]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[RP3]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[RP3]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[SAMU]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[SAMU]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[SAMUF]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[SAMUF]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[PF]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[PF]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[DRVV]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[DRVV]SkinR.dff" download="false"></file>
+    
+    <!-- TRABALHO SKIN -->
+    
+    <file src="mods/skins/[Correio]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[Correio]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[PIZZA]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[PIZZA]SkinR.dff" download="false"></file>
+    <file src="mods/skins/[GAS]SkinR.txd" download="false"></file>
+    <file src="mods/skins/[GAS]SkinR.dff" download="false"></file>
+    
+    <!-- SKIN FEMININA -->
+    
+    <file src="mods/skins/[SKIN]Mulher1R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher1R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher2R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher2R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher3R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher3R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher4R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher4R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher5R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher5R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher6R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher6R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher7R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher7R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher8R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher8R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher9R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher9R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher10R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher10R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher11R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher11R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher12R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher12R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher13R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher13R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher14R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher14R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher15R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher15R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher16R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher16R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher17R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher17R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher18R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher18R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher19R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher19R.dff" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher20R.txd" download="false"></file>
+    <file src="mods/skins/[SKIN]Mulher20R.dff" download="false"></file>
+</meta>

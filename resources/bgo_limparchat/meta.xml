@@ -1,0 +1,6 @@
+<meta>
+<info name="" author="Cromus" type="script" version="1.3" />
+	<script src="server.lua" type="server"  />
+	<script src="client.lua" type="client" cache="false" />
+	<file src="font.ttf"/>
+</meta>

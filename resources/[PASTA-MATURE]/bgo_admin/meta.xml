@@ -1,0 +1,72 @@
+<meta>
+    <script src="codeServer.lua" />
+    <script src="codeClient.lua" type="client" protected="true" />
+    <script src="codeGlobal.lua" type="shared" />
+    <file src="data/pai2.mp3" />
+    <file src="data/pai.mp3" />
+    <file src="data/sound.mp3" />
+    <file src="data/dynamite.txd" />
+    <file src="data/dynamite.dff" />
+    <file src="armour.txd" />
+    <file src="armour.dff" />
+    
+    <file src="data/Track01.mp3" />
+    <file src="data/Track02.mp3" />
+    <file src="data/Track03.mp3" />
+    <file src="data/Track04.mp3" />
+    <file src="data/Track05.mp3" />
+    <file src="data/Track06.mp3" />
+    <file src="data/Track07.mp3" />
+    <file src="data/Track08.mp3" />
+    <file src="data/Track09.mp3" />
+    <file src="data/Track10.mp3" />
+    <file src="data/Track11.mp3" />
+    <file src="data/Track12.mp3" />
+    <file src="data/depre.mp3" />
+    <file src="data/risada.mp3" />
+    <file src="data/paioff.mp3" />
+    <file src="data/mooo.wav" />
+    <file src="data/guei.wav" />
+    <file src="data/abinis.wav" />
+    <file src="data/ham.wav" />
+    <file src="data/queota.wav" />
+    <file src="data/cagao.ogg" />
+    <file src="lobinho.ogg" />
+    <file src="susp.ogg" />
+    <file src="pam.ogg" />
+    
+    
+    <file src="data/vidro.wav" />
+    <file src="data/porta.wav" />
+    <export function="getPlayerAdminLevel" type="shared" />
+    <export function="getPlayerAsLevel" type="shared" />
+    <export function="checkNagyonAdmin" type="shared" />
+    <export function="checkPermission" type="shared" />
+    <export function="checkPermissionIG" type="shared" />
+    <export function="isAdminDuty" type="shared" />
+    
+    <export function="isPlayerDuty" type="shared" />
+    <export function="isPlayerFaccao" type="shared" />
+    
+    <export function="setPlayerPagamento" type="shared" />
+    
+    <export function="checkAdmin" type="shared" />
+    <export function="checkLogged" type="shared" />
+    <export function="outputAdminMessage" type="shared" />
+    <export function="outputDeveloperMessage" type="shared" />
+    <export function="savePP" type="shared" />
+    <export function="setPlayerColete" type="server" />
+    
+    <export function="iniciarRemocaoItemsVIP" type="server" />
+    <export function="iniciarRemocaoItems" type="server" />
+    
+    <export function="AntiComandTempo" type="shared" />
+    <export function="AntiComandGetTime" type="shared" />
+    <export function="AntiComandoTime" type="shared" />
+    <export function="getPorcentagem" type="shared" />
+    
+    <export function="setarskinP" type="shared" />
+    <export function="beneficiario" type="shared" />
+    
+    <min_mta_version server="1.5.7-9.19626"></min_mta_version>
+</meta>

@@ -1,0 +1,18 @@
+<meta>
+    <script src="sourceC.lua" type="client" protected="true" />
+    <script src="sourceS.lua" type="server" />
+    
+    <file src="files/bg.png" />
+    <file src="files/igenylo.png" />
+    <file src="files/font.ttf" />
+	<file src="files/font2.otf" />
+    <file src="files/hand.ttf" />
+    <file src="files/hand2.ttf" />
+    <file src="files/sign.mp3" />
+    
+    
+    <export function="showCard" type="client" />
+    <export function="destroyCard" type="client" />
+    
+    <oop>true</oop>
+</meta>

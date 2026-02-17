@@ -1,0 +1,6 @@
+<meta>
+    <file src="Files/walpaper.png" /> 
+    <file src="Files/shop_icon.png" /> 
+	<script src="Server.lua" type="server" />
+	<script src="Client.lua" type="client" />
+</meta>

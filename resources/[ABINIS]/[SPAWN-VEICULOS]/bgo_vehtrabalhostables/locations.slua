@@ -1,0 +1,547 @@
+﻿
+rent_table = {
+
+
+{
+	name="Emprego\nTaxista",	pos={-41.734, -1154.22, 1.078-1},	colorText={0,191,255},
+	restrictions={12},
+	vehicles={
+		{420, "ground"},
+	},
+	spawn_points={
+		["ground"] = {
+		
+			{-38.258, -1148.135, 0.488, 63.4518699646},
+			{-35.051, -1141.624, 0.488, 63.4518699646},
+			{-31.931, -1135.087, 0.488, 63.4518699646},
+		},
+	},
+},
+
+
+{
+	name="Emprego\nMECANICO",	pos={2850.03, -1532.231, 11.099-1},	colorText={0,191,255},
+	restrictions={3},
+	vehicles={
+		{525, "ground"},
+	},
+	spawn_points={
+		["ground"] = {
+		
+			{2846.0783691406,-1505.3881835938,11.602152824402, 179.06307983398},
+			{2850.806640625,-1505.6468505859,11.383503913879, 179.18893432617},
+			{2855.466796875,-1506.0767822266,11.172608375549, 175.88088989258},
+		},
+	},
+},
+
+
+{
+	name="Veiculos\nDRVV",	pos={2535.521, -2119.261, 13.778-1},	colorText={0,191,255},
+	restrictions={1},
+	vehicles={
+		--{578, "ground"},
+		{443, "ground"},
+		--{422, "ground"}
+	},
+	spawn_points={
+		["ground"] = {
+		
+			{2533.6083984375,-2116.9877929688,12.956558227539, 89.694038391113},
+
+		},
+	},
+},
+
+
+{
+	name="Veiculos\nForça\nNacional",	pos={2773.561, -2378.497, 13.677-1},	colorText={0,191,255},
+	restrictions={19}, pintura=6,
+	vehicles={
+		{490, "carro"}
+	},
+	spawn_points={
+		["carro"] = {
+			{2764.6604003906,-2386.8515625,13.628726959229, 357.9010925293},
+		},
+		["heli"] = {
+			{2115.6684570313,-1769.7014160156,13.467373847961, 358.35415649414},
+		},
+	},
+},
+
+{
+	name="Veiculo\n5º\nBatalhao\nUPP",	pos={620.417, -594.003, 17.233-1},	colorText={0,191,255},
+	restrictions={17}, pintura=12,
+	vehicles={
+		{490, "ground"},
+	},
+	spawn_points={
+		["ground"] = {
+		
+			{612.32592773438,-589.42156982422,17.182397842407, 270.85705566406},
+		},
+
+	},
+},
+
+{
+	name="Veiculo\nRESGATE",	pos={2369.6843261719,525.79034423828,1.796875-1},	colorText={0,191,255},
+	restrictions={4},
+	vehicles={
+		{472, "ground"}
+	},
+	spawn_points={
+		["ground"] = {
+		
+			{2362.5390625,519.390625,1.1447906494141, 90.210456848145},
+		},
+
+	},
+},
+
+
+
+
+
+
+
+--[[
+{
+	name="Veiculos\nFacção",	pos={1920.6446533203,955.72729492188,10.812696456909-1},	colorText={0,191,255},
+	restrictions={27},
+	vehicles={
+		{421, "ground"}
+	},
+	spawn_points={
+		["ground"] = {
+			{1914.4393310547,962.99249267578,10.743207931519, 179.7799987793},
+
+		},
+	},
+},
+
+]]--
+
+
+
+{
+	name="Veiculo\nResgate",	pos={316.498, -1507.134, 24.93-1},	colorText={0,191,255},
+	restrictions={4},
+	vehicles={
+		{416, "ground"}
+	},
+	spawn_points={
+		["ground"] = {
+		
+			{312.48977661133,-1511.7412109375,25.183996200562,  326.12384033203},
+
+		},
+	},
+},
+
+{
+	name="Veiculo\nResgate",	pos={2492.064,928.360,09.827},	colorText={0,191,255},
+	restrictions={4},
+	vehicles={
+		{416, "ground"},
+		{488, "heli"}
+	},
+	spawn_points={
+		["ground"] = {		
+			{2472.0043945313,912.33062744141,10.8203125,  90},
+		},
+		["heli"] = {
+			{2499.8823242188,920.29010009766,14.155365943909,  272.72988891602},
+		},
+	},
+},
+
+{
+	name="Veiculo\nResgate",	pos={1312.704, -883.127, 39.578-1},	colorText={0,191,255},
+	restrictions={4},
+	vehicles={
+		{416, "ground"}
+	},
+	spawn_points={
+		["ground"] = {
+		
+			{1307.8576660156,-886.51641845703,39.832443237305,  359.80325317383},
+
+		},
+	},
+},
+{
+	name="Helicóptero\nResgate",	pos={1347.019, -885.523, 40.955-1},	colorText={0,191,255},
+	restrictions={4},
+	vehicles={
+		{488, "heli"}
+	},
+	spawn_points={
+		["heli"] = {
+		
+			{1356.1674804688,-891.45758056641,41.316402435303,  272.72988891602},
+
+		},
+	},
+},
+{
+	name="Helicóptero\nResgate",	pos={308.525, -1514.952, 76.563-1},	colorText={0,191,255},
+	restrictions={4},
+	vehicles={
+		{488, "heli"}
+	},
+	spawn_points={
+		["heli"] = {
+		
+			{309.698, -1522.713, 75.972,  56.559417724609},
+
+		},
+	},
+},
+
+
+{
+	name="Veiculos\n1º\nBatalhao\nRadio\nPatrulha",	pos={2523.687, -2621.418, 13.677-1},	colorText={0,191,255},
+	restrictions={2}, pintura=8,
+	vehicles={
+		{490, "Carro"},
+		{523, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2513.8669433594,-2630.5773925781,13.628679275513, 359.25442504883},
+		},
+	},
+},
+{
+	name="Veiculos\nPolícia\nFederal",	pos={1598.727, -1634.229, 13.719-1},	colorText={0,191,255},
+	restrictions={11}, pintura=5,
+	vehicles={
+		{490, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{1603.974609375,-1628.0119628906,13.423449516296, 89.783981323242},
+		},
+	},
+},
+
+
+
+{
+	name="Veiculos\n3º\nBatalhão\nCHOQUE",	pos={2477.223, -2379.254, 13.677-1},	colorText={0,191,255},
+	restrictions={6}, pintura=2,
+	vehicles={
+		{490, "Carro"},
+		{523, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2492.6293945313,-2377.6979980469,13.62868309021, 135.34510803223},
+		},
+	},
+},
+
+{
+	name="Veiculos\nMarinha\nFuzileiro",	pos={2839.693, -2493.575, 11.806-1},	colorText={0,191,255},
+	restrictions={20}, pintura=7,
+	vehicles={
+		{490, "Carro"},
+	},
+	spawn_points={
+		["Carro"] = {
+			{2837.5515136719,-2501.3737792969,11.756505012512, 88.998916625977},
+		},
+	},
+},
+
+{
+	name="Veiculos\n2º\nBatalhao\nBOPE",	pos={2651.102, -2367.809, 13.677-1},	colorText={0,191,255},
+	restrictions={5}, pintura=1,
+	vehicles={
+		{490, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2664.291015625,-2375.7495117188,13.628753662109, 90.564796447754},
+		},
+	},
+},
+
+
+
+
+
+
+{
+	name="Helicóptero\nCorporação",	pos={-2091.77, -971.775, 34.728-1},	colorText={0,191,255},
+	restrictions={5},
+	vehicles={
+		{497, "heli"}
+	},
+	spawn_points={
+		["heli"] = {
+			{-2083.1931152344,-957.00915527344,35.087219238281, 0.71511107683182},
+		},
+	},
+},
+{
+	name="Veiculos\n6º\nBatalhão\nRadio\nPatrulha",	pos={2410.768, -2608.817, 13.677-1},	colorText={0,191,255},
+	restrictions={22}, pintura=9,
+	vehicles={
+		{490, "Carro"},
+		{523, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2418.2443847656,-2597.4345703125,13.628665924072, 178.68788146973},
+		},
+	},
+},
+
+
+{
+	name="Veiculos\nPolicia\nCivil",	pos={2711.211, -2462.636, 13.677-1},	colorText={0,191,255},
+	restrictions={21}, pintura=3,
+	vehicles={
+		{490, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2702.0139160156,-2474.6423339844,13.628630638123, 0.25769287347794},
+		},
+	},
+},
+
+
+
+
+{
+	name="Veiculos\n7º\nBatalhão\nRadio\nPatrulha",	pos={2412.714, -2494.821, 13.677-1},	colorText={0,191,255},
+	restrictions={24}, pintura=10,
+	vehicles={
+		{490, "Carro"},
+		{523, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2420.5048828125,-2481.2780761719,13.628674507141, 179.50440979004},
+		},
+	},
+},
+
+
+
+{
+	name="Veiculos\nExercito\nBrasileiro",	pos={2769.588, -2532.624, 13.677-1},	colorText={0,191,255},
+	restrictions={28}, pintura=4,
+	vehicles={
+		{490, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2754.9350585938,-2524.5639648438,13.629293441772, 272.07806396484},
+		},
+	},
+},
+
+
+
+{
+	name="Veiculos\n4º\nBatalhão\nRECoM",	pos={2511.551, -2429.341, 13.677-1},	colorText={0,191,255},
+	restrictions={16}, pintura=11,
+	vehicles={
+		{490, "Carro"},
+		{523, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2496.6171875,-2431.0773925781,13.628746986389, 315.52700805664},
+		},
+	},
+},
+
+
+
+{
+	name="HELICOPTERO\nBOPE\nCORE",	pos={2653.955, -2445.5, 16.128-1},	colorText={0,191,255},
+	restrictions={5,21},
+	vehicles={
+		{548, "HELI"}
+	},
+	spawn_points={
+		["HELI"] = {
+			{2649.0590820313,-2433.8662109375,16.187808990479, 271.11212158203},
+		},
+	},
+},
+
+
+
+{
+	name="HELICOPTERO\nPMERJ\nForçaNacional",	pos={2553.037, -2554.412, 15.728-1},	colorText={0,191,255},
+	restrictions={2,5,6,11,16,17,19,22,24},
+	vehicles={
+		{497, "HELI"}
+	},
+	spawn_points={
+		["HELI"] = {
+			{2538.8842773438,-2544.4514160156,16.08983039856, 89.103248596191},
+		},
+	},
+},
+
+
+{
+	name="HELICOPTERO\nMARINHA\nEXÉRCITO",	pos={2838.753, -2531.301, 11.806-1},	colorText={0,191,255},
+	restrictions={20,28},
+	vehicles={
+		{548, "HELI"}
+	},
+	spawn_points={
+		["HELI"] = {
+			{2827.4350585938,-2543.6403808594,10.566254615784, 359.75122070313},
+		},
+	},
+},
+
+
+{
+	name="HELICOPTERO\nPolícia\nFederal",	pos={1577.5, -1619.907, 13.547-1},	colorText={0,191,255},
+	restrictions={11},
+	vehicles={
+		{548, "HELI"}
+	},
+	spawn_points={
+		["HELI"] = {
+			{1565.8714599609,-1617.5177001953,13.58971118927, 181.38424682617},
+		},
+	},
+},
+
+
+
+
+--FACÇÕES
+
+{
+	name="Veiculos\nCV",	pos={2463.45, -956.27, 80.655-1},	colorText={0,191,255},
+	restrictions={8},
+	vehicles={
+		{400, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2471.5603027344,-961.70257568359,80.43717956543, 89.960113525391},
+		},
+	},
+},
+
+
+{
+	name="Veiculos\nPCC",	pos={1130.524, -2029.441, 69.008-1},	colorText={0,191,255},
+	restrictions={7},
+	vehicles={
+		{400, "Carro"},
+		{418, "Carro"},
+		{560, "Carro"},
+		{522, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{1134.5311279297,-2011.5579833984,68.782073974609, 180.40835571289},
+		},
+	},
+},
+
+{
+	name="Veiculos\nADA",	pos={-174.248, -1689.692, 2.855-1},	colorText={0,191,255},
+	restrictions={10},
+	vehicles={
+		{400, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{-168.13166809082,-1676.7557373047,2.6371784210205, 138.57585144043},
+		},
+	},
+},
+
+{
+	name="Veiculos\nODR",	pos={319.847, -1163.884, 81.055-1},	colorText={0,191,255},
+	restrictions={18},
+	vehicles={
+		{400, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{327.79412841797,-1152.1772460938,80.837074279785, 131.67189025879},
+		},
+	},
+},
+{
+	name="Veiculos\nMLC",	pos={760.738, -563.015, 16.4-1},	colorText={0,191,255},
+	restrictions={26},
+	vehicles={
+		{400, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{765.54827880859,-570.19940185547,16.352045059204, 0.4789177775383},
+		},
+	},
+},
+
+{
+	name="Veiculos\nBDM",	pos={939.212, -854.298, 95.455-1},	colorText={0,191,255},
+	restrictions={15},
+	vehicles={
+		{400, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{926.76141357422,-855.74304199219,95.23690032959, 301.28323364258},
+		},
+	},
+},
+
+
+{
+	name="Veiculos\nRODO",	pos={2385.639, -1694.838, 13.455-1},	colorText={0,191,255},
+	restrictions={25},
+	vehicles={
+		{400, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{2382.8349609375,-1701.3160400391,13.40740776062, 359.71182250977},
+		},
+	},
+},
+
+
+{
+	name="Veiculos\nMOTO CLUB",	pos={1239.095, 283.62, 19.655-1},	colorText={0,191,255},
+	restrictions={23},
+	vehicles={
+		{400, "Carro"},
+		{463, "Carro"}
+	},
+	spawn_points={
+		["Carro"] = {
+			{1232.4124755859,293.17520141602,19.130382537842, 246.46304321289},
+		},
+	},
+},
+
+
+
+
+
+
+}
+
+function getRentTable()
+	return rent_table
+end

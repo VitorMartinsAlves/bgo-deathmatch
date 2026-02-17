@@ -1,0 +1,7 @@
+<meta>  
+<info author='Jvz3D' description='' version='1.0' type='script' />  
+<script src='client.lua' type='client' />  
+<file src='garagem.txd' type='client' />  
+<file src='garagem.col' type='client' />
+<file src='garagem.dff' type='client' />
+</meta>

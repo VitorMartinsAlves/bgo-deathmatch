@@ -1,0 +1,49 @@
+﻿<meta>
+	<info author="#RooTs" version="7.0.0" type="script" name="[ENS]Velocimetro 7" description="New Speed meter" showInResourceBrowser="true"/>
+
+
+
+
+<!--NOVO-->
+	<file src="img/armorfull.png" />
+	<file src="img/icon.png" />
+	<file src="img/iconglow.png" />
+	<file src="img/needle1.png" />
+	<file src="img/nosfull.png" />
+	<file src="img/speedo1.png" />
+	<file src="img/vida.png" />
+
+	<file src="img/fuelindicator.png" />
+	<file src="img/fuelline.png" />
+	<file src="img/fuelnum.png" />
+	<file src="img/fuelnum2.png" />
+	<file src="img/fuelbase.png" />
+		
+	
+	<file src="img/circ.png" />
+
+
+
+	<file src="font/aero.ttf"/>
+	<file src="font/opensans.ttf" />
+	<file src="font/Prototype.ttf" />
+	<file src="font/vehicleStateFont.ttf" />
+
+	
+
+	<script src="sourceC.lua" type="client" protected="true"/>
+	<script src="indicatorsC.lua" type="client" protected="true"/>
+
+	<!--<script src="sourceS.lua" type="server"/>-->
+	
+
+	<!-- exports  -->
+	<export function="getVehicleSpeed" type="client"/>
+	<export function="getVehicleRPM" type="client"/>
+
+
+
+
+
+</meta>
+

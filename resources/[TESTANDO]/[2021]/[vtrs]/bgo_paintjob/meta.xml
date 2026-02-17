@@ -1,0 +1,23 @@
+<meta>
+    <script src="exClient.lua" type="client"></script>
+    <script src="exServer.lua" type="server"></script>
+    
+    <file src="textures/bope.png" />
+	<file src="textures/forca.png" />
+    <file src="textures/choque.png" />
+    <file src="textures/core.png" />
+    <file src="textures/exercito.png" />
+    <file src="textures/federal.png" />
+    <file src="textures/marinha.png" />
+	<file src="textures/PMRJ_1BPM.png" />
+	<file src="textures/PMRJ_6BPM.png" />
+	<file src="textures/PMRJ_7BPM.png" />
+	<file src="textures/PMRJ_RECOM.png" />
+	<file src="textures/PMRJ_UPP.png" />
+    
+    <file src="texturechanger.fx"></file>
+    
+    <export function="getVehiclePaintJobs" type="client"></export>
+    <export function="addVehiclePaintJob" type="shared"></export>
+    <export function="destroyShaderCache" type="shared"></export>
+</meta>

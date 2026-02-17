@@ -1,0 +1,49 @@
+<meta>
+      <script src="server.lua" type="server" cache="false"/>
+      <script src="client.lua" type="client" cache="false"/>
+
+	  <file src="files/walpaper.png" />
+	  <file src="files/circulo.png" />
+	  <file src="files/fundo.png" />
+	  <file src="files/sound.wav" />
+	  <file src="files/Infos/info.png" />
+	  <file src="files/Infos/error.png" />
+	  <file src="files/Infos/conf.png" />
+	  <file src="files/teclas/A.png" />
+	  <file src="files/teclas/B.png" />
+	  <file src="files/teclas/C.png" />
+	  <file src="files/teclas/D.png" />
+	  <file src="files/teclas/E.png" />
+	  <file src="files/teclas/F.png" />
+	  <file src="files/teclas/G.png" />
+	  <file src="files/teclas/H.png" />
+	  <file src="files/teclas/I.png" />
+	  <file src="files/teclas/J.png" />
+	  <file src="files/teclas/K.png" />
+	  <file src="files/teclas/L.png" />
+	  <file src="files/teclas/M.png" />
+	  <file src="files/teclas/N.png" />
+	  <file src="files/teclas/O.png" />
+	  <file src="files/teclas/P.png" />
+	  <file src="files/teclas/Q.png" />
+	  <file src="files/teclas/R.png" />
+	  <file src="files/teclas/S.png" />
+	  <file src="files/teclas/T.png" />
+	  <file src="files/teclas/BEsquerdo.png" />
+
+	  
+	 <export function="serverNotification" type="client" />
+	 <export function="serverNotification" type="server" />
+	 
+	 <export function="serverNotificationTeclas" type="client" />
+	 <export function="serverNotificationTeclas" type="server" />
+	 
+	 <export function="barraProgress" type="client" />
+	 <export function="barraProgress" type="server" />
+	 
+	 <export function="alertNotification" type="client" />
+	 <export function="alertNotification" type="server" />
+	 
+	 <export function="notificationLegend" type="client" />
+	 <export function="notificationLegend" type="server" />
+</meta>

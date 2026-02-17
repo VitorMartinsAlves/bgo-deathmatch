@@ -1,0 +1,17 @@
+<meta>
+	<!--
+    <script src="Server/sAchievements.lua" type="server" protected="true"/>
+	
+
+    <script src="Client/cAchievements.lua" type="client" protected="true"/>
+	
+	
+	<script src="Server/sMerca.lua" type="server" protected="true"/>
+-->
+    <script src="Server/sMaconha.lua" type="server" protected="true"/>
+	<script src="Server/sHeroina.lua" type="server" protected="true"/>
+	<script src="Server/sCocaina.lua" type="server" protected="true"/>
+	<script src="Server/sLockPick.lua" type="server" protected="true"/>
+
+
+</meta>

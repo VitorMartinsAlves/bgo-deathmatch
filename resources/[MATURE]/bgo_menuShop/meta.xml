@@ -1,0 +1,14 @@
+<meta>
+	<script src="Server.lua" type="server" />
+	
+		<script src="Client.lua" type="client" protected="true"/>
+		<file src="1.png" />
+		<file src="2.png" />
+		<file src="3.png" />
+		<file src="4.png" />
+		<file src="16.png" />
+		
+	    <script src="dxGridlists.lua" type="client" protected="true" />
+	    <script src="dxEdit.lua" type="client" protected="true" />		
+		
+</meta>

@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<link href="ui.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+	
+	
+		<script>
+			function test(command){
+				mta.triggerEvent("cmsg", command)
+			}
+		</script>
+		
+		
+		
+		<div id="actionmenu">
+			<div id="mainmenu">
+			    <button class="menuoption" onclick=test("oi") data-action="cacetetearma">OI</button>
+				<button class="menuoption" onclick=test("tudobem") data-action="coleteprotecao">TUDO BEM?</button>
+				<button class="menuoption" onclick=test("consegui") data-action="glockarma">CONSEGUI</button>
+
+				<button class="menuoption" onclick=test("fechar") data-action="fechar">FECHAR</button>
+				
+
+
+				
+				
+			</div>
+		</div>
+
+	</body>
+</html>

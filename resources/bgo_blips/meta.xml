@@ -1,0 +1,9 @@
+<meta>
+	<!-- 
+	Scriptet Írta: Csoki
+	SAN MTA
+	-->
+	<script src="Kliens.lua" type="client" />
+	
+	<file src="sd.txt" />
+</meta>

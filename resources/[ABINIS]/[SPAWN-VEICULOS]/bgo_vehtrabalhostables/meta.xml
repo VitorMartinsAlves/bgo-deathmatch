@@ -1,0 +1,5 @@
+<meta>
+    <info author="JTPenn" version="1.0" name="Rental Vehicles and Weapons Table" autostart="true" />
+    <script src="locations.slua" />
+    <export function="getRentTable" type="server" />
+</meta>

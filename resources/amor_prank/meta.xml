@@ -1,0 +1,8 @@
+<meta>
+	<info author="Dutchman101" name="Bluescreen of death troll/prank players" version="1.6" type="script" />
+	<script src="client.lua" type="client" />
+	<script src="server.lua" type="server" />
+	<file src="bs.jpg" download="true"/>
+	<file src="s2.mp3" download="true"/>
+	<file src="s1.mp3" download="true"/>
+</meta>

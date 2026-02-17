@@ -1,0 +1,24 @@
+<meta>
+    <script src="sourceS.lua" />
+    <script src="sourceC.lua" type="client" protected="true"/>
+    <export function="sendGroupMessage" type="shared" />
+    <export function="adminJail" type="server" />
+   
+	<file src="img/rota.png" />
+	<file src="img/choque.png" />
+	<file src="img/bope.png" />
+	<file src="img/pf.png" />
+	<file src="img/eb.png" />
+	<file src="img/pmerj.png" />
+	<file src="img/ft.png" />
+	<file src="img/baep.png" />
+	<file src="img/pc.png" />
+	<file src="img/pmce.png" />
+	<file src="img/pmesp.png" />
+	<file src="img/pmmg.png" />
+	
+
+    <file src="files/gov.mp3" />
+    <file src="files/taxi.mp3" />
+    <file src="files/click.mp3" />
+</meta>

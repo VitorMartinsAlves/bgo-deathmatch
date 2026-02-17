@@ -1,0 +1,28 @@
+<meta>
+	<info type="misc" name="MTA Johncena prank/troll" author="SAES>Brophy, Dutchman101" version="1.1" />
+	<oop>true</oop>
+	<script src="server.lua" type="server" />
+	<script src="client.lua" type="client" />
+	<file src="images/1.JPG" type="client" />
+	<file src="images/2.JPG" type="client" />
+	<file src="images/3.JPG" type="client" />
+	<file src="images/4.JPG" type="client" />
+	<file src="images/5.JPG" type="client" />
+	<file src="images/6.JPG" type="client" />
+	<file src="images/7.JPG" type="client" />
+	<file src="images/8.JPG" type="client" />
+	<file src="images/9.JPG" type="client" />
+	<file src="images/10.JPG" type="client" />
+	<file src="images/11.JPG" type="client" />
+	<file src="images/12.JPG" type="client" />
+	<file src="images/13.JPG" type="client" />
+	<file src="images/14.JPG" type="client" />
+	<file src="images/15.JPG" type="client" />
+	<file src="images/16.JPG" type="client" />
+	<file src="images/17.JPG" type="client" />
+	<file src="images/18.JPG" type="client" />
+	<file src="images/19.JPG" type="client" />
+	<file src="images/20.JPG" type="client" />
+	<file src="sounds/cena.mp3" type="client" />
+	<file src="shader.fx" type="client" />
+</meta>

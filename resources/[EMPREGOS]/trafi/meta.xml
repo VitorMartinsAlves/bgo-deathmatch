@@ -1,0 +1,8 @@
+<meta>
+    <script src="object.lua" type="client" />
+    
+    <file src="texture.txd" />
+    
+    <file src="trafi.dff" />
+    <file src="trafi.col" />
+</meta>

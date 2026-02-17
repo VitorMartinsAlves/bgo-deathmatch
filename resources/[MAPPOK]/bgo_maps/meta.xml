@@ -1,0 +1,13 @@
+<meta>
+
+<!--
+    <map src="san_deli.map" dimension="0"></map>
+	    <map src="san_aru.map" dimension="0"></map>
+        -->
+    <map src="san_vh.map" dimension="0"></map>
+
+
+
+    <script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="mapEditorScriptingExtension_c.lua" type="client" validate="false"></script>
+</meta>

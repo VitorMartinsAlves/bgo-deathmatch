@@ -1,0 +1,6 @@
+<meta>
+	<script src="detectC.lua" type="client" cache="false" />
+	<script src="detectS.lua" type="server" />
+	<file src="detect.mp3"/>
+	<oop>true</oop>
+	</meta>

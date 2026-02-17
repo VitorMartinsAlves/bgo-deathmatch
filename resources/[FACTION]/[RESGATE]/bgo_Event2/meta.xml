@@ -1,0 +1,30 @@
+<meta>
+    <script src="sourceG.lua" type="shared" />
+    <script src="sourceC.lua" type="client" protected="true" />
+    <script src="sourceS.lua" type="server" />
+    
+	<file src='files/items/1.png' />
+	<file src='files/items/2.png' />
+	<file src='files/items/3.png' />
+	<file src='files/items/4.png' />
+	<file src='files/items/5.png' />
+	<file src='files/items/6.png' />
+	<file src='files/items/7.png' />
+	<file src='files/items/8.png' />
+	
+	
+	<file src='files/reward_big.wav' />
+	
+	<file src='files/buy_effect.wav' />
+	<file src='files/_roll.mp3' />
+	<file src='files/bg_case.png' />
+	<file src='files/reward_bg.png' />
+
+	
+	<file src='files/roll_bg.png' />
+	<file src='files/case.jpg' />
+	<file src='files/calibri.ttf' />
+	<oop>true</oop>
+
+	 <export function="startEventFunction" type="client" />
+</meta>

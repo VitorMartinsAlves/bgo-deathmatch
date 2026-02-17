@@ -1,0 +1,14 @@
+<meta>
+  <info name="chat" type="script" version="1.0.1" author="ABinis" />
+
+  <script src="chat2_shared.lua" type="shared" protected="true"/>
+  <script src="chat2_server.lua" type="server" />
+  <script src="chat2_client.lua" type="client" protected="true" />
+
+  <file src="index.html" protected="true"/>
+  <file src="styles.css" protected="true"/>
+  <file src="scripts.js" protected="true"/>
+
+  <export function="isChatVisible" type="client" />
+  <export function="useDefaultOutput" type="server" />
+</meta>

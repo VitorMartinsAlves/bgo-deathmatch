@@ -1,0 +1,4 @@
+﻿<meta>
+     <info author="Abinis" type="misc" name="Postador" description="a" />
+     <script src="server.lua" type="server" />
+</meta>

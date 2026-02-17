@@ -1,0 +1,13 @@
+﻿ <meta>
+	<script src="Kliens.lua" type="client" protected="true" />
+
+	<!-- GUI -->
+	<file src="ui/ui.html"/>
+	<file src="ui/ui.css"/>
+<file src="ui/ui.js"/>
+
+
+	<export function="cmsg" http="true" />
+
+<oop>true</oop>
+</meta>

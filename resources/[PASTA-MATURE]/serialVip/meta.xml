@@ -1,0 +1,10 @@
+﻿<meta>
+    <include resource="bgo_mysql" />
+<script src="async.lua" type="shared" />
+    <script src="serial_vip.lua" />
+    <export function="isPlayerVip" type="server" />
+    <export function="getConnection" type="server" />
+    <export function="setSerial" type="server" />
+    <export function="remSerial" type="server" />
+</meta>
+

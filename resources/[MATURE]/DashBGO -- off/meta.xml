@@ -1,0 +1,18 @@
+<meta>
+    <script src="client.lua" type="client" protected="true" />
+    <script src="server.lua" type="server" cache="false" />
+   	<file src="font/sound.mp3" cache="false"/>	
+   	<file src="font/dashboard.png" cache="false"/>	
+   	<file src="font/circulo.png" cache="false"/>	
+   	<file src="font/necessidades.png" cache="false"/>	
+   	<file src="font/error.png" cache="false"/>	
+   	<file src="font/sucesso.png" cache="false"/>	
+   	<file src="font/info.png" cache="false"/>	
+   	<file src="font/icons.ttf" cache="false"/>	
+	<file src="font/font.ttf" cache="false" />
+	<file src="font/font1.ttf" cache="false" />
+	<file src="font/OpenSans-Bold.ttf" cache="false" />
+	<file src="font/fontNick.ttf" cache="false" />
+	<file src="font/gotham_light.ttf" cache="false" />
+
+</meta>

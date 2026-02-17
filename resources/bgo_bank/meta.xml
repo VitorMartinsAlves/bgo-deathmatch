@@ -1,0 +1,40 @@
+<bgo>
+	<info author="HiroShi" description="Sistema de banco feito para BGO(Brasil Gaming Online)!"/>
+	
+	<!-- Scripts -->
+	<script src='server/charS.lua' type='server' cashe='false'/>
+	<script src='client/charC.lua' type='client' protected="true" />
+
+	<!-- Files -->
+	<file src='assets/account.png' cashe='false'/>
+	<file src='assets/logo.png' cashe='false'/>
+
+	<file src='assets/deposit/deposit_button.png' cashe='false'/>
+	<file src='assets/deposit/deposit_button_on.png' cashe='false'/>
+	<file src='assets/deposit/deposit_button_clicked.png' cashe='false'/>
+
+	<file src='assets/transfer/transfer_button.png' cashe='false'/>
+	<file src='assets/transfer/transfer_button_on.png' cashe='false'/>
+	<file src='assets/transfer/transfer_button_clicked.png' cashe='false'/>
+
+	<file src='assets/withdraw/withdraw_button.png' cashe='false'/>
+	<file src='assets/withdraw/withdraw_button_on.png' cashe='false'/>
+	<file src='assets/withdraw/withdraw_button_clicked.png' cashe='false'/>
+
+	<file src='assets/back/back_button.png' cashe='false'/>
+	<file src='assets/back/back_button_on.png' cashe='false'/>
+	<file src='assets/back/back_button_clicked.png' cashe='false'/>
+
+	<file src='assets/type/deposit.png' cashe='false'/>
+	<file src='assets/type/transfer.png' cashe='false'/>
+	<file src='assets/type/withdraw.png' cashe='false'/>
+	
+	
+	<export function="abastecer" type="server" />
+	<export function="buscartrajeto" type="server" />
+	<export function="buscartrajeto2" type="server" />
+	
+	
+	<!-- OOP-->
+	<oop>true</oop>
+</bgo>

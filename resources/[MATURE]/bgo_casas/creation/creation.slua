@@ -1,0 +1,22 @@
+----------------------------------------->>
+-- Grand Theft International (GTi)
+-- Author: JT Pennington (JTPenn)
+-- Date: 07 Nov 2014
+-- Resource: GTIhousing/creation.slua
+-- Version: 1.0
+----------------------------------------->>
+
+-- Create House
+---------------->>
+
+addCommandHandler("casa", function(player, cmd)
+   accountname = getAccountName (getPlayerAccount(player))
+    if isObjectInACLGroup ( "user." .. accountname, aclGetGroup ( "Console" ) ) then
+	triggerClientEvent(player, "GTIhousing.createHouse", resourceRoot)
+	end
+end)
+
+addEvent("GTIhousing.createHouse", true)
+addEventHandler("GTIhousing.createHouse", root, function(address, location, garage, int_id, cost)
+	createHouse(client, address, location, garage, int_id, cost)
+end)

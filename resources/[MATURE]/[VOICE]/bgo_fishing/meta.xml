@@ -1,0 +1,9 @@
+<meta>
+    <script src="client.lua" type="client" protected="true" />
+    <script src="server.lua" type="server" />
+    
+    <file src="files/stick.txd" />
+    <file src="files/stick.dff" />
+    <file src="files/Reel.mp3" />
+    <export function="createStick" type="client" />
+</meta>

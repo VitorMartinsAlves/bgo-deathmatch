@@ -1,0 +1,9 @@
+<meta>
+    <script src="CPromo.lua" type="client" protected="true" />
+	
+	<file src="img/bg.png" />
+	<file src="img/migramos.png" />
+	<file src="img/close.png" />
+	<file src="img/pascoa.png" />
+	<oop>true</oop>
+</meta>

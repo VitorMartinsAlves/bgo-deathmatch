@@ -1,0 +1,21 @@
+<meta>
+	<script src="sMature.lua" type="server" />
+	<script src="cMature.lua" type="client" protected="true"/>
+	
+	
+		<file src="model/drill.txd"/>
+	<file src="model/drill.dff"/>
+		<file src="model/mec.txd"/>
+	<file src="model/mec1.dff"/>
+<file src="model/mec2.txd"/>	
+	<file src="model/mec2.dff"/>	
+
+
+<file src="model/coldri.txd"/>	
+	<file src="model/coldri.dff"/>
+
+
+<file src="model/moc.txd"/>	
+	<file src="model/moc.dff"/>	
+	
+</meta>

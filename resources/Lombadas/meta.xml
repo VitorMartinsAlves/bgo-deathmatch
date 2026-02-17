@@ -1,0 +1,9 @@
+<meta>
+	<info type="misc" name="Nova Lombada" author="[M]ister" description="Nova Lombada com arquivo col arrumado e convertido por [M]ister" version="1.3" />
+        <file src="data/lombada.txd" />
+        <file src="data/lombada.col" />
+        <file src="data/lombada.dff" />
+    	<map src="lombada.map" dimension="0"></map>
+	<script type="client" src="replace.lua" />
+
+</meta>

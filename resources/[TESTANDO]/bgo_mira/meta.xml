@@ -1,0 +1,34 @@
+<meta>
+    
+    <!-- Célkereszt -->
+    <file src="img/1.png" />
+    <file src="img/2.png" />
+    <file src="img/3.png" />
+    <file src="img/4.png" />
+    <file src="img/5.png" />
+    <file src="img/6.png" />
+    <file src="img/7.png" />
+    <file src="img/8.png" />
+    <file src="img/9.png" />
+    <file src="img/10.png" />
+    <file src="img/11.png" />
+    <file src="img/12.png" />
+    <file src="img/13.png" />
+    <file src="img/14.png" />
+    <file src="img/15.png" />
+    <file src="img/16.png" />
+    <file src="img/17.png" />
+    <file src="img/18.png" />
+    <file src="img/19.png" />
+    <file src="img/20.png" />
+    <file src="img/21.png" />
+    <file src="img/22.png" />
+    <file src="img/23.png" />
+    <file src="img/24.png" />
+    <file src="img/25.png" />
+    
+    <script src="sourceC.lua" type="client" />
+    
+    <export function="getCelkereszt" type="client" />
+    
+</meta>

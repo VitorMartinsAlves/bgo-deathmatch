@@ -1,0 +1,9 @@
+<meta>
+    <info author="Abinis" name="VTR" version="1.5.6" type="script" />
+    <script src="replace.lua" type="client" cache="false" />
+
+	
+		<file src="Viatura.dff" />
+
+	<file src="Viatura.txd" />
+</meta>

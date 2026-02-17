@@ -1,0 +1,17 @@
+<meta>
+    <script src="sourceG.lua" type="shared" />
+    <script src="sourceC.lua" type="client" protection='true' />
+    <script src="files/color/sourceC.lua" type="client" protection='true'/>
+    <script src="sourceS.lua" type="server" />
+	
+	<file src='files/calibri.ttf'/>
+	<file src='files/longhaul.ttf'/>
+	<file src='files/choice.ttf'/>
+	<file src='files/BlurShader.fx'/>
+	<file src="files/light.png" />
+	<file src="files/palette.png" />
+	<file src="files/hoveredrow.png" />
+	
+	<export function="getVehicleRealName" type="shared" />
+    <export function="getVehicleShopCost" type="shared" />
+</meta>

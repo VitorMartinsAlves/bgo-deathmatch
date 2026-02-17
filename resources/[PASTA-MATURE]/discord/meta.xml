@@ -1,0 +1,12 @@
+﻿<meta>
+    <include resource="serialVip" />
+<include resource="bgo_mysql" />
+<script src="app.lua" type="server" />
+    <export function="getMembers" http="true" />
+    <export function="sendMessage" http="true" />
+    <export function="setpp" http="true" />
+    <export function="banP" http="true" />
+    <export function="unbanP" http="true" />
+    <export function="svipP" http="true" />
+    <export function="rvipP" http="true" />
+</meta>

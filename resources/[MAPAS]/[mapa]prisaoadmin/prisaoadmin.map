@@ -1,0 +1,5 @@
+<map edf:definitions="editor_main">
+    <object id="object (veg_pol_main1) (1)" breakable="true" interior="3" alpha="255" model="14858" doublesided="false" scale="1" dimension="1" posX="598.90002" posY="-3206.8" posZ="847.29999" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_jetdoor) (1)" breakable="true" interior="3" alpha="255" model="3095" doublesided="false" scale="1" dimension="1" posX="570.70001" posY="-3197.8999" posZ="840.90002" rotX="0" rotY="270" rotZ="90"></object>
+    <object id="object (a51_jetdoor) (2)" breakable="true" interior="3" alpha="255" model="3095" doublesided="false" scale="1" dimension="1" posX="570.5" posY="-3215.7" posZ="841.20001" rotX="0" rotY="270" rotZ="270"></object>
+</map>

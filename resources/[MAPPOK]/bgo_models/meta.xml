@@ -1,0 +1,47 @@
+<meta>
+	<oop>true</oop>
+	<script src="Kliens.lua" type="client" protected="true" />
+
+
+	
+	<file src="models/bank2.dff"/>
+	<file src="models/bank2.txd"/>
+	<file src="models/bank2.col"/>
+
+<!--
+	<file src="models/deli.dff" />
+	<file src="models/deli.txd" />
+	<file src="models/deli.col" />
+	
+	<file src="models/deli_alatt.col" />
+	<file src="models/deli_alatt.dff" />
+	<file src="models/deli_alatt.txd" />
+	
+
+
+	<file src="models/vh.txd" />
+	<file src="models/vh.col" />
+	<file src="models/vh.dff" />
+
+	<file src="models/vh2.txd" />
+	<file src="models/vh2.col" />
+	<file src="models/vh2.dff" />
+	
+
+	
+	<file src="models/plaza.txd" />
+	<file src="models/plaza.col" />
+	<file src="models/plaza.dff" />
+		-->
+	
+	<file src="models/kut.dff" />
+	<file src="models/kut.txd" />
+	<file src="models/kut.col" />
+
+
+
+
+
+
+	
+</meta>

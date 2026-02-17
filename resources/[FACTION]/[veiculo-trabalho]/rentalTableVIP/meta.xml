@@ -1,0 +1,5 @@
+<meta>
+    <info author="JTPenn" name="[EXP] Vehicle and Weapon Spawns Table" autostart="true" />
+    <script src="vehicle_tableS.lua" />
+    <export function="vehiclesTable" type="server" />
+</meta>

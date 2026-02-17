@@ -1,0 +1,22 @@
+<meta>
+    <script src="sourceC.lua" type="client" protected="true" />
+    <script src="sourceG.lua" type="shared" protected="true" />
+    <script src="sourceS.lua" type="server" />
+    
+    <file src="files/font.ttf" />
+    <file src="files/icons.ttf" />
+    <file src="files/OpenSansB.ttf" />
+    <file src="files/opensans.ttf" />
+    
+    <file src="files/icons/allami.png" />
+    <file src="files/icons/elado.png" />
+    <file src="files/icons/garazs.png" />
+    <file src="files/icons/haz.png" />
+    <file src="files/icons/status.png" />
+    
+    <file src="files/sounds/intenter.mp3" />
+    <file src="files/sounds/intout.mp3" />
+    <file src="files/sounds/locked.mp3" />
+    <file src="files/sounds/openclose.mp3" />
+	<export function="loadOneInteriorWhereID" type="server" />
+</meta>

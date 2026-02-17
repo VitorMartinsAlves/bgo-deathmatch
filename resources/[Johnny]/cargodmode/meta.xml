@@ -1,0 +1,5 @@
+<meta>
+	<info author="DelZ!k4" version="1.3.3" type="script" name="Proteção De Carros Staff" description="Proteção De Carros Staff" />
+	<script src="srv.lua" type="server" />
+	<script src="readme.lua" type="client" />
+</meta>

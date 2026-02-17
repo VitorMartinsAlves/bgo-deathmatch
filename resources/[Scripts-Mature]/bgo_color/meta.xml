@@ -1,0 +1,9 @@
+<meta>
+	<script src="sMature.lua" type="server" />
+	<script src="cMature.lua" type="client" />
+	
+	
+	<export function="getColorServer" type="server"/>
+	<export function="getColorClient" type="client"/>
+	<export function="getColorClientRGB" type="client"/>
+</meta>

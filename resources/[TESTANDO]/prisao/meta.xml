@@ -1,0 +1,14 @@
+<meta>
+    <info type="map" version="1.0.0"></info>
+    <map src="san_fegyhaz.map" dimension="0"></map>
+    <script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="mapEditorScriptingExtension_c.lua" type="client" validate="false"></script>
+    
+    
+    <script type="client" src="client.lua" />
+    
+    <file src="borton.txd" />
+    <file src="borton.dff" />
+    <file src="borton.col" />
+    
+</meta>

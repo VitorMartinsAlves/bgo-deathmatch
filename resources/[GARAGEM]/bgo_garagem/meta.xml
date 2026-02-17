@@ -1,0 +1,7 @@
+<meta>
+    <info author="Abinis" />
+    <script src="mainC.lua" type="client" protected="true" />
+    <script src="mainS.lua" type="server" />
+	
+<oop>true</oop>
+</meta>

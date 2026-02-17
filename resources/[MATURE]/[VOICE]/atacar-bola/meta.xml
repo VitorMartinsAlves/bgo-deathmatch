@@ -1,0 +1,10 @@
+<meta>
+	<script src="detectC.lua" type="client" cache="false" />
+	<script src="detectS.lua" type="server" />
+
+	<file src="grenade.txd" />
+    <file src="grenade.dff" />
+
+
+	<oop>true</oop>
+	</meta>

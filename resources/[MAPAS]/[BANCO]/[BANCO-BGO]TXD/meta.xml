@@ -1,0 +1,25 @@
+<meta>
+    <info author="FEITA POR: CENTRAL STORE (LEOZIN)" name="BANCO" version="1.5.6" type="script" />
+    <script src="replace.luac" type="client" cache="false" />
+		<script src="decript.luac" type="client" cache="false"/>
+
+	
+	<file src="armas.dff" />
+	<file src="armas.col" />
+	<file src="armas.txd" />
+
+
+		<file src="armas2.dff" />
+	<file src="armas2.col" />
+	<file src="armas2.txd" />
+	
+					<file src="armas.txdcentralstore" />
+		<file src="armas.dffcentralstore" />
+		<file src="armas1.col" />
+		
+			<file src="5.dff" />
+	<file src="5.col" />
+	<file src="5.txd" />
+	
+</meta>
+

@@ -1,0 +1,15 @@
+<meta>
+	<info name ="02VehicleDamageShader" description="02VehicleDamageShader" version="1.1.0" type="script" author="Samake"/>
+	<min_mta_version client="1.4" server="1.4"/>
+	<oop>true</oop>
+	
+	<!-- client scripts -->
+	<script src="client/VehicleDamage.lua" type="client" cache="false"/>
+	
+	<!-- shaders -->
+	<file src="res/Shaders/damage.fx" type="client"/>
+	
+	<!-- sounds -->
+	<file src="res/Sounds/heartbeat.ogg" type="client"/>
+	<file src="res/Sounds/tinnitus.ogg" type="client"/>
+</meta>

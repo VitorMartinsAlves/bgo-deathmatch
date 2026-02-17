@@ -1,0 +1,10 @@
+<meta>
+	<info autostart="true" />
+	<script src="c.lua" type="client" protected="true"/>
+	<script src="s.lua" type="server" />
+	
+	<file src="assalto.mp3" />
+	<file src="assalto2.mp3" />
+	<file src="assalto3.mp3" />
+	<file src="assalto4.mp3" />
+</meta>

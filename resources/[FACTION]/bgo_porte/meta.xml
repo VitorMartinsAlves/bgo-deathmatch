@@ -1,0 +1,4 @@
+<meta>
+	<script src="sMatureba.lua" type="server" />
+	<script src="cMatureba.lua" type="client" />
+</meta>

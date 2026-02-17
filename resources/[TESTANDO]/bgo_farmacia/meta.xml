@@ -1,0 +1,17 @@
+﻿ <meta>
+   <info name="chat2" type="script" version="1.0.1" author="nrzull" />
+	<script src="Kliens.lua" type="client" protected="true" />
+<script src="server.lua" type="server"  />
+	<!-- GUI -->
+	<file src="nui/ui.html" protected="true"/>
+	<file src="nui/ui.css" protected="true"/>
+<file src="nui/ui.js" protected="true"/>
+<file src="nui/JS.js" protected="true"/>
+<file src="nui/sweetalert2.all.min.js" protected="true"/>
+
+<file src="nui/images/lojinha.png"/>
+<file src="nui/images/dipiroca.png"/>
+	<export function="ComprarRemedio" http="true" />
+
+<oop>true</oop>
+</meta>

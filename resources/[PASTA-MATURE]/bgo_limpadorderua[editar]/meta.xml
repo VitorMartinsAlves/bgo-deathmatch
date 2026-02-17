@@ -1,0 +1,7 @@
+<meta>  
+	<info author="JTPenn" 	version="2.0"	name="Bus Driver"	autostart="true" />
+	
+	<script src="locations.lua"		type="client" protected="true"/>
+	<script src="limp_driver.lua"		type="client" protected="true"/>
+	<script src="limp_driver.slua"		/>
+</meta>

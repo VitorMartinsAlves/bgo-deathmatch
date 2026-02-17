@@ -1,0 +1,5 @@
+<meta>
+    <info author="#Flavio" version="1.0" name="Painel DJ" type="script" />
+	<script src="client.lua" type="client" cache="false"/>
+	<script src="server.lua" type="server"/>
+</meta>

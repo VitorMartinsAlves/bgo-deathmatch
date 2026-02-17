@@ -1,0 +1,10 @@
+<meta>
+	<info author="Abinis" name="DRVV" type="script" version="1.0.0" />
+	<script src="Cliente.lua" type="client" protected="true"/>
+	<script src="Server.lua" type="server" />
+	<file src="some.ogg" type="client" protected="true"/>
+	<file src="agradece.ogg" type="client" protected="true"/>
+	
+	
+<oop>true</oop>
+</meta>

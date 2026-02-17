@@ -1,0 +1,8 @@
+<meta>
+	<info type="misc" name="Car replacement for: DFT-30" author="krojis" description="" version="1" />
+	<file src="578.txd" />
+	<file src="578.dff" />
+	<script type="client" src="replace.lua" />
+	<script type="client" src="readme.lua" />
+	<!-- generated with http://mta.dzek.eu/ -->
+</meta>

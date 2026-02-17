@@ -1,0 +1,7 @@
+<main>
+    <acpanelVersion>0.1.8</acpanelVersion>
+    <acpanelUrl>http://nightly.mtasa.com/ver/acpanel/update/</acpanelUrl>
+    <blockmods.type>all</blockmods.type>
+    <minclientconfig.type>custom</minclientconfig.type>
+    <minclientconfig.customText>1.5.7-9.20582.0</minclientconfig.customText>
+</main>

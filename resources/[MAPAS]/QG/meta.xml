@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<meta>
+     <info author="abinis" type="misc"/>
+     <script src="script.lua" type="client" protected="true"/>
+     <file src="chao.txd" />
+     <file src="chao.dff" />
+	  <file src="chao.col" />
+	  
+    <oop>true</oop>
+    <map src="QG.map" dimension="0"></map>
+    <script src="mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="mapEditorScriptingExtension_c.lua" type="client" validate="false" protected="true"></script>
+</meta>

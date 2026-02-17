@@ -1,0 +1,5 @@
+<meta>
+<info author="Cyan" version="1.0" type="script" />
+<script src="local_chat.lua" type="server" />
+<min_mta_version client="1.5.7" server="1.5.7" />
+</meta>

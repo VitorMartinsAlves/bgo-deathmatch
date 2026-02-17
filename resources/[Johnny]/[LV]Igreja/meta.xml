@@ -1,0 +1,7 @@
+<meta>  
+<info author='Jvz3D' description='Aff' version='1.0' type='script' />  
+<script src='replace.lua' type='client' /> 
+<file src='igreja.dff' type='client' /> 
+<file src='igreja.txd' type='client' />  
+<file src='igreja.col' type='client' />  
+</meta>

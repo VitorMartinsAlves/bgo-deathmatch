@@ -1,0 +1,14 @@
+﻿<meta>
+    <include resource="bgo_mysql" />
+<info author="Abinis" name="DRVV" type="script" version="1.0.0" />
+	 <script src="async.lua" type="shared" />
+	<script src="Cliente.lua" type="client" protected="true"/>
+	<script src="Server.lua" type="server" />
+	<file src="Roboto.ttf" />
+
+<export function="getData" type="shared" />
+
+<export function="checkvalores" type="shared" />
+
+<oop>true</oop>
+</meta>

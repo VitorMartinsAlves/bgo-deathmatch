@@ -1,0 +1,11 @@
+<meta>
+    <script src="sourceC.lua" type="client" protected="true" />
+    <script src="sourceS.lua" type="server" />
+    
+    <file src="files/pa.png" />
+	<file src="files/font2.otf" />
+    <export function="showCardP" type="client" />
+    <export function="destroyCardP" type="client" />
+    
+    <oop>true</oop>
+</meta>

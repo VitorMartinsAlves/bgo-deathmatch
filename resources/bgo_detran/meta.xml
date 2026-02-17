@@ -1,0 +1,15 @@
+<meta>
+    <script src="sourceC.lua" type="client" cache="false" />
+    <script src="sourceS.lua" type="server" />
+    
+    <file src="files/bg.png" />
+    <file src="files/font.ttf" />
+    <file src="files/hand.ttf" />
+	<file src="files/font2.otf" />
+    <file src="files/sign.mp3" />
+    
+    
+    <export function="showJogsi" type="client" />
+    <export function="destroyJogsi" type="client" />
+    <oop>true</oop>
+</meta>

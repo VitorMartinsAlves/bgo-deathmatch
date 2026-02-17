@@ -1,0 +1,115 @@
+<mods>
+    
+    <vehicles>
+        
+        <!-- CARRO LOJA -->
+        
+        <mod name="BRASILIAR" txd="BRASILIAR.txd" dff="BRASILIAR.dff" replace="500" />
+        <mod name="GOL QUADRADO" txd="GOLQUAD.txd" dff="GOLQUAD.dff" replace="496" />
+        <mod name="Chevete" txd="Chevete.txd" dff="Chevete.dff" replace="401" />
+        <mod name="Golf GTI" txd="GolfGTI.txd" dff="GolfGTI.dff" replace="436" />
+        <mod name="Toro" txd="ToroR.txd" dff="ToroR.dff" replace="400" />
+        <mod name="Jeep" txd="Jeep.txd" dff="Jeep.dff" replace="547" />
+        <mod name="Lamborghini" txd="Lamborghini.txd" dff="Lamborghini.dff" replace="561" />
+        <mod name="Outlander" txd="Outlander.txd" dff="Outlander.dff" replace="418" />
+        <mod name="Mercedes" txd="MercedesR.txd" dff="MercedesR.dff" replace="560" />
+        <mod name="Sonata" txd="Sonata.txd" dff="Sonata.dff" replace="405" />
+        <mod name="Capitiva" txd="Capitiva.txd" dff="Capitiva.dff" replace="466" />
+        <mod name="Dodge" txd="Dodge.txd" dff="Dodge.dff" replace="504" />
+        <mod name="Camaro" txd="Camaro.txd" dff="Camaro.dff" replace="603" />
+        <mod name="Ferrari" txd="Ferrari.txd" dff="Ferrari.dff" replace="541" />
+        <mod name="BMWX6" txd="BMWX6.txd" dff="BMWX6.dff" replace="438" />
+        <mod name="AudiR8" txd="AudiR8.txd" dff="AudiR8.dff" replace="477" />
+        <mod name="Titan" txd="Titan.txd" dff="Titan.dff" replace="468" />
+        <mod name="KOMBI" txd="KOMBI.txd" dff="KOMBI.dff" replace="483" />
+        <mod name="Veloster" txd="velosterR.txd" dff="velosterR.dff" replace="562" />
+        <mod name="H2R" txd="H2R.txd" dff="H2R.dff" replace="521" />
+        <mod name="XJ6" txd="XJ6.txd" dff="XJ6.dff" replace="522" />
+        
+        
+        <!-- CARRO CORPS -->
+        
+        <mod name="HELICOPTEROPOLICIA" txd="HELIP.txd" dff="HELIP.dff" replace="497" />
+        <mod name="MOTOPOLICIA" txd="MOTOPOLICIA.txd" dff="MOTOPOLICIA.dff" replace="523" />
+        <mod name="HSAMU" txd="HSAMU.txd" dff="HSAMU.dff" replace="488" />
+        <mod name="VAN" txd="VAN.txd" dff="VAN.dff" replace="431" />
+        <mod name="LIXEIROR" txd="LIXEIROR.txd" dff="LIXEIROR.dff" replace="408" />
+        <mod name="taxiR" txd="taxiR.txd" dff="taxiR.dff" replace="420" />
+        <mod name="mecanicoR" txd="mecanicoR.txd" dff="mecanicoR.dff" replace="525" />
+        
+        
+        
+    </vehicles>
+    <skins>
+        
+        <!-- facções -->
+        
+        <mod name="[ADA]SkinR" txd="[ADA]SkinR.txd" dff="[ADA]SkinR.dff" replace="102" />
+        <mod name="[BDM]SkinR" txd="[BDM]SkinR.txd" dff="[BDM]SkinR.dff" replace="103" />
+        <mod name="[BDM]SkinFR" txd="[BDM]SkinFR.txd" dff="[BDM]SkinFR.dff" replace="190" />
+        <mod name="[CV]SkinR" txd="[CV]SkinR.txd" dff="[CV]SkinR.dff" replace="104" />
+        <mod name="[FDN]SkinR" txd="[FDN]SkinR.txd" dff="[FDN]SkinR.dff" replace="105" />
+        <mod name="[MLC]SkinR" txd="[MLC]SkinR.txd" dff="[MLC]SkinR.dff" replace="106" />
+        <mod name="[MLC]SkinFR" txd="[MLC]SkinFR.txd" dff="[MLC]SkinFR.dff" replace="55" />
+        <mod name="[ODR]SkinR" txd="[ODR]SkinR.txd" dff="[ODR]SkinR.dff" replace="107" />
+        <mod name="[PCC]skinR" txd="[PCC]skinR.txd" dff="[PCC]skinR.dff" replace="108" />
+        <mod name="[RODO]SkinR" txd="[RODO]SkinR.txd" dff="[RODO]SkinR.dff" replace="109" />
+        <mod name="[TCP]SkinR" txd="[TCP]SkinR.txd" dff="[TCP]SkinR.dff" replace="110" />
+        
+        
+        
+        <!-- CORP SKIN -->
+        
+        <mod name="[BOPE]SkinR" txd="[BOPE]SkinR.txd" dff="[BOPE]SkinR.dff" replace="285" />
+        <mod name="[CHOQUE]SkinR" txd="[CHOQUE]SkinR.txd" dff="[CHOQUE]SkinR.dff" replace="283" />
+        <mod name="[EB]SkinR" txd="[EB]SkinR.txd" dff="[EB]SkinR.dff" replace="287" />
+        <mod name="[UPP]SkinR" txd="[UPP]SkinR.txd" dff="[UPP]SkinR.dff" replace="277" />
+        <mod name="[GTM]SkinR" txd="[GTM]SkinR.txd" dff="[GTM]SkinR.dff" replace="284" />
+        <mod name="[FN]SkinR" txd="[FN]SkinR.txd" dff="[FN]SkinR.dff" replace="282" />
+        <mod name="[PC]SkinR" txd="[PC]SkinR.txd" dff="[PC]SkinR.dff" replace="280" />
+        <mod name="[RECOM]SkinR" txd="[RECOM]SkinR.txd" dff="[RECOM]SkinR.dff" replace="288" />
+        <mod name="[FUZ]SkinR" txd="[FUZ]SkinR.txd" dff="[FUZ]SkinR.dff" replace="278" />
+        <mod name="[RP1]SkinR" txd="[RP1]SkinR.txd" dff="[RP1]SkinR.dff" replace="265" />
+        <mod name="[RP2]SkinR" txd="[RP2]SkinR.txd" dff="[RP2]SkinR.dff" replace="281" />
+        <mod name="[RP3]SkinR" txd="[RP3]SkinR.txd" dff="[RP3]SkinR.dff" replace="266" />
+        <mod name="[SAMU]SkinR" txd="[SAMU]SkinR.txd" dff="[SAMU]SkinR.dff" replace="274" />
+        <mod name="[SAMUF]SkinR" txd="[SAMUF]SkinR.txd" dff="[SAMUF]SkinR.dff" replace="233" />
+        <mod name="[PF]SkinR" txd="[PF]SkinR.txd" dff="[PF]SkinR.dff" replace="286" />
+        <mod name="[DRVV]SkinR" txd="[DRVV]SkinR.txd" dff="[DRVV]SkinR.dff" replace="26" />
+        
+        <!-- TRABALHO SKIN -->
+        
+        <mod name="[Correio]SkinR" txd="[Correio]SkinR.txd" dff="[Correio]SkinR.dff" replace="36" />
+        <mod name="[PIZZA]SkinR" txd="[PIZZA]SkinR.txd" dff="[PIZZA]SkinR.dff" replace="155" />
+        <mod name="[GAS]SkinR" txd="[GAS]SkinR.txd" dff="[GAS]SkinR.dff" replace="184" />
+        
+        <!-- SKIN FEMININA -->
+        
+        <mod name="[SKIN]Mulher1" txd="[SKIN]Mulher1R.txd" dff="[SKIN]Mulher1R.dff" replace="31" />
+        <mod name="[SKIN]Mulher2" txd="[SKIN]Mulher2R.txd" dff="[SKIN]Mulher2R.dff" replace="10" />
+        <mod name="[SKIN]Mulher3" txd="[SKIN]Mulher3R.txd" dff="[SKIN]Mulher3R.dff" replace="263" />
+        <mod name="[SKIN]Mulher4" txd="[SKIN]Mulher4R.txd" dff="[SKIN]Mulher4R.dff" replace="13" />
+        <mod name="[SKIN]Mulher5" txd="[SKIN]Mulher5R.txd" dff="[SKIN]Mulher5R.dff" replace="9" />
+        <mod name="[SKIN]Mulher6" txd="[SKIN]Mulher6R.txd" dff="[SKIN]Mulher6R.dff" replace="11" />
+        <mod name="[SKIN]Mulher7" txd="[SKIN]Mulher7R.txd" dff="[SKIN]Mulher7R.dff" replace="12" />
+        <mod name="[SKIN]Mulher8" txd="[SKIN]Mulher8R.txd" dff="[SKIN]Mulher8R.dff" replace="40" />
+        <mod name="[SKIN]Mulher9" txd="[SKIN]Mulher9R.txd" dff="[SKIN]Mulher9R.dff" replace="178" />
+        <mod name="[SKIN]Mulher10" txd="[SKIN]Mulher10R.txd" dff="[SKIN]Mulher10R.dff" replace="191" />
+        <mod name="[SKIN]Mulher11" txd="[SKIN]Mulher11R.txd" dff="[SKIN]Mulher11R.dff" replace="214" />
+        <mod name="[SKIN]Mulher12" txd="[SKIN]Mulher12R.txd" dff="[SKIN]Mulher12R.dff" replace="216" />
+        <mod name="[SKIN]Mulher13" txd="[SKIN]Mulher13R.txd" dff="[SKIN]Mulher13R.dff" replace="131" />
+        <mod name="[SKIN]Mulher14" txd="[SKIN]Mulher14R.txd" dff="[SKIN]Mulher14R.dff" replace="38" />
+        <mod name="[SKIN]Mulher15" txd="[SKIN]Mulher15R.txd" dff="[SKIN]Mulher15R.dff" replace="39" />
+        <mod name="[SKIN]Mulher16" txd="[SKIN]Mulher16R.txd" dff="[SKIN]Mulher16R.dff" replace="130" />
+        <mod name="[SKIN]Mulher17" txd="[SKIN]Mulher17R.txd" dff="[SKIN]Mulher17R.dff" replace="64" />
+        <mod name="[SKIN]Mulher18" txd="[SKIN]Mulher18R.txd" dff="[SKIN]Mulher18R.dff" replace="46" />
+        <mod name="[SKIN]Mulher19" txd="[SKIN]Mulher19R.txd" dff="[SKIN]Mulher19R.dff" replace="199" />
+        <mod name="[SKIN]Mulher20" txd="[SKIN]Mulher20R.txd" dff="[SKIN]Mulher20R.dff" replace="93" />
+        
+    </skins>
+    
+    <weapons>
+        
+    </weapons>
+    
+</mods>

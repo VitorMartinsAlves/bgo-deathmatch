@@ -1,0 +1,13 @@
+<meta>
+	<script src="sourceG.lua" type="shared" cache="false"/>
+	<script src="sourceC.lua" type="client" cache="false"/>
+	<script src="sourceS.lua" type="server"/>
+
+	<file src="files/drone.dff"/>
+	<file src="files/drone.txd"/>
+	<file src="files/Roboto.ttf"/>
+	<file src="files/scantext.png"/>
+	<file src="files/nosig.png"/>
+
+	<min_mta_version client="1.5.7" server="1.5.7" />
+</meta>

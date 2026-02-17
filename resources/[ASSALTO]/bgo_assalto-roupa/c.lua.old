@@ -1,0 +1,353 @@
+local peds = {
+[createPed(147,2786.66796875,2461.2951660156,11.061462402344, 137.78852844238)] = {createColSphere(2786.66796875,2461.2951660156,11.061462402344,15),2796.8347167969,2456.6369628906,11.280212402344},
+--[createPed(147,1636.516, -1188.160, 24.097, 358.329)] = {createColSphere(1634.223, -1181, 24.097,12),1628.068, -1186.545, 24.412},
+}
+local doorsloc = {
+{2795.2796875,2455.3918457031,11.280212402344, 0, 0, -45},
+--{1279.3000488281, 277.5, 19.79999923706, 0, 0, 66.25},
+}
+local money = {}
+
+		blip1 = createBlip(2787.0390625,2461.8889160156,11.061462402344, 52)
+		--blip2 = createBlip(1279.224, 272.229, 12.565, 52)
+
+local doors = {}
+local money = {}
+function cancelDamage()
+	cancelEvent()
+end
+addEventHandler("onClientResourceStart",resourceRoot,function()
+	for i,v in pairs(peds) do
+		addEventHandler("onClientPedDamage",i,cancelDamage)
+		addEventHandler("onClientColShapeLeave",v[1],onLeave)
+	end
+	createDoors()
+end)
+
+function getAlivePlayersInTeam(theTeam)
+    local theTable = { }
+    local players = getPlayersInTeam(theTeam)
+
+    for i,v in pairs(players) do
+        if not isPedDead(v) and exports.bgo_items:atmIsAbleToRob(v) then
+            theTable[#theTable+1]=v
+        end
+    end
+
+    return theTable
+end
+
+local col = createColSphere(2786.66796875,2461.2951660156,11.061462402344,15)
+function detectAim( target )
+    if ( target ) and ( getElementType( target ) == "ped" ) and getControlState("aim_weapon") and peds[target] then
+	
+	        local pedSlot = getPedWeaponSlot ( localPlayer )
+        if (pedSlot == 0)	then return end
+        
+        local arma = getPedWeapon ( localPlayer )
+        if (arma == 22)	then return end	
+		target = peds[target]
+		triggerServerEvent("Shop>>PoliciaisVivos", localPlayer, localPlayer, target)
+		end
+
+end
+addEventHandler ( "onClientPlayerTarget", localPlayer, detectAim )
+
+
+
+addEvent("Shop>>PoliciaisConfima", true)
+addEventHandler("Shop>>PoliciaisConfima", root, function(target)
+
+        if isRobbing or isTime then
+            if not isDX then
+                exports.bgo_hud:dm("Porfavor eu não tenho mais dinheiro me deixe em paz!.", 200, 0, 0 )
+				triggerServerEvent("assalto3", localPlayer)
+                isDX = true
+                setTimer(function() isDX = false end, 10000, 1)
+            end
+        return 
+		end
+		
+		if isElement(marker) then return end
+		if not isElementWithinColShape(localPlayer,col) then return end
+		if getElementData(localPlayer,"isPlayerRobbing") == true then return end
+		colshape = col --peds[target][1]
+		source = localPlayer
+		if getCriminals(colshape) and not isDX then
+			local x,y,z = getElementPosition(getDoor(colshape))
+			marker = createMarker(x,y,z-1.3,"cylinder",1,255,0,0)
+			addEventHandler("onClientMarkerHit",marker,plantbomb)
+			
+					exports.Script_futeis:setGPS("Coordenada",x,y,z)
+					--setElementData(blip,"blip >> blipOnScreen", true)
+					
+					
+			triggerServerEvent("assalto2", localPlayer)
+			
+			exports.bgo_hud:dm("Vá plantar uma bomba para explodir a porta da sala segura.", 200, 0, 0 )
+			setPedAnimation( target, "ped", "cower", -1, false, false, false, true)
+			setTimer(setPedAnimation,5400000,1,target)
+			isDX = true
+			setTimer(function() isDX = false end, 10000, 1)
+
+    end
+ end
+)
+
+
+
+function plantbomb(thePlayer,dim)
+	if (thePlayer == localPlayer) and dim then
+		local crims = getCriminals(colshape)
+		local door = getDoor(colshape)
+		local mx,my,mz = getElementPosition(localPlayer)
+		local x,y,z = getElementPosition(door)
+		if mz > z then return end
+		if crims then
+			triggerServerEvent("GTIBettingStoreRob.rob", localPlayer, crims)
+		end
+		destroyElement(marker)
+	end
+end
+function getCriminals(col)
+	count = {}
+	for i,v in pairs(getElementsWithinColShape(col,"player")) do
+		--if getTeamName(getPlayerTeam(v)) == "Criminals" then
+			table.insert(count,v)
+		--end
+	end
+	if #count < 5 then--3
+		exports.bgo_hud:dm("Não há criminosos suficientes para roubar tem que ter no minimo 5 criminosos.", 200, 0, 0 )
+		return false
+	else
+		return count
+	end		
+	count = nil
+end 
+function convertSecsToTime(seconds)
+        local hours = 0
+        local minutes = 0
+        local secs = 0
+        local theseconds = seconds
+        if theseconds >= 60*60 then
+            hours = math.floor(theseconds / (60*60))
+            theseconds = theseconds - ((60*60)*hours)
+        end
+        if theseconds >= 60 then
+            minutes = math.floor(theseconds / (60))
+            theseconds = theseconds - ((60)*minutes)
+        end
+        if theseconds >= 1 then
+            secs = theseconds
+        end
+        if minutes < 10 then
+            minutes = "0"..minutes
+        end
+        if secs < 10 then
+            secs = "0"..secs
+        end
+    return minutes,secs
+end
+
+
+
+addEvent("assalto4", true)
+addEventHandler("assalto4", root, function(name)
+			if(isElement(sound)) then destroyElement(sound) end	
+			
+
+			local x,y,z = getElementPosition(source)
+				sound = playSound3D("assalto4.mp3", x,y,z , false)
+				setSoundMaxDistance(sound, 200)
+ end
+)
+
+addEvent("assalto", true)
+addEventHandler("assalto", root, function(name)	
+		
+			if(isElement(sound)) then destroyElement(sound) end
+
+			local x,y,z = getElementPosition(source)
+			sound = playSound3D("assalto.mp3", x,y,z, false)
+			setSoundMaxDistance(sound, 200)
+
+			setTimer ( playSound3D, 3000, 1, "assalto2.mp3", x,y,z, false)
+			setTimer ( playSound3D, 1000, 1, "assalto3.mp3", x,y,z, false)			
+
+end
+)
+			
+addEvent("GTIBettingStoreRob.start", true)
+addEventHandler("GTIBettingStoreRob.start", root, function(name)
+	if isRobbing then return end
+	if getElementData(localPlayer,"isPlayerRobbing") == true then return end
+	isRobbing = true
+	local col = getCol()
+	if not col then return end
+	local door = getDoor(col) 
+	if not isElement(door) then return end
+	if isElement(marker) then destroyElement(marker) end
+	local x,y,z = getElementPosition(door)
+    bomb = createObject ( 1654, x, y, z-0.9, -90, 0, 0, true )			
+			
+    seconds = 420
+	isRobbing = true
+	setElementData(localPlayer, "isPlayerRobbing", true)
+	isTime = true
+    timer1 = setTimer ( timerCountDown, 1000, 0, door )
+			exports.bgo_hud:dm("(fique dentro do local por 3 minutos!)", 200, 255, 0)
+            exports.bgo_hud:dm("Mãos pra cima isso é um assalto", 200, 0, 0)
+end)
+	
+function getDoor(col)
+	for i,v in pairs(getElementsWithinColShape(col,"object")) do
+		if (getElementModel(v) == 3089) then
+			return v
+		end
+	end
+end
+function getCol()
+	for i,v in pairs(peds) do
+		if isElementWithinColShape(localPlayer,v[1]) then
+			return v[1]
+		end
+	end
+end
+function getMoneyLoc(door)
+	for i,v in pairs(peds) do
+		if v[1] == door then
+			return v[2],v[3],v[4]
+		end
+	end
+end
+function recreateDoor()
+	isTime = false
+	createDoors()
+	noMoney()			
+end	
+function timerCountDown(door)
+        seconds = seconds - 1
+        local mins,secds = convertSecsToTime(seconds)
+        if mins == "00" and secds == "00" then
+			if not isElement(door) then return end
+            killTimer(timer1)
+			local x,y,z = getElementPosition(door)
+			local mx,my,mz = getMoneyLoc(getCol())
+			setTimer(recreateDoor,5400000,1)
+            createMoney(mx,my,mz)
+			destroyElement(door)
+			destroyElement(bomb)
+			createExplosion(x,y,z,12,true,1,false)
+            exports.bgo_hud:drawStat("bettingRobTimer", "", "", 200, 0, 0)
+			isRobbing = false
+			setElementData(localPlayer, "isPlayerRobbing", false)
+			triggerServerEvent("GTIBettingStoreRob.store", localPlayer)
+        else
+            exports.bgo_hud:drawStat("bettingRobTimer", "tempo restante: ", mins..":"..secds, 250, 0, 0)
+        end
+    end
+	
+function destroyDoors()
+	for i,v in ipairs(doors) do
+		if isElement(v) then destroyElement(v) end
+	end
+	doors = {}
+end
+function createDoors()
+	destroyDoors()
+		for i,v in pairs(doorsloc) do
+			local door = createObject(3089,v[1],v[2],v[3],v[4],v[5],v[6])
+			table.insert(doors,door)
+	end
+end
+function createMoney(x,y,z)
+	for i=1,4 do
+		local px,py,pz = getPos(x,y,z)
+		if pz then
+			local moni = createPickup(px,py,pz,3,1212)
+			addEventHandler("onClientPickupHit", moni, pay)
+			table.insert(money,moni)
+		end
+	end
+end
+
+function pay(thePlayer,dim)
+	if (thePlayer == localPlayer) and dim then
+		destroyElement(source)
+		triggerServerEvent("GTIBettingStoreRob.pay", localPlayer)
+	end
+end
+
+function getPos(x,y,z)
+	for i = 1,9 do
+		local state = math.random(1,4)
+		if (state == 1) then
+			_x,_y = x+math.random(1,2.5),y+math.random(1,2.5)
+		elseif (state == 2) then
+			_x,_y = x-math.random(1,2.5),y+math.random(1,2.5)
+		elseif (state == 3) then
+			_x,_y = x+math.random(1,2.5),y-math.random(1,2.5)
+		elseif (state == 4) then
+			_x,_y = x-math.random(1,2.5),y-math.random(1,2.5)
+		end
+		local _z = z
+		if isLineOfSightClear(x,y,_z,_x,_y,_z+2) then
+			return _x,_y,_z
+		end
+	end
+end
+
+function noMoney()
+	for i,v in pairs(money) do
+		if isElement(v) then destroyElement(v) end
+		table.remove(money,i)
+	end
+	if #money > 0 then noMoney() end
+end
+
+function stopRob()
+	noMoney()
+    if ( isRobbing == false ) then return end
+    exports.bgo_hud:drawStat("bettingRobTimer", "", "", 200, 0, 0)
+    if isTimer ( timer1 ) then killTimer ( timer1 ) end
+	isRobbing = false
+	setElementData(localPlayer, "isPlayerRobbing", false)
+	if isElement(bomb) then destroyElement(bomb) end
+	if isElement(marker) then destroyElement(marker) end
+end
+addEvent ("GTIammunationRob_cancelRob", true )
+addEventHandler ("GTIammunationRob_cancelRob", root, stopRob )
+addEventHandler ("onClientPlayerWasted", localPlayer, function()
+	if ( isRobbing == true ) then
+		exports.bgo_hud:dm ("Você falhou o assalto!", 200, 0, 0)
+	end
+	stopRob()
+end)
+
+function quitJob(job)
+		stopRob()
+		destroyDoors()
+end
+addEventHandler ("onClientPlayerQuitJob", localPlayer, quitJob)
+function getJob(job)
+		createDoors()
+
+end 
+addEventHandler ("onClientPlayerGetJob", localPlayer, getJob)
+
+function onLeave(thePlayer,dim)
+	if (thePlayer == localPlayer) and dim and isRobbing then
+		if isElement(marker) then destroyElement(marker) end
+		stopRob()
+		exports.bgo_hud:dm ("Você falhou o assalto!", 200, 0, 0)
+	end
+end
+addEventHandler("onClientResourceStart", resourceRoot, function()
+	createDoors()
+end)
+
+
+addEventHandler("onClientResourceStop", resourceRoot, function()
+		stopRob()
+		destroyDoors()
+end)

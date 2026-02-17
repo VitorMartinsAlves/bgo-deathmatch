@@ -1,0 +1,8 @@
+<map edf:definitions="editor_main">
+    <object id="object (chinaTgate) (1)" breakable="true" interior="0" alpha="255" model="2930" doublesided="false" scale="1" dimension="0" posX="1572" posY="-1695" posZ="15.2" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (chinaTgate) (2)" breakable="true" interior="0" alpha="255" model="2930" doublesided="false" scale="1" dimension="0" posX="1576.5" posY="-1695" posZ="15.2" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (chinaTgate) (3)" breakable="true" interior="0" alpha="255" model="2930" doublesided="false" scale="1" dimension="0" posX="1581" posY="-1695" posZ="15.2" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (chinaTgate) (4)" breakable="true" interior="0" alpha="255" model="2930" doublesided="false" scale="1" dimension="0" posX="1578.2" posY="-1703.2" posZ="15.2" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (chinaTgate) (5)" breakable="true" interior="0" alpha="255" model="2930" doublesided="false" scale="1" dimension="0" posX="1573.9" posY="-1703.2" posZ="15.2" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (chinaTgate) (6)" breakable="true" interior="0" alpha="255" model="2930" doublesided="false" scale="1" dimension="0" posX="1569.3" posY="-1703.3" posZ="15.2" rotX="0" rotY="0" rotZ="90"></object>
+</map>

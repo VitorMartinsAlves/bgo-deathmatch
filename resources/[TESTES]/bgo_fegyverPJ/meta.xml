@@ -1,0 +1,144 @@
+<meta>
+    <script type="shared" src="global.lua" />
+    <script type="client" src="client.lua" />
+    <script type="server" src="server.lua" />
+    
+    <export type="shared" function="getWeaponWeaponShaderName" />
+    <export type="shared" function="isStickerValid" />
+    
+    <file src="fx/replace.fx" />
+    
+    <file src="stickers/ak_1.jpg" />
+    <file src="stickers/ak_2.jpg" />
+    <file src="stickers/ak_3.jpg" />
+    <file src="stickers/ak_4.jpg" />
+    <file src="stickers/ak_5.jpg" />
+    <file src="stickers/ak_6.jpg" />
+    <file src="stickers/mp_1.jpg" />
+    <file src="stickers/mp_2.jpg" />
+    <file src="stickers/mp_3.jpg" />
+    <file src="stickers/mp_4.jpg" />
+    <file src="stickers/mp_5.jpg" />
+    <file src="stickers/mp_6.jpg" />
+    <file src="stickers/desert_1.jpg" />
+    <file src="stickers/desert_2.jpg" />
+    <file src="stickers/desert_3.jpg" />
+    <file src="stickers/m4_1.jpg" />
+    <file src="stickers/m4_2.jpg" />
+    <file src="stickers/m4_3.jpg" />
+    <file src="stickers/m4_4.jpg" />
+    <file src="stickers/uzi_1.jpg" />
+    <file src="stickers/uzi_2.jpg" />
+    <file src="stickers/uzi_3.jpg" />
+    <file src="stickers/sniper_1.jpg" />
+    <file src="stickers/sniper_2.jpg" />
+    <file src="stickers/sniper_3.jpg" />
+    <file src="stickers/sniper_4.jpg" />
+    <file src="stickers/sniper_5.jpg" />
+    <file src="stickers/sniper_6.jpg" />
+    <file src="stickers/shoutgun_1.jpg" />
+    <file src="stickers/shoutgun_2.jpg" />
+    <file src="stickers/tec9_1.jpg" />
+    <file src="stickers/tec9_2.jpg" />
+    <file src="stickers/knife_1.jpg" />
+    <file src="stickers/knife_2.jpg" />
+    <file src="stickers/knife_3.jpg" />
+    <file src="stickers/knife_4.jpg" />
+    <file src="stickers/knife_5.jpg" />
+    <file src="stickers/colt_1.jpg" />
+    <file src="stickers/colt_2.jpg" />
+    <file src="stickers/halloween.jpg" />
+  
+  <file src="stickers/m4_halloween.jpg" />
+  <file src="stickers/ak_halloween.jpg" />
+  <file src="stickers/sniper_halloween.jpg" />
+  
+   <file src="stickers/m4_natalina.jpg" />
+  <file src="stickers/ak_natalina.jpg" />
+  <file src="stickers/sniper_natalina.jpg" />
+  <file src="stickers/desert_natalina.jpg" />
+  
+  
+  <file src="stickers/ak_brasil.jpg" />
+  <file src="stickers/desert_brasil.jpg" />
+  <file src="stickers/knife_brasil.jpg" />
+  <file src="stickers/m4_brasil.jpg" />
+  <file src="stickers/mp_brasil.jpg" />
+  <file src="stickers/shotgun_brasil.jpg" />
+  <file src="stickers/sniper_brasil.jpg" />
+  <file src="stickers/tec9_brasil.jpg" />
+  <file src="stickers/uzi_brasil.jpg" />
+  
+  
+  
+    <file src="stickers/ak_folia.jpg" />
+  <file src="stickers/desert_folia.jpg" />
+  <file src="stickers/m4_folia.jpg" />
+    <file src="stickers/sniper_folia.jpg" />
+ 
+
+  
+	<file src="stickers/ak_ouro.jpg" />
+	<file src="stickers/desert_ouro.jpg" />
+	<file src="stickers/knife_ouro.jpg" />
+	<file src="stickers/m4_ouro.jpg" />
+	<file src="stickers/mp_ouro.jpg" />
+	<file src="stickers/shoutgun_ouro.jpg" />
+	<file src="stickers/sniper_ouro.jpg" />
+	<file src="stickers/tec9_ouro.jpg" />
+	<file src="stickers/uzi_ouro.jpg" />
+	<file src="stickers/bat_grove.jpg" />
+	<file src="stickers/bat_dragon.jpg" />
+	<file src="stickers/m4_sakura.jpg" />
+	
+	<file src="stickers/m4_alpha.jpg" />
+	<file src="stickers/ak_alpha.jpg" />
+	
+	<file src="stickers/m4_reddragon.jpg" />
+	
+   <file src="stickers/desert_reddragon.jpg" />
+    <file src="stickers/sniper_reddragon.jpg" />
+	
+	<file src="stickers/m4_asiimov.jpg" />
+	<file src="stickers/desert_asiimov.jpg" />
+	
+	
+	<file src="stickers/m4_imperador.jpg" />
+   <file src="stickers/ak_vulcan.jpg" />
+   <file src="stickers/awm_vulcan.jpg" />
+   <file src="stickers/desert_vulcan.jpg" />
+   <file src="stickers/m4_vulcan.jpg" />
+<file src="stickers/ak_flamengo.jpg" />
+   
+   
+   <file src="stickers/ak_stickbombs.jpg" />
+   <file src="stickers/awm_stickbombs.jpg" />
+   <file src="stickers/desert_stickbombs.jpg" />
+   <file src="stickers/m4_stickbombs.jpg" />
+   
+   
+   
+   <file src="stickers/m4_diablo.jpg" />
+   <file src="stickers/ak_bgo.jpg" />
+   
+   
+      <file src="stickers/ak_rose.jpg" />
+   <file src="stickers/m4_rose.jpg" />
+   
+   
+         <file src="stickers/ak_doce.jpg" />
+   <file src="stickers/m4_doce.jpg" />
+    <file src="stickers/ak_galaxy.jpg" />
+   <file src="stickers/m4_galaxy.jpg" />
+   <file src="stickers/awp_galaxy.jpg" />
+   <file src="stickers/deagle_galaxy.jpg" />
+   <file src="stickers/faca_galaxy.jpg" />
+    <file src="stickers/pistol_cimento.jpg" />
+	
+   <file src="stickers/ak_rio.jpg" />
+   <file src="stickers/m4_rio.jpg" />
+   <file src="stickers/awp_rio.jpg" />
+   <file src="stickers/deagle_rio.jpg" />
+   <file src="stickers/faca_rio.jpg" />
+   
+</meta>

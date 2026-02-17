@@ -1,0 +1,14 @@
+<meta>
+    <!-- Client oldali fileok -->
+    
+    <!-- Server oldali fileok -->
+    
+    <script src="sourceS.lua" />
+      <script src="sourceC.lua" type="client" protected="true" />
+    <!-- Fileok -->
+    
+    <file src="files/myriadproregular.ttf" />
+    <file src="files/pointer.png" />
+      <file src="tapa.wav" />
+    <min_mta_version server="1.3.4-0.00000" client="1.3.4-0.00000"></min_mta_version>
+</meta>

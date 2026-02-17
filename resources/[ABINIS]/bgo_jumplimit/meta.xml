@@ -1,0 +1,6 @@
+<meta>  
+
+	<script src="CJumpLimit.lua"		type="client" protected="true"/>
+
+	<oop>true</oop>
+</meta>

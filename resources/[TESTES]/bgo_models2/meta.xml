@@ -1,0 +1,388 @@
+<meta>
+    <script src="codeClient.lua" type="client" protected="true"/>
+    <script src="codeComy.lua" type="client" protected="true"/>
+     <script src="server.lua" />   
+
+    <!--
+
+
+    <file src="int/pod_suf_biale.dff" />
+    <file src="int/pod_suf_col.col" />
+    <file src="int/pod_suf_dyw.dff" />
+    <file src="int/pod_suf_dyw2.dff" />
+    <file src="int/pod_suf_pan.dff" />
+    <file src="int/pod_suf_plytki.dff" />
+    <file src="int/pod_suf_pan2.dff" />
+    <file src="int/pod_suf_plytki3.dff" />
+    <file src="int/pod_suf_plytki2.dff" />
+    <file src="int/pod_suf_tex.txd" />
+    <file src="int/sciana_biala.dff" />
+    <file src="int/sciana_blekitna.dff" />
+    <file src="int/sciana_col.col" />
+    <file src="int/sciana_drzwi_biala.dff" />
+    <file src="int/sciana_drzwi_blekitna.dff" />
+    <file src="int/sciana_drzwi_col.col" />
+    <file src="int/sciana_drzwi_kremowa.dff" />
+    <file src="int/sciana_drzwi_okno_tex.txd" />
+    <file src="int/sciana_drzwi_zielona.dff" />
+    <file src="int/sciana_kremowa.dff" />
+    <file src="int/sciana_zielona.dff" />
+
+
+
+
+
+    <file src="comy_kresz/kresz_ve32.txd" />
+    <file src="comy_kresz/kresz_ve33.txd" />
+    <file src="comy_kresz/kresz_ve34.txd" />
+    <file src="comy_kresz/kresz_ve35.txd" />
+    <file src="comy_kresz/kresz_ve36.txd" />
+    <file src="comy_kresz/kresz_ve37.txd" />
+    <file src="comy_kresz/kresz1.dff" />
+    <file src="comy_kresz/kresz2.dff" />
+    <file src="comy_kresz/kresz3.dff" />
+    <file src="comy_kresz/kresz4.dff" />
+    <file src="comy_kresz/kresz5.dff" />
+    <file src="comy_kresz/kresz6.dff" />
+    <file src="comy_kresz/kresz7.dff" />
+    <file src="comy_kresz/kresz.col" />
+    <file src="comy_kresz/kresz_es01.txd" />
+    <file src="comy_kresz/kresz_es02.txd" />
+    <file src="comy_kresz/kresz_es03.txd" />
+    <file src="comy_kresz/kresz_es04.txd" />
+    <file src="comy_kresz/kresz_fu01.txd" />
+    <file src="comy_kresz/kresz_fu02.txd" />
+    <file src="comy_kresz/kresz_ki01.txd" />
+    <file src="comy_kresz/kresz_ki02.txd" />
+    <file src="comy_kresz/kresz_ki03.txd" />
+    <file src="comy_kresz/kresz_ki04.txd" />
+    <file src="comy_kresz/kresz_ki05.txd" />
+    <file src="comy_kresz/kresz_ki06.txd" />
+    <file src="comy_kresz/kresz_ki07.txd" />
+    <file src="comy_kresz/kresz_ki08.txd" />
+    <file src="comy_kresz/kresz_ki09.txd" />
+    <file src="comy_kresz/kresz_ki10.txd" />
+    <file src="comy_kresz/kresz_ki11.txd" />
+    <file src="comy_kresz/kresz_ki12.txd" />
+    <file src="comy_kresz/kresz_ti01.txd" />
+    <file src="comy_kresz/kresz_ti02.txd" />
+    <file src="comy_kresz/kresz_ti03.txd" />
+    <file src="comy_kresz/kresz_ti04.txd" />
+    <file src="comy_kresz/kresz_ti05.txd" />
+    <file src="comy_kresz/kresz_ti06.txd" />
+    <file src="comy_kresz/kresz_ti07.txd" />
+    <file src="comy_kresz/kresz_ti08.txd" />
+    <file src="comy_kresz/kresz_ti09.txd" />
+    <file src="comy_kresz/kresz_ti10.txd" />
+    <file src="comy_kresz/kresz_ti11.txd" />
+    <file src="comy_kresz/kresz_ti12.txd" />
+    <file src="comy_kresz/kresz_ti13.txd" />
+    <file src="comy_kresz/kresz_ti14.txd" />
+    <file src="comy_kresz/kresz_ti15.txd" />
+    <file src="comy_kresz/kresz_ti16.txd" />
+    <file src="comy_kresz/kresz_ti17.txd" />
+    <file src="comy_kresz/kresz_ti18.txd" />
+    <file src="comy_kresz/kresz_ti19.txd" />
+    <file src="comy_kresz/kresz_ti20.txd" />
+    <file src="comy_kresz/kresz_ti21.txd" />
+    <file src="comy_kresz/kresz_ti22.txd" />
+    <file src="comy_kresz/kresz_ti23.txd" />
+    <file src="comy_kresz/kresz_ti24.txd" />
+    <file src="comy_kresz/kresz_ti25.txd" />
+    <file src="comy_kresz/kresz_ti26.txd" />
+    <file src="comy_kresz/kresz_ti27.txd" />
+    <file src="comy_kresz/kresz_ti28.txd" />
+    <file src="comy_kresz/kresz_ti29.txd" />
+    <file src="comy_kresz/kresz_ti30.txd" />
+    <file src="comy_kresz/kresz_ti31.txd" />
+    <file src="comy_kresz/kresz_ti32.txd" />
+    <file src="comy_kresz/kresz_ti33.txd" />
+    <file src="comy_kresz/kresz_ti34.txd" />
+    <file src="comy_kresz/kresz_ti35.txd" />
+    <file src="comy_kresz/kresz_ti36.txd" />
+    <file src="comy_kresz/kresz_ti37.txd" />
+    <file src="comy_kresz/kresz_ti38.txd" />
+    <file src="comy_kresz/kresz_ti39.txd" />
+    <file src="comy_kresz/kresz_ti40.txd" />
+    <file src="comy_kresz/kresz_ti41.txd" />
+    <file src="comy_kresz/kresz_ti42.txd" />
+    <file src="comy_kresz/kresz_ti43.txd" />
+    <file src="comy_kresz/kresz_ti44.txd" />
+    <file src="comy_kresz/kresz_ti45.txd" />
+    <file src="comy_kresz/kresz_ti46.txd" />
+    <file src="comy_kresz/kresz_ti47.txd" />
+    <file src="comy_kresz/kresz_ti48.txd" />
+    <file src="comy_kresz/kresz_ti49.txd" />
+    <file src="comy_kresz/kresz_ti50.txd" />
+    <file src="comy_kresz/kresz_ti51.txd" />
+    <file src="comy_kresz/kresz_ti52.txd" />
+    <file src="comy_kresz/kresz_ti53.txd" />
+    <file src="comy_kresz/kresz_ti54.txd" />
+    <file src="comy_kresz/kresz_ti55.txd" />
+    <file src="comy_kresz/kresz_tj01.txd" />
+    <file src="comy_kresz/kresz_tj02.txd" />
+    <file src="comy_kresz/kresz_tj03.txd" />
+    <file src="comy_kresz/kresz_tj04.txd" />
+    <file src="comy_kresz/kresz_tj05.txd" />
+    <file src="comy_kresz/kresz_tj06.txd" />
+    <file src="comy_kresz/kresz_tj07.txd" />
+    <file src="comy_kresz/kresz_tj08.txd" />
+    <file src="comy_kresz/kresz_tj09.txd" />
+    <file src="comy_kresz/kresz_tj10.txd" />
+    <file src="comy_kresz/kresz_tj11.txd" />
+    <file src="comy_kresz/kresz_tj12.txd" />
+    <file src="comy_kresz/kresz_tj13.txd" />
+    <file src="comy_kresz/kresz_tj14.txd" />
+    <file src="comy_kresz/kresz_tj15.txd" />
+    <file src="comy_kresz/kresz_tj16.txd" />
+    <file src="comy_kresz/kresz_tj17.txd" />
+    <file src="comy_kresz/kresz_tj18.txd" />
+    <file src="comy_kresz/kresz_tj19.txd" />
+    <file src="comy_kresz/kresz_tj20.txd" />
+    <file src="comy_kresz/kresz_tj21.txd" />
+    <file src="comy_kresz/kresz_tj22.txd" />
+    <file src="comy_kresz/kresz_tj23.txd" />
+    <file src="comy_kresz/kresz_tj24.txd" />
+    <file src="comy_kresz/kresz_tj25.txd" />
+    <file src="comy_kresz/kresz_tj26.txd" />
+    <file src="comy_kresz/kresz_tj27.txd" />
+    <file src="comy_kresz/kresz_tj28.txd" />
+    <file src="comy_kresz/kresz_tj29.txd" />
+    <file src="comy_kresz/kresz_tj30.txd" />
+    <file src="comy_kresz/kresz_tj31.txd" />
+    <file src="comy_kresz/kresz_tj32.txd" />
+    <file src="comy_kresz/kresz_tj33.txd" />
+    <file src="comy_kresz/kresz_tj34.txd" />
+    <file src="comy_kresz/kresz_tj35.txd" />
+    <file src="comy_kresz/kresz_tj36.txd" />
+    <file src="comy_kresz/kresz_tj37.txd" />
+    <file src="comy_kresz/kresz_tj38.txd" />
+    <file src="comy_kresz/kresz_tj39.txd" />
+    <file src="comy_kresz/kresz_tj40.txd" />
+    <file src="comy_kresz/kresz_tj41.txd" />
+    <file src="comy_kresz/kresz_tj42.txd" />
+    <file src="comy_kresz/kresz_tj43.txd" />
+    <file src="comy_kresz/kresz_tj44.txd" />
+    <file src="comy_kresz/kresz_tj45.txd" />
+    <file src="comy_kresz/kresz_tj46.txd" />
+    <file src="comy_kresz/kresz_tj47.txd" />
+    <file src="comy_kresz/kresz_tj48.txd" />
+    <file src="comy_kresz/kresz_us01.txd" />
+    <file src="comy_kresz/kresz_us02.txd" />
+    <file src="comy_kresz/kresz_us03.txd" />
+    <file src="comy_kresz/kresz_us04.txd" />
+    <file src="comy_kresz/kresz_us05.txd" />
+    <file src="comy_kresz/kresz_us06.txd" />
+    <file src="comy_kresz/kresz_us07.txd" />
+    <file src="comy_kresz/kresz_us08.txd" />
+    <file src="comy_kresz/kresz_us09.txd" />
+    <file src="comy_kresz/kresz_us10.txd" />
+    <file src="comy_kresz/kresz_us11.txd" />
+    <file src="comy_kresz/kresz_us12.txd" />
+    <file src="comy_kresz/kresz_us13.txd" />
+    <file src="comy_kresz/kresz_us14.txd" />
+    <file src="comy_kresz/kresz_us15.txd" />
+    <file src="comy_kresz/kresz_us16.txd" />
+    <file src="comy_kresz/kresz_us17.txd" />
+    <file src="comy_kresz/kresz_us18.txd" />
+    <file src="comy_kresz/kresz_us19.txd" />
+    <file src="comy_kresz/kresz_us20.txd" />
+    <file src="comy_kresz/kresz_us21.txd" />
+    <file src="comy_kresz/kresz_us22.txd" />
+    <file src="comy_kresz/kresz_us23.txd" />
+    <file src="comy_kresz/kresz_us24.txd" />
+    <file src="comy_kresz/kresz_us25.txd" />
+    <file src="comy_kresz/kresz_us26.txd" />
+    <file src="comy_kresz/kresz_us27.txd" />
+    <file src="comy_kresz/kresz_us28.txd" />
+    <file src="comy_kresz/kresz_us29.txd" />
+    <file src="comy_kresz/kresz_ut01.txd" />
+    <file src="comy_kresz/kresz_ut02.txd" />
+    <file src="comy_kresz/kresz_ut03.txd" />
+    <file src="comy_kresz/kresz_ut04.txd" />
+    <file src="comy_kresz/kresz_ve01.txd" />
+    <file src="comy_kresz/kresz_ve02.txd" />
+    <file src="comy_kresz/kresz_ve03.txd" />
+    <file src="comy_kresz/kresz_ve04.txd" />
+    <file src="comy_kresz/kresz_ve05.txd" />
+    <file src="comy_kresz/kresz_ve06.txd" />
+    <file src="comy_kresz/kresz_ve07.txd" />
+    <file src="comy_kresz/kresz_ve08.txd" />
+    <file src="comy_kresz/kresz_ve09.txd" />
+    <file src="comy_kresz/kresz_ve10.txd" />
+    <file src="comy_kresz/kresz_ve11.txd" />
+    <file src="comy_kresz/kresz_ve12.txd" />
+    <file src="comy_kresz/kresz_ve13.txd" />
+    <file src="comy_kresz/kresz_ve14.txd" />
+    <file src="comy_kresz/kresz_ve15.txd" />
+    <file src="comy_kresz/kresz_ve16.txd" />
+    <file src="comy_kresz/kresz_ve17.txd" />
+    <file src="comy_kresz/kresz_ve18.txd" />
+    <file src="comy_kresz/kresz_ve19.txd" />
+    <file src="comy_kresz/kresz_ve20.txd" />
+    <file src="comy_kresz/kresz_ve21.txd" />
+    <file src="comy_kresz/kresz_ve22.txd" />
+    <file src="comy_kresz/kresz_ve23.txd" />
+    <file src="comy_kresz/kresz_ve24.txd" />
+    <file src="comy_kresz/kresz_ve25.txd" />
+    <file src="comy_kresz/kresz_ve26.txd" />
+    <file src="comy_kresz/kresz_ve27.txd" />
+    <file src="comy_kresz/kresz_ve28.txd" />
+    <file src="comy_kresz/kresz_ve29.txd" />
+    <file src="comy_kresz/kresz_ve30.txd" />
+    <file src="comy_kresz/kresz_ve31.txd" />
+
+
+
+
+    <file src="files/wls_garazs.dff" />
+    <file src="files/wls_garazs.col" />
+    <file src="files/wls_garazs.txd" />
+	
+	
+	
+    <file src="files/wls_jail.dff" />
+    <file src="files/wls_jail.col" />
+    <file src="files/wls_jail.txd" />
+
+
+
+    <file src="files/wls_traffipax.dff" />
+    <file src="files/wls_traffipax.col" />
+    <file src="files/wls_traffipax.txd" />
+
+
+
+
+
+    <file src="files/wls_vehicleshopfix.dff" />
+    <file src="files/wls_vehicleshopfix.col" />
+    <file src="files/wls_vehicleshopfix.txd" />
+
+
+
+
+
+
+
+    <file src="files/wls_garazs2.dff" />
+    <file src="files/wls_garazs2.col" />
+    <file src="files/wls_garazs2.txd" />
+    <file src="files/wls_garazs3.dff" />
+    <file src="files/wls_garazs3.col" />
+    <file src="files/wls_garazs3.txd" />
+
+
+
+    <file src="files/wls_ammodoboz.dff" />
+    <file src="files/wls_ammodoboz.col" />
+    <file src="files/wls_ammodoboz.txd" />
+
+
+
+
+
+
+	<file src="files/wls_gold.dff" />  
+    <file src="files/wls_gold.txd" />  
+    <file src="files/wls_gold.col" />  
+
+
+
+
+	<file src="files/wls_safelock.dff" />  
+    <file src="files/wls_safelock.txd" />  
+    <file src="files/wls_safelock.col" />  	
+
+
+	<file src="files/wls_safeunlock.dff" />  
+    <file src="files/wls_safeunlock.txd" />  
+    <file src="files/wls_safeunlock.col" />   
+
+
+	<file src="files/wls_lucky.dff" />  
+    <file src="files/wls_lucky.txd" />  
+    <file src="files/wls_lucky.col" />  
+
+
+	<file src="files/wls_fixtraffi.dff" />  
+    <file src="files/wls_fixtraffi.txd" />  
+    <file src="files/wls_fixtraffi.col" />   
+
+	<file src="files/wls_shield.txd" />
+    <file src="files/wls_shield.dff" />
+    <file src="files/wls_shield.col" />	
+
+
+	
+
+
+
+    <file src="files/wls_bandahaz.dff" />
+    <file src="files/wls_bandahaz.col" />
+    <file src="files/wls_bandahaz.txd" />
+
+
+
+	
+	
+	
+ 
+
+
+ 	<file src="files/wls_monitor.txd" />
+    <file src="files/wls_monitor.dff" />
+    <file src="files/wls_monitor.col" />
+
+
+ 
+	<file src="files/wls_cellak.dff" />
+    <file src="files/wls_cellak.col" />
+    <file src="files/wls_cellak.txd" />
+	
+ 
+	
+
+	
+
+
+-->
+
+
+				<file src="files/wls_koka.txd" />
+    <file src="files/wls_koka.dff" />
+	
+
+ 
+
+	
+	
+	<file src="files/wls_rakmonitor.dff" />  
+    <file src="files/wls_rakmonitor.txd" />  
+	<file src="files/wls_rakmonitor.col" />  
+	
+	<file src="files/wls_boja.dff" />  
+    <file src="files/wls_boja.txd" />  
+	<file src="files/wls_boja.col" />
+
+
+	<file src="files/wls_kures2.dff" />  
+	<file src="files/wls_kures2.col" />  
+    <file src="files/wls_kures2.txd" />
+
+	
+	<file src="files/wls_mak.txd" />
+    <file src="files/wls_mak.dff" />
+    
+
+
+
+
+	<file src="files/wls_cserep.txd" />
+    <file src="files/wls_cserep.dff" />
+    <file src="files/wls_cserep.col" />
+
+	<file src="files/wls_marihuana.txd" />
+    <file src="files/wls_marihuana.dff" />
+
+</meta>

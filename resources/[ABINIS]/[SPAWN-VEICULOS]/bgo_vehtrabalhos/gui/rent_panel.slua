@@ -1,0 +1,130 @@
+﻿----------------------------------------->>
+-- GTI: Grand Theft International
+-- Date: 09 May 2014
+-- Resource: GTIrentalUI/rent_panel.lua
+-- Type: Server Side
+-- Author: JT Pennington (JTPenn)
+----------------------------------------->>
+
+pickupTable = {}	-- Vehicle Rental Information
+
+local PICKUP_ICON = 1277	-- Pickup Icon
+local Z_OFFSET = 1			-- Z-Offset
+
+addEvent("onVehicleRent22", true)
+
+-- Locations
+------------->>
+ 
+function createRentalLocations(resource)
+	if (resource ~= getThisResource() and resource ~= getResourceFromName("bgo_vehtrabalhostables")) then return end
+		-- Destroy Old
+	for i,v in ipairs(getElementsByType("pickup", resourceRoot)) do
+		destroyElement(v)
+	end
+	pickupTable = {}
+	
+		-- And Create New
+	local rentTable = exports.bgo_vehtrabalhostables:getRentTable()
+	for i,v in ipairs(rentTable) do
+		local pickup = createPickup(v.pos[1], v.pos[2], v.pos[3]+Z_OFFSET, 3, PICKUP_ICON, 0)
+		setElementData(pickup, "name", v.name)
+		local color = table.concat(v.colorText, ",")
+		setElementData(pickup, "color", color)
+		pickupTable[pickup] = v
+	end
+end
+addEventHandler("onResourceStart", root, createRentalLocations)
+
+-- Show Rental Panel
+--------------------->>
+
+
+function showRentalPanel(player)
+	if (isPedInVehicle(player)) then return end
+
+	local p = pickupTable[source]
+		-- Check for Global Restrictions
+	if (p.restrictions) then
+		local passed
+		for i,rest in ipairs(p.restrictions) do
+			--if (exports.bgo_employment:getPlayerJob(player) == rest) then
+			
+			if tonumber(getElementData(player, "char:dutyfaction") or 0) == rest then
+				passed = true
+				break
+			end
+		end
+		if (not passed) then 
+			exports.bgo_hud:dm("Você não tem acesso!", player, 255, 125, 0)
+			return 
+		end
+	end
+	
+		-- Vehicles Table
+	local vehs = {}
+	for i,v in ipairs(p.vehicles) do
+	
+		local vT = {}
+		vT[1] = v[1]	-- Vehicle ID
+		vT[2] = true	-- Is Accessible?
+		vT[3] = v[3]	-- Restrictions Table
+		vT[4] = getHourlyRentalCost(v[1])
+		vT[5] = p.cost
+		vT[6] = p.pintura
+		
+		if (v[3]) then
+			for i,rstn in ipairs(v[3]) do
+				local rstns = split(rstn, ";")
+					-- Job Based Restrictions
+				if (rstns[1] and rstns[2]) then
+				elseif (getElementData(player, "char:dutyfaction") ~= rstn) then
+					vT[2] = false
+					break
+				end
+			end
+		end
+		table.insert(vehs, vT)
+	end
+	
+	local hasRental = getPlayerRentalVehicle(player)
+	if (hasRental) then hasRental = true end
+		
+	triggerClientEvent(player, "GTIrentalUI.displayRentPanel2", source, vehs, weaps, hasRental, ownedWeapons)
+end
+addEventHandler("onPickupHit", resourceRoot, showRentalPanel)
+
+
+
+
+
+
+
+
+-- Return Vehicle
+------------------>>
+
+function returnVehicle()
+		local xp, yp, zp = getElementPosition(client)
+		local tabela = getElementsWithinRange( xp, yp, zp, 40, "vehicle" )
+		local value = nil
+		for i = 1, #tabela do
+		value = tabela[i] 
+		if getElementData(value, "owner") == getElementData(client, "char:id") then
+			local x1,y1,z1 = getElementPosition(client)
+			local x2,y2,z2 = getElementPosition(value)
+			returnRentVehicle(client)
+			triggerClientEvent(client, "bgo>info", client,"Veiculos", "O veiculo foi guardado com sucesso!", "sucesso")		
+			tem = false
+			return
+			end
+		end
+		tem = true
+
+		if tem then
+		tem = false
+		triggerClientEvent(client, "bgo>info", client,"Veiculos", "O veiculo precisa esta perto de você para guarda-lo", "erro")
+	end
+end
+addEvent("GTIrentalUI.returnVehicle2", true)
+addEventHandler("GTIrentalUI.returnVehicle2", root, returnVehicle)

@@ -1,0 +1,48 @@
+
+
+
+local speed = 0.2
+
+
+
+
+addEventHandler('onClientRender', root,
+	function()
+			if getPedControlState( "forwards" ) == true or getPedControlState( "backwards" ) == true or getPedControlState( "left" ) == true or getPedControlState( "right" ) == true then
+
+
+				local x, y, z = getElementPosition(getLocalPlayer())
+				local prot = getPedRotation(getLocalPlayer())
+				local nx, ny = getPointFromDistanceRotation(x, y, speed, (prot)*-1)
+				local nz = getGroundPosition ( nx, ny, z )
+	
+				local clear = isLineOfSightClear( x, y, z, nx, ny, z, true, true, true, true, true, true, true)
+				if clear == true then
+					local lx, ly = getPointFromDistanceRotation(x, y, 1, (prot-8)*-1)
+					local rx, ry = getPointFromDistanceRotation(x, y, 1, (prot+8)*-1)
+					local clearl = isLineOfSightClear( x, y, z, lx, ly, z, true, true, true, true, true, true, true)
+					local clearr = isLineOfSightClear( x, y, z, rx, ry, z, true, true, true, true, true, true, true)
+					if clearl == true and clearr == true then
+						local nz = getGroundPosition ( nx, ny, z+1 )
+						if  getDistanceBetweenPoints3D( x, y, z, nx, ny, nz) < 2 then
+							setElementPosition(getLocalPlayer(), nx, ny, nz+1, false)
+								print("a")
+						end
+					end
+				end
+
+			end
+			end
+)
+
+function getPointFromDistanceRotation(x, y, dist, angle)
+
+    local a = math.rad(90 - angle);
+ 
+    local dx = math.cos(a) * dist;
+    local dy = math.sin(a) * dist;
+ 
+    return x+dx, y+dy;
+ 
+end
+

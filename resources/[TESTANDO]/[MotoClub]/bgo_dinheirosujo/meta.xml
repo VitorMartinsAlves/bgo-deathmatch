@@ -1,0 +1,7 @@
+<meta>
+	<info author="Abinis" name="DRVV" type="script" version="1.0.0" />
+	<script src="Cliente.lua" type="client" protected="true"/>
+	<script src="Server.lua" type="server" />
+
+<oop>true</oop>
+</meta>

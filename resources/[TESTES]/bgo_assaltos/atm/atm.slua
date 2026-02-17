@@ -1,0 +1,464 @@
+﻿local ATM_PROGRESS_TIME = 180000
+local ATM_TIMEOUT = 3600000
+local ATM_PICKUPS = 1
+local ATM_ROB_PAY_PER_PICKUP = 388
+
+local atmCooldown = {}
+local atmBag = {}
+local atmBagColShape = {}
+local atmTimer = {}
+local atmSerial = {}
+
+
+ATMs = 
+{
+    { 1450.7216796875,-1127.7297363281,23.932811737061,  284.0000 },
+
+
+}
+
+function onATMShapeHit ( element )
+	if ( isElement(element) and getElementType(element) == "player"  ) then
+		if getPlayerTeam(element) == getTeamFromName("Policia") then return end
+		if ( not isPedInVehicle(element) and isPedOnGround(element) ) then
+				if ( atmIsAbleToRob(element) and not atmIsPlayerRobbing (element) ) then
+					bindKey(element, "l", "down", atmStartRobbing)
+					drawNote('ATMRobbery', 'Pressione [L] parar roubar a loja', element, 255, 0, 0, 5000)
+				else
+					drawNote('ATMRobbery', 'Você não pode roubar esse caixa no momento, você deve esperar '.. atmGetTimeOut ( element ) .. ' segundos', element, 255, 0, 0, 5000)
+			end
+		end
+	end
+end
+
+function onATMShapeLeave ( element)
+	if ( isElement(element) and getElementType(element) == "player" ) then
+		if ( not isPedInVehicle(element) and isPedOnGround(element) ) then
+			unbindKey(element, "l", "down", atmStartRobbing)
+			drawNote('ATMRobbery', '', element, 0, 0, 0, 1)
+		end
+	end
+end
+
+function atmIsAbleToRob ( player )
+	return not isTimer(atmCooldown[player])
+end
+
+function atmIsPlayerRobbing ( player )
+	return isElement(atmBag[player])
+end
+
+function atmGetTimeOut ( player )
+	if isTimer ( atmCooldown[player] ) then
+		local miliseconds = getTimerDetails ( atmCooldown[player] )
+		return math.ceil( miliseconds / 1000 )
+	else
+		return false
+	end
+end
+
+function atmSetTimeOut ( player, time )
+	atmCooldown[player] = setTimer( function (player) atmCooldown[player] = nil end, time, 1, player)
+end
+
+function atmDrawProgress ( player, time )
+	exports.bgo_hud:drawProgressBar( 'ATMRobbery_ProgressBar', 'Progresso do Roubo', player, 255, 0, 0, time )
+end
+
+function onATMPickupHit ( element )
+	if ( isPedInVehicle(element) ) then return end		
+			
+	if ( getElementData(source, "ATMRobbery.owner") == element ) then
+		atmPay(element)
+		setTimer(
+			function (pickup)
+				destroyElement(pickup)
+			end, 50, 1, source)
+	else
+		cancelEvent()
+	end
+end
+
+function onATMRobberyComplete ( player )
+		local x, y, z = getElementPosition( atmBag[player] )
+		for index = 1, ATM_PICKUPS do
+			local offset = index*0.1
+			local randomNumber = math.random(0.1, 0.6)
+			local pickup = createPickup(x-offset, y+randomNumber, z, 3, 1212, 1)
+			setElementData(pickup, "ATMRobbery.owner", player)
+			addEventHandler("onPickupHit", pickup, onATMPickupHit)
+		end
+		--for explosions = 1, 3 do
+			createExplosion(x, y, z, 11)
+		--end
+		destroyElement(atmBag[player])
+		destroyElement(atmBagColShape[player])
+		atmBag[player] = nil
+		atmBagColShape[player] = nil
+
+		triggerClientEvent(root, "bgoassalto.atmStopRobbing", root, player)
+end
+
+
+
+	local marker = createMarker(134.79705810547,1381.6352539063,1083.8653564453-0.9, "cylinder", 1, 25, 255, 25, 150)
+	setElementDimension(marker, 2)
+	setElementInterior(marker, 5)
+		
+	function consoleCreateMarker ( thePlayer )
+		if getElementData(thePlayer, "char:dutyfaction") == 13 then 
+		if not exports['bgo_items']:hasItemS(thePlayer, 73) then 
+		exports.bgo_items:giveItem(thePlayer, 73, 1, 1, 0, true)
+		exports.bgo_hud:dm("Você recebeu um alicate hidráulico!",thePlayer, 200, 0, 0 )
+		setElementData(thePlayer, "char:money", (getElementData(thePlayer,"char:money") or 0) - 20000 )
+		end
+	end
+end
+addEventHandler("onMarkerHit", marker, consoleCreateMarker)
+
+
+--[[
+function atmPay ( player )
+		givePlayerMoney(player, ATM_ROB_PAY_PER_PICKUP)
+		triggerClientEvent(player, "onClientPlayerGiveMoney", player, ATM_ROB_PAY_PER_PICKUP)
+		triggerClientEvent(player, "TESTE", root, "roubo efetuado com sucesso")
+end]]--
+
+
+function atmPay ( player )
+		geld = math.random(50000, 70000)
+		--exports.bgo_hud:dm("Você recebeu "..geld.." de dinheiro sujo!",player, 200, 0, 0 )
+		--setElementData(player, "char:moneysujo", (getElementData(player,"char:moneysujo") or 0) + geld )
+		--triggerClientEvent(player, "TESTE", root, "Roubo efetuado com sucesso")
+		
+		if exports.bgo_items:giveItem(player, 230, 1, geld, 0, true) then 
+        local linha = math.random(1, 255 )
+        exports.bgo_hud:drawNote("Sujo"..linha.."", "+ "..geld.." em blocos de dinheiro!", player, 255, 255, 255, 7000) 
+		triggerClientEvent(player, "onClientPlayerGiveMoney", player, geld)
+        end
+		
+		
+end
+
+local myBlip = { }
+
+
+
+function getAlivePlayersInTeam(theTeam)
+    local theTable = { }
+    local players = getPlayersInTeam(theTeam)
+
+    for i,v in pairs(players) do
+        if not isPedDead(v) and exports.bgo_items:atmIsAbleToRob(v) then
+            theTable[#theTable+1]=v
+        end
+    end
+
+    return theTable
+end
+
+
+
+function atmStartRobbing ( element )
+	unbindKey(element, 'N', 'down', atmStartRobbing)
+	if ( isElement(element) ) then
+	
+	    --local pedSlot = getPedWeaponSlot ( element )
+        --if (pedSlot == 0)	then 
+		--outputChatBox("#dc143c[AVISO]:#ffffffVocê precisa de arma para assaltar o caixa eletrônico!",element, 255, 255, 255, true)
+		--return end
+        
+        --local arma = getPedWeapon ( element )
+       -- if (arma == 6)	then
+		
+		if exports['bgo_items']:hasItemS(element, 73) then 
+			
+		   local policiaTeam = getTeamFromName ( "Policia" )
+            local groveCount = #getAlivePlayersInTeam(policiaTeam) --countPlayersInTeam ( policiaTeam )
+            if tonumber(groveCount) >= 8 then
+			
+		exports.bgo_anims:setJobAnimation(element, "BOMBER", "BOM_Plant", 2500, false, false, true, false )
+		toggleAllControls(element, false)
+		setTimer(toggleAllControls, 2500, 1, element, true)
+		atmDrawProgress ( element, ATM_PROGRESS_TIME )
+		
+		exports['bgo_items']:takePlayerItemToID(element, 73, true)	
+		
+		atmSetTimeOut(element, ATM_TIMEOUT)
+		--for _, players in ipairs(getElementsByType("player")) do
+		--atmSetTimeOut(players, ATM_TIMEOUT)
+		--end
+		
+		
+		
+			local x, y, z = getElementPosition ( element )
+			local location = getZoneName ( x, y, z )
+			local city = getZoneName ( x, y, z, true )
+		for _, players in ipairs(getElementsByType("player")) do		
+			if getPlayerTeam(players) == getTeamFromName("Policia")  then
+				triggerClientEvent(players, "TESTE22", players, "Assalto a Shopping LV em andamento!")
+				triggerClientEvent(players, "bgo>info", players,"Assalto à loja!", "Um assalto proximo o banco LS foi iniciado no bairro " .. location .. " " .. city.." ", "info")
+				myBlip[element] = createBlipAttachedTo (element, 1 )
+				setElementData(myBlip[element] ,"blipName", "Assalto a lojinha em andamento!")
+				setBlipColor ( myBlip[element], 255, 0, 0, 255 )
+				setBlipSize ( myBlip[element], 2 )
+				setElementVisibleTo ( myBlip[element], root, false )
+				setTimer(destroyElement, 60000, 1, myBlip[element])
+				setElementVisibleTo ( myBlip[element], players, true )
+				end
+				
+			if tonumber(getElementData(players, "char:adminduty") or 0) == 1 then
+				setElementVisibleTo ( myBlip[element], players, true )
+				triggerClientEvent(players, "TESTE22", players, "Assalto a lojinha alicate em andamento!")
+				triggerClientEvent(players, "bgo>info", players,"Assalto à loja!", "Assalto em " .. location .. " " .. city.." | ID: "..getElementData(element, "acc:id").." ", "info")
+				end
+			end
+		
+		
+		
+
+		local x, y, z = getElementPosition(element)
+		atmBag [ element ] = createObject( 1654, x+0.3, y, z-0.9, -90, 0, 0)
+		triggerClientEvent(root, "bgoassalto.setObjectUnbreakable", root, atmBag[element] )
+		
+		local x, y, z = getElementPosition( atmBag[element] )
+		atmBagColShape [ element ] = createColSphere ( x, y, z, 2 )
+		setElementData(atmBagColShape[element], "atmParent", atmBag[element])
+		setElementData(atmBagColShape[element], "atmOwner", element)
+		addEventHandler("onColShapeHit", atmBagColShape[element], onATMBagColShapeHit)
+		addEventHandler("onColShapeLeave", atmBagColShape[element], onATMBagColShapeLeave)
+		
+		atmTimer[element] = setTimer(onATMRobberyComplete, ATM_PROGRESS_TIME, 1, element)
+		local ms = getTimerDetails(atmTimer[element])
+		triggerClientEvent(root, "bgoassalto.bomb", root, ms, atmBag[element], atmBagColShape[element])
+		else
+		outputChatBox("#dc143c[AVISO]:#ffffff Não tem policia na cidade ( minimo 8 policiais ), vaza daqui!",element, 255, 255, 255, true)
+        end
+		else
+		outputChatBox("#dc143c[AVISO]:#ffffffVocê precisa de Alicate Hidráulico para assaltar",element, 255, 255, 255, true)
+		outputChatBox("#dc143c[AVISO]:#ffffffEste item é vendido na grove. (Marcação verde no F11)!",element, 255, 255, 255, true)
+		end
+	end
+end
+	
+
+--local assaltopostocentral = createColCuboid(1234.95190, -1549.80835, 16.65540, 26.233520507813, 17.35205078125, 5.0999969482422)
+--local assaltocommerce = createColCuboid(1342.66309, -1770.46558, 11.70776, 21.562622070313, 11.341064453125, 8.9000009536743)
+--local assaltoclukclin = createColCuboid(927.32349, -1369.93518, 11.20777, 12.781860351563, 20.265625, 5.0000003814697)
+--local assaltoproximohospital = createColCuboid(497.03867, -1362.20837, 15.00781, 5.8744506835938, 4.130615234375, 3.6999954223633)
+
+
+local zone = createColCuboid(1429.68591, -1149.08044, 22.82947, 40.590942382813, 51.045166015625, 10.019453430176)
+		
+		
+function stopRobbing (player)
+	if ( isElement(atmBag[player]) )then
+		destroyElement(atmBag[player])
+		destroyElement(atmBagColShape[player])
+		atmBag[player] = nil
+		atmBagColShape[player] = nil
+	end
+	if ( isTimer(atmTimer[player]) ) then
+		killTimer(atmTimer[player])
+		atmTimer[player] = nil
+	end
+	triggerClientEvent(root, "bgoassalto.atmStopRobbing", root, player)
+	exports.bgo_hud:drawProgressBar( 'ATMRobbery_ProgressBar', '', player, 255, 0, 0, 1 )
+	drawNote('ATMRobbery', '', player, 255, 0, 0, 1)
+end
+addEventHandler("onColShapeLeave", zone, stopRobbing)
+--addEventHandler("onColShapeLeave", assaltopostocentral, stopRobbing)
+--addEventHandler("onColShapeLeave", assaltocommerce, stopRobbing)
+--addEventHandler("onColShapeLeave", assaltoclukclin, stopRobbing)
+--addEventHandler("onColShapeLeave", assaltoproximohospital, stopRobbing)
+
+addEventHandler("onPlayerJailed", root, 
+	function ()
+		stopRobbing(source)
+	end
+)
+
+function onATMBagColShapeHit ( element )
+	if getPlayerTeam(element) == getTeamFromName("Policia")  then
+	if ( isElement(element) and getElementType(element) == "player" ) then --and not getElementData(source, "atmOwner") and dim ) then
+		if ( not isPedInVehicle(element) ) then
+			bindKey(element, 'l', 'down', atmUnplanting, source)
+			drawNote('ATMRobbery', "Pressione [L] para defusar a bomba do "..getPlayerName(getElementData(source, "atmOwner")).."", element, 30, 125, 255, 5000)
+		end
+	end
+end
+end
+
+
+function onATMBagColShapeLeave ( element)
+	if ( isElement(element) and getElementType(element) == "player" and not getElementData(source, "atmOwner") and dim ) then
+		unbindKey(element, 'l', 'down', atmUnplanting)
+		drawNote('ATMRobbery', '', element, 0, 0, 0, 1)
+	end
+end
+
+function atmUnplanting ( cop, _, _, colshape )
+	if ( not isElement(colshape) or getElementData(colshape, "atmIsBeingDefused") ) then
+		return exports.bgo_hud:dm("Esta bomba" .. (isElement(colshape) and "já esta desarmada" or "já está sendo neutralizada!"), cop, 255, 0, 0)
+	end
+	local ms = getTimerDetails(atmTimer[getElementData(colshape, "atmOwner")])
+		if ( ms < 10000 ) then
+			unbindKey(cop, 'l', 'down', atmUnplanting)
+			exports.bgo_hud:dm("É muito tarde! Afaste-se da bomba!", cop, 255, 0, 0)
+		return end
+		unbindKey(cop, 'l', 'down', atmUnplanting)
+		exports.bgo_anims:setJobAnimation(cop, "BOMBER", "BOM_Plant", 7500, true, false, true, false )
+		exports.bgo_hud:drawProgressBar( 'ATMRobbery_Unplanting', 'Progresso do desarme', cop, 30, 125, 255, 7500 )
+		local criminal = getElementData(colshape, "atmOwner")
+		setElementData(colshape, "atmIsBeingDefused", true)
+		toggleAllControls(cop, false)
+		setTimer(
+				function ( )
+					if ( isElement(cop) and not isPedDead(cop) ) then
+						exports.bgo_hud:dm("O policial "..getPlayerName(cop).." Defusou sua bomba.", criminal, 255, 0, 0)
+						exports.bgo_hud:dm("Você desativou com sucesso a bomba do "..getPlayerName(criminal)..".", cop, 255, 0, 0)
+						stopRobbing(criminal)	
+						--givePlayerMoney(cop, 2500)
+						
+						setElementData(player, "char:money", (getElementData(player,"char:money") or 0) + 2500 )
+						
+						--triggerClientEvent(source, "onClientPlayerGiveMoney", source, 2500)
+						
+						
+						toggleAllControls(cop, true)
+					end
+					if ( isElement(colshape) ) then
+						setElementData(colshape, "atmIsBeingDefused", false)
+					end
+				end, 7500, 1)
+end
+
+
+function drawNote(id, text, player, r, g, b, time)
+	exports.bgo_hud:drawNote(id, text, player, r, g, b, time)
+end
+--[[
+for _, ATMsData in ipairs ( ATMs or {} ) do
+	--if ( not ATMsData.int and not ATMsData.dim ) then
+		local colshape = createColTube( ATMsData[1], ATMsData[2], ATMsData[3], 0.5, 2)
+		addEventHandler("onColShapeHit", colshape, onATMShapeHit)
+		addEventHandler("onColShapeLeave", colshape, onATMShapeLeave)
+	--end
+end]]--
+
+addEventHandler("onResourceStart", resourceRoot, function()
+	for i,v in ipairs(ATMs) do
+		--local colshape = createColTube(v[1], v[2], v[3]-1, 0.5, 3)
+		--addEventHandler("onColShapeHit", colshape, onATMShapeHit)
+		--addEventHandler("onColShapeLeave", colshape, onATMShapeLeave)	
+
+		local colshape = createMarker(v[1], v[2], v[3]-0.9, "cylinder", 1, 25, 255, 25, 150)
+		atmBlip = createBlip ( v[1], v[2], v[3], 36, 1, 0, 0, 0, 0, 0, 300 )
+		
+		addEventHandler("onMarkerHit", colshape, onATMShapeHit)
+		addEventHandler("onMarkerLeave", colshape, onATMShapeLeave)
+		
+
+	end
+end)
+
+addEventHandler("onPlayerWasted", root,
+	function ()
+		if ( atmIsPlayerRobbing(source) ) then
+			stopRobbing(source)
+		end
+	end
+)
+
+addEventHandler ("onPlayerArrested", root, 
+	function ()
+		if ( atmIsPlayerRobbing(source) ) then
+			stopRobbing(source)
+		end
+	end
+)
+
+addEventHandler("onPlayerGetJob", root,
+	function ()
+		unbindKey(source, "l", "down", atmStartRobbing)
+		drawNote('ATMRobbery', '', source, 0, 0, 0, 1)
+	end
+)
+
+addEventHandler("onPlayerGetJob", root,
+	function (job, new)
+		if ( job and new ~= "Criminal" and atmIsPlayerRobbing(source)) then
+			stopRobbing(source)
+		end
+	end
+)
+
+addEventHandler("onResourceStop", resourceRoot, 
+	function ()
+		for index, players in ipairs ( getElementsByType("player") ) do
+			if ( atmIsPlayerRobbing(players) ) then
+				stopRobbing(players)
+			end
+		end
+	end
+)
+
+addEventHandler("onPlayerQuit", root,
+	function ()
+		if ( atmIsPlayerRobbing(source) ) then
+			stopRobbing(source)
+		end
+	end
+)
+
+addEventHandler("onPlayerQuit", root,
+	function ()
+		if ( atmGetTimeOut(source) ) then
+			atmSerial[getPlayerSerial(source)] = atmGetTimeOut(source)
+		end
+	end
+)
+
+addEventHandler("onPlayerQuit", root,
+	function ()
+		for _, pickups in ipairs ( getElementsByType("pickup") ) do
+			if ( getElementData(pickups, "ATMRobbery.owner") == source ) then
+				removeEventHandler("onPickupHit", pickups, onATMPickupHit)
+				destroyElement(pickups)
+			end
+		end
+	end
+)
+
+addEventHandler("onPlayerArrested", root,
+	function ()
+		for _, pickups in ipairs ( getElementsByType("pickup") ) do
+			if ( getElementData(pickups, "ATMRobbery.owner") == source ) then
+				removeEventHandler("onPickupHit", pickups, onATMPickupHit)
+				destroyElement(pickups)
+			end
+		end
+	end
+)
+
+addEventHandler("onPlayerWasted", root,
+	function ()
+		for _, pickups in ipairs ( getElementsByType("pickup") ) do
+			if ( getElementData(pickups, "ATMRobbery.owner") == source ) then
+				removeEventHandler("onPickupHit", pickups, onATMPickupHit)
+				destroyElement(pickups)
+			end
+		end
+	end
+)
+
+addEventHandler("onPlayerJoin", root,
+	function ()
+		for serial, cooldown in pairs ( atmSerial ) do
+			if ( getPlayerSerial(source) == serial ) then
+				atmSetTimeOut(source, cooldown*1000)
+				atmSerial[serial] = nil
+			end
+		end
+	end
+)

@@ -1,0 +1,6 @@
+<meta>  
+<info author='Jvz3D' description='' version='1.0' type='script' />  
+<script src='client.lua' type='client' />  
+<file src='Dodge.txd' type='client' />  
+<file src='Dodge.dff' type='client' />  
+</meta>

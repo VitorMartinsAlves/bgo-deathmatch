@@ -1,0 +1,11 @@
+
+GUIEditor = {
+    window = {}
+}
+addEventHandler("onClientResourceStart", resourceRoot,
+    function()
+        GUIEditor.window[1] = guiCreateWindow(955, 227, 96, 134, "Eu sou lindo", false)
+        guiWindowSetSizable(GUIEditor.window[1], false)
+        guiSetAlpha(GUIEditor.window[1], 1.00)    
+    end
+)

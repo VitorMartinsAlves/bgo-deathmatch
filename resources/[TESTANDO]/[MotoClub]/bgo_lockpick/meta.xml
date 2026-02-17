@@ -1,0 +1,23 @@
+<meta>
+	<info author="Abinis" name="DRVV" type="script" version="1.0.0" />
+	<script src="Cliente.lua" type="client" protected="true"/>
+	<script src="Server.lua" type="server" />
+	<file src="alarm.ogg" />
+	
+	
+    <script src="minigames/arrowsC.lua"    type="client"  protected="true"/>
+    <script src="minigames/balanceC.lua"    type="client"  protected="true"/>
+    <file src="files/arch.png"   type="client" />
+    <file src="files/arrow_d.png"   type="client" />
+    <file src="files/arrow_l.png"   type="client" />
+    <file src="files/arrow_r.png"   type="client" />
+    <file src="files/arrow_u.png"   type="client" />
+    <file src="files/circle.png"   type="client" />
+    <file src="files/mainCircle.png"   type="client" />
+    <file src="files/pointer.png"   type="client" />
+    <file src="files/progressbg.png"   type="client" />
+    <file src="files/progressoff.png"   type="client" />
+    <file src="files/progresson.png"   type="client" />
+	
+<oop>true</oop>
+</meta>

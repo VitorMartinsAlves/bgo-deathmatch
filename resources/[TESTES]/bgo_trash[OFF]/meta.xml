@@ -1,0 +1,9 @@
+<meta>
+    <script src="codeClient.lua" type="client" protected="true" ></script>
+	 <script src="codeServer.lua" type="server" />
+	<!--
+   
+    <script src="codeServer2.lua" type="server" />
+    <script src="codeServer3.lua" type="server" />
+	-->
+</meta>

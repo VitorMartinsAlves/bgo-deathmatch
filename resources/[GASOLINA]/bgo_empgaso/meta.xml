@@ -1,0 +1,7 @@
+<meta>
+    <info author="N3xT" />
+
+    <script src="config.lua" type="shared" protected="true" />
+    <script src="mainC.lua" type="client" protected="true" />
+    <script src="mainS.lua" type="server" />
+</meta>

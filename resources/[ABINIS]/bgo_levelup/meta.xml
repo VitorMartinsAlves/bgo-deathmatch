@@ -1,0 +1,15 @@
+<meta>  
+
+	<script src="CUILevels.lua"		type="client" protected="true"/>
+	<file src="sounds/levelup.wav" />
+	<file src="images/button_okey_click.png" />
+	<file src="images/button_okey_hover.png" />
+	<file src="images/button_okey_idle.png" />
+	<file src="images/info.png" />
+	
+	<file src="fonts/OpenSans-Bold.ttf" />
+	<file src="fonts/OpenSans-Regular.ttf" />
+	
+	<export function="ShowUILevelUp" type="client" />
+	
+</meta>

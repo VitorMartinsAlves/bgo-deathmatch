@@ -1,0 +1,10 @@
+<meta>
+    <script src="client.lua" type="client" protected="true" />
+    <script src="server.lua" type="server" protected="true" />
+
+   	<file src="font/tab.png" cache="false"/>	
+   	<file src="font/vidas.png" cache="false"/>	
+	<file src="font/fundo.png" cache="false"/>	
+	<file src="font/font.otf" cache="false" />
+
+</meta>

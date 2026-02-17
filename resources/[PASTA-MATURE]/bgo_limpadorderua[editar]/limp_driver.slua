@@ -1,0 +1,110 @@
+﻿----------------------------------------->>
+-- Grand Theft International (GTi)
+-- Author: JT Pennington (JTPenn)
+-- Date: 27 Jul 2014
+-- Resource: Limpador/bus_driver.slua
+-- Version: 1.0
+----------------------------------------->>
+
+local vehIDs = {
+	[574] = 1.000,	-- Bus
+}
+
+local TIME_BTWN_CHAT = 1000	-- How often a person can use the radio
+local radioSpam = {}	-- Table of Last Radio Chat
+
+-- Complete Mission
+-------------------->>
+	
+	
+	
+	local blip = createBlip (1769.4847412109,2072.3361816406,9.7203125, 42)
+	setElementData(blip,"blipName", "Limpador")
+		
+		
+function completeMission()
+	local vehicle = getPedOccupiedVehicle(client)
+--[[
+	local pay = 200 --math.random(10,50)
+	setElementData(client,"char:money", getElementData(client,"char:money") + pay)
+	exports.bgo_hud:dm("Você Ganhou +R$"..pay.." por chegar no ponto!", client, 255, 200, 0)
+	
+	local ganho = 150
+	exports.bgo_Level:givePlayerExp(client, ganho )]]--
+
+	exports.bgo_admin:setPlayerPagamento(client)
+	
+	
+end
+addEvent("Limpador.completeMission", true)
+addEventHandler("Limpador.completeMission", root, completeMission)
+
+-- Job Radio
+------------->>
+
+function LimpadorRadio(player, cmd, ...)
+	if (exports.bgo_employment:getPlayerJob(player, true) ~= "Limpador") then return end
+	if (radioSpam[player]) then 
+		outputChatBox("Você só pode usar o rádio uma vez a cada segundo.", player, 255, 25, 25)
+	return end
+	
+	local message = table.concat({...}, " ")
+	if (string.gsub(message, "%s", "") == "") then return end
+	
+	radioSpam[player] = true
+	setTimer(function(player) radioSpam[player] = nil end, TIME_BTWN_CHAT, 1, player)
+	
+	for i,plr in ipairs(getElementsByType("player")) do
+		if (exports.bgo_employment:getPlayerJob(plr, true) == "Limpador") then
+			outputChatBox("* (RADIO): "..getPlayerName(player)..": #FFFFFF"..message..", câmbio.", plr, 255, 175, 0, true)
+		end
+	end
+end
+addCommandHandler("r", LimpadorRadio)
+
+
+timer = {}
+v = {}
+
+function removeHelmetOnExit ( thePlayer, seat, jacked )
+    if ( getElementModel ( source ) == 574 ) then -- if its a nrg
+         if (getElementData(thePlayer, "job") == "Limpador") then
+                     v[thePlayer] = setTimer(vVehicle, 3000, 1, thePlayer, getPedOccupiedVehicle(thePlayer))
+		 end
+    end
+end
+addEventHandler ( "onVehicleStartExit", getRootElement(), removeHelmetOnExit )
+
+function vVehicle ( thePlayer, busD )
+local theVehicle = getPedOccupiedVehicle ( thePlayer )
+         if not theVehicle then
+               	      outputChatBox("#FFA000*#FFFFFFVocê tem #FFA00010 Segundos #FFFFFFpara entrar no veiculo novamente", thePlayer, 255,255,255, true)
+         	      exports.bgo_hud:dm("*Você tem 10 Segundos para entrar no veiculo novamente", thePlayer, 255, 255, 255)
+                      timer[thePlayer] = setTimer(destroyBus, 10000, 1, thePlayer, busD)
+         end
+end
+
+function destroyBus (thePlayer, bus)
+local theVehicle = getPedOccupiedVehicle ( thePlayer )
+     if bus then
+         if not theVehicle then
+              destroyElement(bus)
+         end
+     end
+end
+
+function addHelmetOnEnter ( thePlayer, seat, jacked )
+    if ( getElementModel ( source ) == 574 ) then
+         if isTimer(timer[thePlayer]) then
+		     killTimer(timer[thePlayer])
+		 end
+    end
+end
+addEventHandler ( "onVehicleEnter", getRootElement(), addHelmetOnEnter )
+
+function notifyAboutExplosion()
+     if ( getElementModel ( source ) == 574 ) then
+	     destroyElement(source)
+	 end
+end
+addEventHandler("onVehicleExplode", getRootElement(), notifyAboutExplosion)

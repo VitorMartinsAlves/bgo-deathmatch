@@ -1,0 +1,9 @@
+<meta>
+    <script src="exClient.lua" type="client" protected="true"/>
+    <script src="exServer.lua" type="server" />
+    
+    <oop>true</oop>   
+
+
+
+</meta>

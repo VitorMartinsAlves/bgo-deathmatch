@@ -1,0 +1,85 @@
+<map>
+	<animationCategory id="Dance">
+		<animation id="Dance 1" block="DANCING" code="bd_clap" />
+		<animation id="Dance 2" block="DANCING" code="bd_clap1" />
+		<animation id="Dance 3" block="DANCING" code="dance_loop" />
+		<animation id="Dance 4" block="DANCING" code="DAN_Down_A" />
+		<animation id="Dance 5" block="DANCING" code="DAN_Left_A" />
+		<animation id="Dance 6" block="DANCING" code="DAN_Loop_A" />
+		<animation id="Dance 7" block="DANCING" code="DAN_Right_A" />
+		<animation id="Dance 8" block="DANCING" code="DAN_Up_A" />
+		<animation id="Dance 9" block="DANCING" code="dnce_M_a" />
+		<animation id="Dance 10" block="DANCING" code="dnce_M_b" />
+		<animation id="Dance 11" block="DANCING" code="dnce_M_c" />
+		<animation id="Dance 12" block="DANCING" code="dnce_M_d" />
+		<animation id="Dance 13" block="DANCING" code="dnce_M_e" />
+	</animationCategory>
+
+	<animationCategory id="Sex">
+		<animation id="Punheta" block="PAULNMAC" code="wank_loop" />
+		<animation id="Olha Meu Bilau" block="PAULNMAC" code="piss_loop" />
+	</animationCategory>
+
+
+	<animationCategory id="Policia">
+		<animation id="Deita no chao" block="crack" code="crckidle2" />
+		<animation id="Mao pro alto" block="shop" code="SHP_Rob_HandsUp" />
+		<animation id="Parar carros" block="police" code="coptraf_stop" />
+		<animation id="Chamar carros" block="police" code="coptraf_come" />
+		
+	</animationCategory>
+
+	<animationCategory id="Danca P/ Meninas">
+		<animation id="Dance 01" block="strip" code="strip_a" />
+		<animation id="Dance 02" block="strip" code="strip_b" />
+		<animation id="Dance 03" block="strip" code="strip_c" />
+		<animation id="Dance 04" block="strip" code="strip_d" />
+		<animation id="Dance 05" block="strip" code="strip_e" />
+		<animation id="Dance 06" block="strip" code="strip_f" />
+		<animation id="Dance 07" block="strip" code="strip_g" />
+		<animation id="Dance 08" block="strip" code="str_a2b" />
+		<animation id="Dance 09" block="strip" code="str_b2c" />
+		<animation id="Dance 10" block="strip" code="str_c1" />
+		<animation id="Dance 11" block="strip" code="str_c2" />
+	</animationCategory>
+	<animationCategory id="P/ Meninas">
+		<animation id="sexo 01" block="strip" code="str_loop_a" />
+		<animation id="sexo 02" block="strip" code="str_loop_b" />
+		<animation id="sexo 03" block="strip" code="str_loop_c" />
+	</animationCategory>
+	<animationCategory id="Deitar E Dumir">
+		<animation id="Deitar 01" block="BEACH" code="bather" />
+		<animation id="Deitar 02" block="BEACH" code="Lay_Bac_Loop" />
+		<animation id="Deitar 03" block="BEACH" code="ParkSit_M_loop" />
+		<animation id="Deitar 04" block="BEACH" code="ParkSit_W_loop" />
+		<animation id="Deitar 05" block="BEACH" code="SitnWait_loop_W" />
+		<animation id="Deitar 05" block="INT_HOUSE" code="BED_Loop_L" />
+		<animation id="Deitar 05" block="INT_HOUSE" code="BED_Loop_R" />
+	</animationCategory>
+	<animationCategory id="Dança Para Dj">
+		<animation id="Dj 01" block="SCRATCHING" code="scdrulp" />
+		<animation id="Dj 02" block="SCRATCHING" code="sclng_l" />
+		<animation id="Dj 03" block="SCRATCHING" code="sclng_r" />
+		<animation id="Dj 04" block="SCRATCHING" code="scmid_l" />
+		<animation id="Dj 05" block="SCRATCHING" code="scmid_r" />
+		<animation id="Dj 06" block="SCRATCHING" code="scshrtl" />
+		<animation id="Dj 07" block="SCRATCHING" code="scshrtr" />
+	</animationCategory>
+	<animationCategory id="Noinhado">
+		<animation id="Noinhado 01" block="CRACK" code="crckdeth1" />
+		<animation id="Noinhado 02" block="CRACK" code="crckdeth2" />
+		<animation id="Noinhado 03" block="CRACK" code="crckdeth3" />
+		<animation id="Noinhado 04" block="CRACK" code="crckdeth4" />
+		<animation id="Noinhado 05" block="CRACK" code="crckidle1" />
+		<animation id="Noinhado 06" block="CRACK" code="crckidle2" />
+		<animation id="Noinhado 07" block="CRACK" code="crckidle3" />
+		<animation id="Noinhado 08" block="CRACK" code="crckidle4" />
+	</animationCategory>
+	<animationCategory id="Outros">
+		<animation id="De boa fumando" block="BD_FIRE" code="M_smkleam_loop" />
+		<animation id="Sentar Toop" block="Attractors" code="Stepsit_loop" />
+		<animation id="Fumando" block="BAR" code="dnk_stndM_loop" />
+		<animation id="Seguraca" block="DEALER" code="DEALER_DEAL" />
+		
+	</animationCategory>
+</map>

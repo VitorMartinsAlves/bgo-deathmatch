@@ -1,0 +1,11 @@
+<meta>
+    <script src="shared.lua" type="shared" protected="true"/>
+	<script src="client.lua" type="client" protected="true"/>
+    <script src="server.lua" type="server"/>
+	
+	<file src="files/1.png"/>
+	<file src="files/2.png"/>
+	<file src="files/3.png"/>
+    
+    <file src="files/RobotoCondensed.ttf"/>
+</meta>

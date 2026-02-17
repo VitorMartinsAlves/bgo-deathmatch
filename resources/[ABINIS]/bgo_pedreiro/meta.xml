@@ -1,0 +1,5 @@
+<meta>
+<info author="Emile" name="Trash Collector Job" autostart="true" />
+	<script src="PedreiroClient.lua" type="client" protected="true"/>
+	<script src="PedreiroServer.lua" type="server" />
+</meta>

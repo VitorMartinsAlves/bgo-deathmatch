@@ -1,0 +1,284 @@
+﻿----------------------------------------->>
+-- GTI: Grand Theft International
+-- Author: JT Pennington (JTPenn)
+-- Date: 07 Mar 2015
+-- Resource: GTIrentals/rent_vehicle.slua
+-- Version: 1.0
+----------------------------------------->>
+
+local veh_rest = {}				-- Restrictions Table by Vehicle
+local cust_col = {}				-- Vehicles with Custom Colors
+local cols = {}					-- Collisions around the vehicles
+local veh_cols = {}				-- Vehicle attached to col.
+local rentVehicles = {}			-- Storage of Job Vehicles by Player
+local activeRentals = {}		-- Storage of Players by Job Vehicle
+local vehicle_index = {}		-- Vehicle indexing.
+local MAX_HR_PAYMENT = 1000		-- Highest Amount to charge per hour
+local MAX_RENT_COST = 7500		-- Highest Amount to charge, period
+local groupVehicles = {}
+addEvent("onPlayerQuitJob",true)
+addEvent("onPlayerGetJob",true)
+
+-- Create Vehicles
+------------------->>
+
+addEventHandler("onResourceStart",resourceRoot,function(resource)	
+	for k,v in ipairs(getElementsByType("vehicle",resourceRoot)) do
+		if (getElementData(v,"rentalVIP")) then
+			destroyElement(v)
+		end
+	end
+	veh_rest = {}
+	
+	for k,v in ipairs(exports.rentalTableVIP:vehiclesTable()) do
+		local vehicle = createVehicle(v.id,v.pos[1],v.pos[2],v.pos[3]+1,0,0,(v.pos[4] or 0))
+		if (v.col and #v.col > 0) then
+			setVehicleColor(vehicle, v.col[1],v.col[2],v.col[3],v.col[4],v.col[5],v.col[6])
+			cust_col[vehicle] = true
+		end
+		
+		setVehicleDamageProof(vehicle,true)
+		setElementData(vehicle,"rentalVIP",true)
+		setTimer(setElementFrozen,500,1,vehicle,true)
+		veh_rest[vehicle] = v.res
+		vehicle_index[vehicle] = k
+	end
+end)
+
+-- Vehicle Restrictions
+------------------------>>
+--[[
+addEventHandler("onVehicleStartEnter", resourceRoot, function(player, seat)
+	if (not getElementData(source, "rentalVIP")) then return end
+	if (seat ~= 0) then cancelEvent() return end
+	if getElementData(player, "char:dutyfaction") ~= 3 then
+	cancelEvent()
+	exports.bgo_hud:dm("Este veículo é restrita só para mecanico.", player, 255, 25, 25)
+	end
+end)]]--
+
+addEventHandler("onVehicleStartEnter", resourceRoot, function(player, seat)
+	if (not getElementData(source, "rentalVIP")) then return end
+	if (seat ~= 0) then cancelEvent() return end
+	local res = veh_rest[source]
+	if (not res) then return end
+	local reason;
+	--for i,v in ipairs(res) do
+		if getElementData(player, "VIP") ~= true then
+					--reason = v..""
+					
+		else
+			return
+		--end
+	end
+	cancelEvent()
+	exports.bgo_hud:dm("Este veículo é restrito apenas para jogador vip.", player, 255, 25, 25)
+end)
+
+
+-- Duplicate Vehicle
+--------------------->>
+
+addEventHandler("onVehicleEnter",resourceRoot,
+function(player,seat)
+	if (seat ~= 0 or not getElementData(source,"rentalVIP")) then return end
+	destroyRental(player)
+	
+	local x,y,z = getElementPosition(source)
+	
+	colshape = createColSphere(x,y,z,7)
+	cols[colshape] = {col = colshape, veh = source}
+	veh_cols[source] = colshape
+	
+	addEventHandler("onColShapeLeave",colshape,
+		function(hitEl)
+			if not cols[source] then return end
+			if cols[source].veh ~= hitEl then return end
+			setTimer(createNewRental,500,1,vehicle_index[hitEl],hitEl)
+			
+			if cols[source] and isElement(cols[source].col) then
+				destroyElement(cols[source].col)
+				veh_cols[cols[source].col] = nil
+				cols[source] = nil
+			end
+		end
+	)
+	
+	setVehicleDamageProof(source,false)
+	removeElementData(source,"rentalVIP",true)
+	veh_rest[source] = nil
+	rentVehicles[player] = source
+	activeRentals[source] = {owner = player, duration = getRealTime().timestamp}
+	
+	setElementData(source,"owner",getElementData(player, "acc:id"))
+	setVehiclePlateText( source, getElementData(player,"char:id") )
+	setElementFrozen(source,false)
+	
+	triggerClientEvent("GTIrentals.removeGhostmode2",source)
+end)
+
+addEventHandler("onElementDestroy",resourceRoot,
+function()
+	if cols[source] and isElement(cols[source]) then
+		veh_cols[cols[source].col] = nil
+		destroyElement(cols[source].col)
+		cols[source] = nil
+	end
+end)
+
+function createNewRental(index,hitEl)
+	if index then
+		local vehicles = exports.rentalTableVIP:vehiclesTable()
+		local _vehicle = vehicles[index]
+		if not _vehicle then return false end
+		
+		local vehicle = createVehicle(_vehicle.id,_vehicle.pos[1],_vehicle.pos[2],_vehicle.pos[3]+1,0,0,(_vehicle.pos[4] or 0))
+		if (_vehicle.col and #_vehicle.col > 0) then
+			setVehicleColor(vehicle, _vehicle.col[1],_vehicle.col[2],_vehicle.col[3],_vehicle.col[4],_vehicle.col[5],_vehicle.col[6])
+			cust_col[vehicle] = true
+		end
+		setElementFrozen(vehicle,true)
+		setVehicleDamageProof(vehicle,true)
+		setElementData(vehicle,"rentalVIP",true)
+		veh_rest[vehicle] = _vehicle.res
+		vehicle_index[vehicle] = index
+	end
+end
+
+-- Destroy Rental Vehicle
+-------------------------->>
+
+function destroyRental(player)
+	local vehicle = rentVehicles[player]
+	if (vehicle and isElement(vehicle)) then
+		if ( groupVehicles[vehicle] ) then groupVehicles[vehicle] = nil 
+			activeRentals[vehicle] = nil
+			rentVehicles[player] = nil
+		
+			--triggerClientEvent("GTIrentals.destroyRental", vehicle)
+			setTimer(function(vehicle)
+				destroyElement(vehicle)
+			end, 500, 1, vehicle)
+		
+			if veh_cols[vehicle] and isElement(veh_cols[vehicle]) then
+				createNewRental(vehicle_index[vehicle],vehicle)
+				destroyElement(veh_cols[vehicle])
+				cols[veh_cols[vehicle]] = nil
+				veh_cols[vehicle] = nil
+			end
+			return 
+		end
+
+		--Is the vehicle destroyed?
+		local destroyed
+		if (getElementHealth(vehicle) <= 250) then
+				destroyed = true
+		end
+		
+		--Clean up
+		activeRentals[vehicle] = nil
+		rentVehicles[player] = nil
+		
+		--triggerClientEvent("GTIrentals.destroyRental", vehicle)
+		setTimer(function(vehicle)
+			destroyElement(vehicle)
+		end, 500, 1, vehicle)
+		
+		if veh_cols[vehicle] and isElement(veh_cols[vehicle]) then
+			createNewRental(vehicle_index[vehicle],vehicle)
+			destroyElement(veh_cols[vehicle])
+			cols[veh_cols[vehicle]] = nil
+			veh_cols[vehicle] = nil
+		end
+	end
+end
+addEvent("GTIrentals.destroyRental_", true)
+addEventHandler("GTIrentals.destroyRental_", root, destroyRental)
+
+function getVehicleRentTime(vehicle,mins)
+	if (not activeRentals[vehicle]) then return false end
+	local duration = activeRentals[vehicle].duration
+	
+	if (mins) then
+		return math.floor( (getRealTime().timestamp - duration) / 60)
+	end
+	return ((getRealTime().timestamp - duration) / 3600)
+end
+
+function getHourlyRentalCost(vehicle)
+	local payment
+	local _vehicle
+	
+	if isElement(vehicle) then
+		_vehicle = getElementModel(vehicle)
+	else
+		_vehicle = vehicle
+	end
+	
+	--payment = math.floor(exports.vehicles:getVehicleCost(_vehicle) / 333)
+	--if (payment > MAX_HR_PAYMENT) then payment = MAX_HR_PAYMENT end
+	
+	return payment
+end
+
+addEventHandler("onPlayerQuit", root, function()
+	destroyRental(source)
+end)
+--[[
+addCommandHandler("djv", function(player)
+	local vehicle = rentVehicles[player]
+	if (not isElement(vehicle)) then return end
+	
+	triggerEvent("onRentalVehicleHide2", vehicle, player)
+	triggerClientEvent(player, "onClientRentalVehicleHide2", vehicle, player)
+	destroyRental(player)
+end)]]--
+
+-- Rental Exports
+------------------>>
+
+function isVehicleRental(vehicle)
+	if (activeRentals[vehicle]) then return true end
+	return false
+end
+
+function getVehicleOwner(vehicle)
+	if (activeRentals[vehicle]) then
+		return activeRentals[vehicle].owner or false
+	end
+	return false
+end
+
+function getPlayerRentalVehicle(player)
+	return rentVehicles[player] or false
+end
+
+-- Conditions
+------------------>>
+
+function cleanUp(player)
+	if not player or not isElement(player) then return end
+	
+	destroyRental(player)
+end
+
+addEventHandler("onPlayerWasted",root,function() cleanUp(source) end)
+
+addEventHandler("onVehicleExplode",resourceRoot,
+function()
+	if isVehicleRental(source) then
+		local owner = getVehicleOwner(source)
+		destroyRental(owner)
+	end
+end)
+
+--[[
+function waterCheck()
+	for k,v in pairs(rentVehicles) do
+		if (isElement(v) and isElementInWater(v)) then
+			destroyRental(k)
+		end
+	end
+end
+setTimer(waterCheck,3000,0)
+]]--

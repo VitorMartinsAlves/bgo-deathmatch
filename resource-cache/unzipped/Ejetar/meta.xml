@@ -1,0 +1,5 @@
+<meta>
+	<info author="[M]ister" version="1.0" type="script" />
+	<script src="Ejectorseats.LUA" type="server" />
+	<script src="ClientEjectorseats.lua" type="client" />
+</meta>

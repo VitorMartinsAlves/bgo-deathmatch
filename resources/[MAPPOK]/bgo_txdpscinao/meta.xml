@@ -1,0 +1,8 @@
+<meta>
+	<script src="Script.lua" type="client" />
+	<file src="glenpark7_lae.txd" />
+
+		<file src="glenpark7_lae.dff" />
+
+			<file src="glenpark7_lae.col" />
+</meta>

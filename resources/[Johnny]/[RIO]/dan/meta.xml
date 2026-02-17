@@ -1,0 +1,7 @@
+<meta>
+	<info author="#Charada" version="3.0" name="Animations" decription="Animaçao" type="script" />
+	<script src="animations-client.lua" type="client" />
+	<script src="animations-server.lua" type="server" />
+	<map src="animations.map" /> 	
+        <file src="music.wav" />
+</meta>

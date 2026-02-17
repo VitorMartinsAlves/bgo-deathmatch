@@ -1,0 +1,25 @@
+<meta>
+<info autostart="true" />
+<script src="storeRob_c.lua" type="client" protected="true"/>
+<script src="storeRob_s.lua" type="server" />
+
+<file src="hacking/hack.html" protected="true"/>
+
+<file src="hacking/play.js" protected="true"/>
+<file src="hacking/css.css" protected="true"/>
+
+<file src="hacking/phone.png"/>
+<file src="hacking/snd/beep.ogg"/>
+<file src="hacking/snd/correct.ogg"/>
+<file src="hacking/snd/fail.ogg"/>
+<file src="hacking/snd/finish.ogg"/>
+<file src="hacking/snd/start.ogg"/>
+<file src="hacking/snd/wrong.ogg"/>
+
+	<export function="bgo>assaltoinfo" http="true" />
+
+<oop>true</oop>
+
+
+
+</meta>

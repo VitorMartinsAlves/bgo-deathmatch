@@ -1,0 +1,19 @@
+<map edf:definitions="editor_main">
+    <object id="object (sub_roadbarrier) (1)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1619.4" posY="205.5" posZ="31.9" rotX="0" rotY="356.25" rotZ="245"></object>
+    <object id="object (sub_roadbarrier) (2)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1615.6" posY="197.10001" posZ="32.6" rotX="0" rotY="356.248" rotZ="245.999"></object>
+    <object id="object (sub_roadbarrier) (3)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1612.7" posY="188.39999" posZ="33.3" rotX="0" rotY="355.743" rotZ="256.245"></object>
+    <object id="object (sub_roadbarrier) (4)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1610.7" posY="179.60001" posZ="34" rotX="0" rotY="355.737" rotZ="257.49"></object>
+    <object id="object (sub_roadbarrier) (5)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1609.6" posY="170.3" posZ="34.6" rotX="0" rotY="356.987" rotZ="269.487"></object>
+    <object id="object (sub_roadbarrier) (6)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1609.5" posY="161" posZ="35.1" rotX="0" rotY="356.984" rotZ="269.484"></object>
+    <object id="object (sub_roadbarrier) (7)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1609.3" posY="158.2" posZ="35.1" rotX="0" rotY="356.984" rotZ="269.484"></object>
+    <object id="object (sub_roadbarrier) (8)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1592.3" posY="96.4" posZ="37.5" rotX="0" rotY="0" rotZ="253.75"></object>
+    <object id="object (sub_roadbarrier) (9)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1594.4" posY="101.4" posZ="37.5" rotX="0" rotY="0" rotZ="245.746"></object>
+    <object id="object (sub_roadbarrier) (10)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1597.3" posY="107" posZ="37.5" rotX="0" rotY="0" rotZ="238.492"></object>
+    <object id="object (sub_roadbarrier) (11)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1626" posY="91.3" posZ="37.2" rotX="0" rotY="0" rotZ="96.491"></object>
+    <object id="object (sub_roadbarrier) (12)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1625.2" posY="100" posZ="37.1" rotX="0" rotY="0" rotZ="94.487"></object>
+    <object id="object (sub_roadbarrier) (13)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1646.9" posY="181.2" posZ="32.9" rotX="0" rotY="4.734" rotZ="75.484"></object>
+    <object id="object (sub_roadbarrier) (14)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1644.5" posY="172.39999" posZ="33.6" rotX="0" rotY="3.23" rotZ="75.482"></object>
+    <object id="object (sub_roadbarrier) (15)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1641.6" posY="163.60001" posZ="34.2" rotX="0" rotY="4.73" rotZ="65.982"></object>
+    <object id="object (sub_roadbarrier) (16)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1637.9" posY="155.2" posZ="34.7" rotX="0" rotY="1.974" rotZ="65.978"></object>
+    <object id="object (sub_roadbarrier) (17)" breakable="true" interior="0" alpha="255" model="973" doublesided="true" scale="1" dimension="0" posX="1636.8" posY="152.5" posZ="34.7" rotX="0" rotY="1.972" rotZ="65.978"></object>
+</map>

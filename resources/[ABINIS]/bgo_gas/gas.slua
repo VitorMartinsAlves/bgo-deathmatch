@@ -1,0 +1,126 @@
+﻿----------------------------------------->>
+-- GTI: Grand Theft International Network
+-- Date: 18 Jan 2014
+-- Resource: gas/mailCarrier.slua
+-- Type: Server Side
+-- Author: JT Pennington (JTPenn)
+----------------------------------------->>
+
+local vehIDs = {
+[478] = 0.881, -- Pony (Pay Offset)
+}
+
+CARDBOARD_BOX = 918
+
+--local dist = {}			-- Table of Player Distances (Debug Only)
+local packages = {}		-- Box Objects
+local lastPay = {}
+
+-- Payment Function
+-------------------->>
+
+
+	
+	
+	local blip = createBlip (2255.01953125,-1032.27734375,56.407356262207, 42)
+	setElementData(blip,"blipName", "Entregador de Gas")
+	
+	
+function deliverPackage(vehicle, distance, finishMission)
+	if (lastPay[client]) then return end
+	lastPay[client] = true
+	setTimer(function(client) lastPay[client] = nil end, 15000, 1, client)
+	
+	local vehOffset = vehIDs[getElementModel(vehicle)]
+
+	local progress = 1
+	--[[
+	local pay = 300
+	setElementData(client,"char:money", getElementData(client,"char:money") + pay)
+	exports.bgo_hud:dm("Você Ganhou +R$"..pay.." por entregar o produto!", client, 255, 200, 0)
+	local ganho = 200
+	exports.bgo_Level:givePlayerExp(client, ganho )]]--
+	
+	exports.bgo_admin:setPlayerPagamento(client)
+
+
+	if (not finishMission) then
+		exports.bgo_hud:dm("gas entregue!", client, 255, 200, 0)
+	else
+		exports.bgo_hud:dm("Entrega Completada! Aqui está um bônus.", client, 255, 200, 0)
+	end
+	
+end
+addEvent("gas.deliverPackage", true)
+addEventHandler("gas.deliverPackage", root, deliverPackage)
+
+-- Sync Packages
+----------------->>
+
+function carryPackage(vehicle)
+	local x,y,z = getElementPosition(client)
+	local rot = getElementRotation(client)
+		-- Just in case
+	if (packages[player]) then
+		destroyElement(packages[player])
+		packages[player] = nil
+	end
+	
+	packages[client] = createObject(CARDBOARD_BOX, x, y, z+1.5, 0, 0, rot)
+	attachElements(packages[client], client, -0.02, 0.450, 0.676)
+	setElementCollisionsEnabled(packages[client], false)
+	exports.bgo_anims:setJobAnimation(client, "CARRY", "crry_prtial", 500, false, false, true, true)
+	toggleAllControls(client, false, true, false)
+	toggleControl(client, "enter_passenger", false)
+	for i,ctrl in ipairs({"forwards", "backwards", "left", "right", "walk"}) do
+		toggleControl(client, ctrl, true)
+	end
+	
+	setVehicleDoorOpenRatio(vehicle, 4, 1, 500)
+	setVehicleDoorOpenRatio(vehicle, 5, 1, 500)
+end
+addEvent("gas.carryPackage", true)
+addEventHandler("gas.carryPackage", root, carryPackage)
+
+function dropPackage(vehicle)
+	exports.bgo_anims:setJobAnimation(client, "CARRY", "putdwn", 1000, false, false, true, false)
+	setTimer(function(player, vehicle)
+		exports.bgo_anims:setJobAnimation(player)
+		toggleControl(player, "enter_passenger", true)
+		toggleAllControls(player, true, true, false)
+		if (packages[player]) then
+			destroyElement(packages[player])
+			packages[player] = nil
+		end
+		
+		setVehicleDoorOpenRatio(vehicle, 4, 0, 500)
+		setVehicleDoorOpenRatio(vehicle, 5, 0, 500)
+	end, 1000, 1, client, vehicle)
+end
+addEvent("gas.dropPackage", true)
+addEventHandler("gas.dropPackage", root, dropPackage)
+
+-- Terminate Job
+----------------->>
+
+function terminateJob(player)
+	if (not client) then client = player end
+	if (packages[client]) then
+		destroyElement(packages[client])
+		packages[client] = nil
+		exports.bgo_anims:setJobAnimation(client)
+		toggleControl(client, "enter_passenger", true)
+		toggleAllControls(client, true, true, false)
+	end
+end
+addEvent("gas.terminateJob", true)
+addEventHandler("gas.terminateJob", root, terminateJob)
+
+addEventHandler("onPlayerQuit", root, function()
+	terminateJob(source)
+end)
+
+addEvent("onPlayerArrested", true)
+addEventHandler("onPlayerArrested", root, function()
+	terminateJob(source)
+end)

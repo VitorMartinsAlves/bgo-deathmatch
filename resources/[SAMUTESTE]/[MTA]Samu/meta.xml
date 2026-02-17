@@ -1,0 +1,7 @@
+<meta>
+<script src="client.lua" type="client" />
+<script src="server.lua" type="server" />
+
+<script src="shaders/BlurShader.lua" type="client" cache="false" />
+<file src="shaders/BlurShader.fx" type="client"/>
+</meta>

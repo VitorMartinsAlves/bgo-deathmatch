@@ -1,0 +1,4 @@
+<meta>
+	<script src="sAnuncios.lua" type="server" />
+	<script src="cAnuncios.lua" type="client" />
+</meta>

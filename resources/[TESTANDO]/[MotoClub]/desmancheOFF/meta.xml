@@ -1,0 +1,4 @@
+<meta>
+	<script src="desmanC.lua" type="client" protected="true" />
+    <script src="desmanS.lua" type="server" />
+</meta>

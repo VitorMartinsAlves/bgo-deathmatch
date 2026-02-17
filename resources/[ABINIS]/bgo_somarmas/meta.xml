@@ -1,0 +1,17 @@
+<meta>
+	<info author="Abinis" version="1.0" type="script" />
+	<script src="weapon_sounds_client.lua" type="client" protected="true" />
+	
+	<file src="sounds/AK47.ogg" cache="false"/>
+	<file src="sounds/Colt45.ogg" cache="false" />
+	<file src="sounds/Combat-Shotgun.ogg" cache="false" />
+	<file src="sounds/Deagle.ogg" cache="false" />
+	<file src="sounds/M4.ogg" cache="false" />
+	<file src="sounds/MP5.ogg" cache="false" />
+	<file src="sounds/Rifle.ogg" cache="false" />
+	<file src="sounds/Sawed-Off.ogg" cache="false" />
+	<file src="sounds/Shotgun.ogg" cache="false" />
+	<file src="sounds/Silenced.ogg" cache="false" />
+	<file src="sounds/Sniper.ogg" cache="false" />
+	<file src="sounds/UZI_Tec9.ogg" cache="false" />
+</meta>

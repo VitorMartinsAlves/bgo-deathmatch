@@ -1,0 +1,19 @@
+﻿ <meta>
+	<script src="client.lua" type="client" protected="true" />
+	<script src="server.lua" type="server" protected="true" />
+	
+	<export function="mensagem" type="client" />
+	
+	<export function="mensagem" type="server" />
+	
+	
+	<!-- GUI -->
+	<file src="ui/nui.html"/>
+	<file src="ui/nui.css"/>
+<file src="ui/nui.js"/>
+<file src="ui/nui2.js"/>
+<file src="ui/nui3.js"/>
+<file src="ui/img/info.png"/>	
+
+<oop>true</oop>
+</meta>

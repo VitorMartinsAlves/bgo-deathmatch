@@ -1,0 +1,8 @@
+<meta>
+	<script src="cMature.lua" type="client" />
+	
+    <file src="files/progressbg.png"   type="client" />
+    <file src="files/progressoff.png"   type="client" />
+    <file src="files/progresson.png"   type="client" />
+	
+</meta>

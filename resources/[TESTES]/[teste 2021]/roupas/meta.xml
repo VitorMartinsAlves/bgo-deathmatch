@@ -1,0 +1,25 @@
+<meta>
+    <info author="Stoorm" name="HQ" version="1.5.7" type="script" />
+    <script src="replace.lua" type="client" cache="false" />
+	<file src="barcelona.txd" />
+	<file src="mancity.txd" />
+	<file src="milan.txd" />
+	<file src="tsupreme.txd" />
+	<file src="tadidas.txd" />
+	<file src="tmilan.txd" />
+	<file src="jeansdenim.txd" />
+	<file src="jeansred.txd" />
+	<file src="rolex.txd" />
+	<file src="rolexcro.txd" />
+	<file src="8poker.txd" />
+	<file src="tnasa.txd" />
+	<file src="jsupreme.txd" />
+	<file src="tracktrwhstr.txd" />
+	<file src="tracktrpro.txd" />
+	<file src="tracktrgang.txd" />
+	<file src="tracktreris.txd" />
+	<file src="tracktrblue.txd" />
+	<file src="lakers.txd" />
+	<file src="tlakers.txd" />
+</meta>
+

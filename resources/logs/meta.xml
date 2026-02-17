@@ -1,0 +1,5 @@
+<meta>
+    <script src="codeServer.lua" type="server" />
+    
+    <export function="logMessage" type="server" />
+</meta>
