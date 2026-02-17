@@ -9,10 +9,10 @@ local sqlDatas = {
 ]]--
 
 local sqlDatas = {
-	["host"] = "177.153.39.59",
-	["user"] = "u24_DtZfK3lStX",
-	["pw"] = "87s6SJ32J0qg@g=TgHTNV9lK",
-	["database"] = "s24_main_bgo",
+	["host"] = "panel.martins-ltda.com",
+	["user"] = "u29_lcqDaxNpmu",
+	["pw"] = "MX9Yl+v^uVIMV8e21^vg8gPi",
+	["database"] = "s29_bgo",
 }
 
 
