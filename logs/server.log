@@ -9321,3 +9321,1509 @@
 [2026-02-17 18:19:10] INFO: [BGO SYSTEM]: TODAS AS CONTAS SALVAS COM SUCESSO!!
 [2026-02-17 18:19:13] INFO: Hora Real: 18:19
 [2026-02-17 18:19:13] INFO: Servidor: : 22:19
+==================================================================
+= Multi Theft Auto: San Andreas v1.5.8
+==================================================================
+= Server name      : BGO RIO | Brasil Gaming Online ~ RPVP   EM BREVE! ~
+= Server IP address: auto
+= Server port      : 22003
+= 
+= Log file         : ..-rio/server/mods/deathmatch/logs/server.log
+= Maximum players  : 2021
+= HTTP port        : 22006
+= Voice Chat       : Quality [10];  Sample Rate: [16000Hz]
+= Bandwidth saving : Maximum with lightweight sync rate of 1500ms
+==================================================================
+[2026-02-18 00:37:37] ERROR: Couldn't find script test.lua for resource dgs
+[2026-02-18 00:37:37] Loading of resource 'dgs' failed
+[2026-02-18 00:37:42] ERROR: Problem with resource: dgs; Couldn't find script test.lua for resource dgs
+[2026-02-18 00:37:42] Resources: 410 loaded, 1 failed
+[2026-02-18 00:37:42] Starting resources...
+[2026-02-18 00:37:42] WARNING: bgo_mysql\server.lua:31: Bad usage @ 'dbConnect' [Client does not support authentication protocol requested by server; consider upgrading MySQL client]
+[2026-02-18 00:37:42] INFO: [mysql]: Banco de dados n?o conectado
+[2026-02-18 00:37:42] Start up of resource bgo_mysql cancelled by script
+[2026-02-18 00:37:42] ERROR: Unable to start resource bgo_mysql; Start up of resource cancelled by script
+[2026-02-18 00:37:42] ERROR: [PASTA-MATURE]\serialVip\serial_vip.lua:2: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:43] Start up of resource bgo_mysql cancelled by script
+[2026-02-18 00:37:43] startResource: Resource 'AtirarHeli' started
+[2026-02-18 00:37:43] startResource: Resource 'BGOBlur' started
+[2026-02-18 00:37:43] startResource: Resource 'Camera' started
+[2026-02-18 00:37:43] startResource: Resource 'CarrodosVIPS' started
+[2026-02-18 00:37:43] startResource: Resource 'DashBGO' started
+[2026-02-18 00:37:43] Server minclientversion is now 1.5.9-9.21652.0
+[2026-02-18 00:37:43] startResource: Resource 'Down-Animation' started
+[2026-02-18 00:37:43] startResource: Resource 'DriftSubaru' started
+[2026-02-18 00:37:43] startResource: Resource 'Ejetar' started
+[2026-02-18 00:37:43] startResource: Resource 'EstLS' started
+[2026-02-18 00:37:43] startResource: Resource 'HELIBLIN' started
+[2026-02-18 00:37:43] startResource: Resource 'HELIVIP' started
+[2026-02-18 00:37:43] WARNING: File 'Dodge.dff' in resource 'Johnny' contains errors.
+[2026-02-18 00:37:43] startResource: Resource 'Johnny' started
+[2026-02-18 00:37:43] startResource: Resource 'JoinQuitGtaV' started
+[2026-02-18 00:37:43] startResource: Resource 'Lombadas' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO01' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO02' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO03' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO04' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO05' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO06' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO07' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO08' started
+[2026-02-18 00:37:43] startResource: Resource 'MAP-FAVELA-BGO10' started
+[2026-02-18 00:37:43] startResource: Resource 'MAPA-Prisao' started
+[2026-02-18 00:37:43] startResource: Resource 'Map-Processador-de-cocaina' started
+[2026-02-18 00:37:43] startResource: Resource 'Mod-Remover_Objetos' started
+[2026-02-18 00:37:43] startResource: Resource 'MotodosVIPS' started
+[2026-02-18 00:37:43] startResource: Resource 'PagamentoSTAFF' started
+[2026-02-18 00:37:43] startResource: Resource 'QG' started
+[2026-02-18 00:37:44] startResource: Resource 'RAM' started
+[2026-02-18 00:37:44] startResource: Resource 'S10' started
+[2026-02-18 00:37:44] startResource: Resource 'STAFFHomem' started
+[2026-02-18 00:37:44] startResource: Resource 'STAFFMulher' started
+[2026-02-18 00:37:44] Resource 'Script_futeis' changed, reloading and starting
+[2026-02-18 00:37:44] startResource: Resource 'Script_futeis' started
+[2026-02-18 00:37:44] startResource: Resource 'TAXI-Mapa' started
+[2026-02-18 00:37:44] WARNING: TXD-PORTA/port1.lua [Client] is encoded in ANSI instead of UTF-8.  Please convert your file to UTF-8.
+[2026-02-18 00:37:44] Some files in 'TXD-PORTA' use deprecated functions.
+[2026-02-18 00:37:44] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:37:44] startResource: Resource 'TXD-PORTA' started
+[2026-02-18 00:37:44] startResource: Resource 'TXD-VIDROS-NAO-DESLIGAR' started
+[2026-02-18 00:37:44] startResource: Resource '[BANCO-BGO]MAP' started
+[2026-02-18 00:37:44] WARNING: [BANCO-BGO]TXD <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.5.6-9.18728 because of 'replace.luac')
+[2026-02-18 00:37:44] WARNING: [BANCO-BGO]TXD requires upgrade as <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.5.6-9.18728 because of 'replace.luac')
+[2026-02-18 00:37:44] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:37:44] startResource: Resource '[BANCO-BGO]TXD' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]BATALHAO-MAP' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]FAVELA-GRANDE' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]Galao' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]PEDBATALHAO' started
+[2026-02-18 00:37:44] WARNING: bgo_mysql\server.lua:31: Bad usage @ 'dbConnect' [Client does not support authentication protocol requested by server; consider upgrading MySQL client]
+[2026-02-18 00:37:44] INFO: [mysql]: Banco de dados n?o conectado
+[2026-02-18 00:37:44] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:73: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:37:44] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:113: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:37:44] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:358: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:37:44] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:362: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:37:44] startResource: Resource '[BGO]REMOVER-FAVELAS' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]REMOVER-OBJ' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]Shop_Open' started
+[2026-02-18 00:37:44] ERROR: [MATURE]\[BGO]Shop_Skin\Server.lua:111: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:44] INFO: Sistema Inicado! (Achievements)
+[2026-02-18 00:37:44] INFO: * Database connected.
+[2026-02-18 00:37:44] startResource: Resource '[BGO]Shop_Skin' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]SkinFAC' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]Sniper' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]SpawnSkinBatalhao' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]portaoFAC' started
+[2026-02-18 00:37:44] startResource: Resource '[BGO]portaobatalhao' started
+[2026-02-18 00:37:44] startResource: Resource '[CRISTO]MAP' started
+[2026-02-18 00:37:44] startResource: Resource '[CRISTO]TXD' started
+[2026-02-18 00:37:44] startResource: Resource '[LOJA]Aero' started
+[2026-02-18 00:37:44] startResource: Resource '[LOJA]Heli' started
+[2026-02-18 00:37:44] startResource: Resource '[LOJA]Praia' started
+[2026-02-18 00:37:44] startResource: Resource '[LV]Banco' started
+[2026-02-18 00:37:44] startResource: Resource '[LV]FixMapLV' started
+[2026-02-18 00:37:44] startResource: Resource '[LV]Hospital' started
+[2026-02-18 00:37:44] startResource: Resource '[LV]Prefeitura' started
+[2026-02-18 00:37:44] startResource: Resource '[MAPA]BancoLV' started
+[2026-02-18 00:37:44] startResource: Resource '[MAPA]BaseDRVV' started
+[2026-02-18 00:37:44] startResource: Resource '[MAPA]BaseResgLV' started
+[2026-02-18 00:37:44] startResource: Resource '[MAPA]Cartorio' started
+[2026-02-18 00:37:44] startResource: Resource '[MAPA]CentroComercial' started
+[2026-02-18 00:37:44] startResource: Resource '[MAPA]Hospital' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]HospitalLV' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]Industria' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]MecETunning' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]NovoLixao' started
+[2026-02-18 00:37:45] WARNING: [FACTION]\[PF]\[MAPA]PF2\Skins.lua:4: Bad argument @ 'addEventHandler' [Expected element at argument 2, got nil]
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]PF2' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]ParqueBGO' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]PedreiroLV' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]PostoCJ' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]PostoCentral' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]PrefLV' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]Prefeitura' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]TrabTaxi' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]TrabalhoGas[off]' started
+[2026-02-18 00:37:45] startResource: Resource '[MAPA]delegacia' started
+[2026-02-18 00:37:45] startResource: Resource '[MTA]Samu' started
+[2026-02-18 00:37:45] startResource: Resource '[PMMG]Blitz' started
+[2026-02-18 00:37:45] startResource: Resource '[RESGATE]PontoBase' started
+[2026-02-18 00:37:45] startResource: Resource '[RESGATE]SpawRoupas' started
+[2026-02-18 00:37:45] startResource: Resource '[SKIN]FemininaPM' started
+[2026-02-18 00:37:45] startResource: Resource '[TESTE]Delegacia' started
+[2026-02-18 00:37:45] startResource: Resource '[TESTE]HOSPITAL' started
+[2026-02-18 00:37:45] startResource: Resource '[TESTE]HOSPITAL1' started
+[2026-02-18 00:37:45] startResource: Resource '[TESTE]HOSPITAL2' started
+[2026-02-18 00:37:45] startResource: Resource '[TESTE]HOSPITAL3' started
+[2026-02-18 00:37:45] startResource: Resource '[mapa]prisaoadmin' started
+[2026-02-18 00:37:45] startResource: Resource '[teste]bgo_traficos' started
+[2026-02-18 00:37:45] startResource: Resource 'admin' started
+[2026-02-18 00:37:45] startResource: Resource 'ajax' started
+[2026-02-18 00:37:45] startResource: Resource 'alek' started
+[2026-02-18 00:37:45] startResource: Resource 'ambu' started
+[2026-02-18 00:37:45] startResource: Resource 'amor_prank' started
+[2026-02-18 00:37:45] startResource: Resource 'atacar-bola' started
+[2026-02-18 00:37:45] ERROR: [MATURE]\[VOICE]\bgoMiner\sourceS.lua:2: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:45] WARNING: [MATURE]\[VOICE]\bgoMiner\sourceS.lua:95: Bad argument @ 'dbQuery' [Expected db-connection at argument 2, got nil]
+[2026-02-18 00:37:45] startResource: Resource 'bgoMiner' started
+[2026-02-18 00:37:45] startResource: Resource 'bgoMinigame' started
+[2026-02-18 00:37:45] startResource: Resource 'bgoWalk' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Animation' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Anuncios' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Cdoor' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Event' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Event2' started
+[2026-02-18 00:37:45] Resource 'bgo_Level' changed, reloading and starting
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Level' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Logs' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Mapacrime' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Mask' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Painel-Musica' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Pedagio' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_PilotoAutomatico' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_Symbol' started
+[2026-02-18 00:37:45] startResource: Resource 'bgo_academia' started
+[2026-02-18 00:37:46] ERROR: bgo_accounts\Szerver.lua:3: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:46] startResource: Resource 'bgo_accounts' started
+[2026-02-18 00:37:46] ERROR: [PASTA-MATURE]\bgo_admin\codeServer.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:46] startResource: Resource 'bgo_admin' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_adminchat' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_ajuda' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_anims' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_anims2' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_assalto-itau' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_assalto-lojanovo' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_assalto-roupa' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_assaltos' started
+[2026-02-18 00:37:46] ERROR: bgo_bank\server\charS.lua:15: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:46] WARNING: bgo_bank\server\charS.lua:597: Bad argument @ 'dbQuery' [Expected db-connection at argument 1, got nil]
+[2026-02-18 00:37:46] WARNING: bgo_bank\server\charS.lua:598: Bad argument @ 'dbPoll' [Expected db-query at argument 1, got boolean]
+[2026-02-18 00:37:46] ERROR: bgo_bank\server\charS.lua:599: bad argument #1 to 'ipairs' (table expected, got boolean)
+[2026-02-18 00:37:46] startResource: Resource 'bgo_bank' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_blips' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_blur' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_busdriver' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_busrodoviario' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_cadeira' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_caixa' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_caixaDourada' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_caixaPatriota' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_cardporte' started
+[2026-02-18 00:37:46] ERROR: [SHOPVEICULO]\bgo_carshop\sourceS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:46] startResource: Resource 'bgo_carshop' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_casas' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_chamada' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_chat' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_color' started
+[2026-02-18 00:37:46] ERROR: [Scripts-Mature]\bgo_consult\sMature.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:46] startResource: Resource 'bgo_consult' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_cont' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_core' started
+[2026-02-18 00:37:46] ERROR: [FACTION]\bgo_dashboard\exServer.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:46] WARNING: bgo_mysql\server.lua:31: Bad usage @ 'dbConnect' [Client does not support authentication protocol requested by server; consider upgrading MySQL client]
+[2026-02-18 00:37:46] INFO: [mysql]: Banco de dados n?o conectado
+[2026-02-18 00:37:46] Start up of resource bgo_mysql cancelled by script
+[2026-02-18 00:37:46] WARNING: [FACTION]\bgo_dashboard\exServer.lua:531: Bad argument @ 'dbQuery' [Expected db-connection at argument 3, got nil]
+[2026-02-18 00:37:46] startResource: Resource 'bgo_dashboard' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_death' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_defaultstats' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_detran' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_dinheirosujo' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_discordlogs' started
+[2026-02-18 00:37:46] startResource: Resource 'bgo_dn' started
+[2026-02-18 00:37:48] Resource 'bgo_downloadcompac' changed, reloading and starting
+[2026-02-18 00:37:49] WARNING: File 'mods/vehicles/Outlander.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[CV]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[MLC]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[RODO]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[TCP]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[BOPE]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[UPP]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[FN]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[PC]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[RECOM]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[Correio]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[SKIN]Mulher13R.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] WARNING: File 'mods/skins/[SKIN]Mulher14R.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:1 - BRASILIAR!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:2 - GOL QUADRADO!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:3 - Chevete!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:4 - Golf GTI!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:5 - Toro!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:6 - Jeep!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:7 - Lamborghini!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:8 - Outlander!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:9 - Mercedes!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:10 - Sonata!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:11 - Capitiva!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:12 - Dodge!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:13 - Camaro!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:14 - Ferrari!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:15 - BMWX6!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:16 - AudiR8!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:17 - Titan!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:18 - KOMBI!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:19 - Veloster!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:20 - H2R!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:21 - XJ6!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:22 - HELICOPTEROPOLICIA!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:23 - MOTOPOLICIA!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:24 - HSAMU!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:25 - VAN!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:26 - LIXEIROR!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:27 - taxiR!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #1:28 - mecanicoR!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #2:1 - [ADA]SkinR!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #2:2 - [BDM]SkinR!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #2:3 - [BDM]SkinFR!
+[2026-02-18 00:37:49] INFO: Successfully loaded mod #2:4 - [CV]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:5 - [FDN]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:6 - [MLC]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:7 - [MLC]SkinFR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:8 - [ODR]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:9 - [PCC]skinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:10 - [RODO]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:11 - [TCP]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:12 - [BOPE]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:13 - [CHOQUE]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:14 - [EB]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:15 - [UPP]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:16 - [GTM]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:17 - [FN]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:18 - [PC]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:19 - [RECOM]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:20 - [FUZ]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:21 - [RP1]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:22 - [RP2]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:23 - [RP3]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:24 - [SAMU]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:25 - [SAMUF]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:26 - [PF]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:27 - [DRVV]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:28 - [Correio]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:29 - [PIZZA]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:30 - [GAS]SkinR!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:31 - [SKIN]Mulher1!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:32 - [SKIN]Mulher2!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:33 - [SKIN]Mulher3!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:34 - [SKIN]Mulher4!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:35 - [SKIN]Mulher5!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:36 - [SKIN]Mulher6!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:37 - [SKIN]Mulher7!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:38 - [SKIN]Mulher8!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:39 - [SKIN]Mulher9!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:40 - [SKIN]Mulher10!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:41 - [SKIN]Mulher11!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:42 - [SKIN]Mulher12!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:43 - [SKIN]Mulher13!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:44 - [SKIN]Mulher14!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:45 - [SKIN]Mulher15!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:46 - [SKIN]Mulher16!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:47 - [SKIN]Mulher17!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:48 - [SKIN]Mulher18!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:49 - [SKIN]Mulher19!
+[2026-02-18 00:37:50] INFO: Successfully loaded mod #2:50 - [SKIN]Mulher20!
+[2026-02-18 00:37:51] startResource: Resource 'bgo_downloadcompac' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_droga' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_eletricista' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_empgaso' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_employTable' started
+[2026-02-18 00:37:51] Resource 'bgo_employment' changed, reloading and starting
+[2026-02-18 00:37:51] startResource: Resource 'bgo_employment' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_esgosto' started
+[2026-02-18 00:37:51] ERROR: [FACTION]\bgo_factions\sourceS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:51] startResource: Resource 'bgo_factions' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_farmacia' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_fegyverPJ' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_fightstyle' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_fishing' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_freezeVeh' started
+[2026-02-18 00:37:51] ERROR: [GASOLINA]\bgo_fuel2\ex_Server.lua:6: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:51] WARNING: [GASOLINA]\bgo_fuel2\ex_Server.lua:517: Bad argument @ 'dbQuery' [Expected db-connection at argument 1, got nil]
+[2026-02-18 00:37:51] WARNING: [GASOLINA]\bgo_fuel2\ex_Server.lua:518: Bad argument @ 'dbPoll' [Expected db-query at argument 1, got boolean]
+[2026-02-18 00:37:51] ERROR: [GASOLINA]\bgo_fuel2\ex_Server.lua:519: bad argument #1 to 'ipairs' (table expected, got boolean)
+[2026-02-18 00:37:51] startResource: Resource 'bgo_fuel2' started
+[2026-02-18 00:37:51] ERROR: [GARAGEM]\bgo_garagem\mainS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:51] startResource: Resource 'bgo_garagem' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_garagemHELI' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_gas' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_gasolina2' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_generatekey' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_handling' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_handvip' started
+[2026-02-18 00:37:51] ERROR: [SHOPVEICULO]\bgo_helishop\sourceS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:51] startResource: Resource 'bgo_helishop' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_house' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_hud' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_identidade' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_info' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_infobox' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_informa' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_infos' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_int' started
+[2026-02-18 00:37:51] ERROR: [TESTES]\bgo_items\sourceS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:51] WARNING: [TESTES]\bgo_items\sourceS.lua:32: Bad argument @ 'dbQuery' [Expected db-connection at argument 2, got nil]
+[2026-02-18 00:37:51] WARNING: [TESTES]\bgo_items\sourceS.lua:797: Bad argument @ 'dbQuery' [Expected db-connection at argument 2, got nil]
+[2026-02-18 00:37:51] WARNING: [TESTES]\bgo_items\sourceS.lua:1235: Bad argument @ 'dbQuery' [Expected db-connection at argument 2, got nil]
+[2026-02-18 00:37:51] startResource: Resource 'bgo_items' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_jetdoor' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_jobs' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_jobs-especiais' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_jobsLS' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_jumplimit' started
+[2026-02-18 00:37:51] Resource 'bgo_km' changed, reloading and starting
+[2026-02-18 00:37:51] ERROR: bgo_km\saver_s.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:51] startResource: Resource 'bgo_km' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_levelup' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_liberarDRVV' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_license' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_limparchat' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_loadscream' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_localchat' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_lockpick' started
+[2026-02-18 00:37:51] startResource: Resource 'bgo_logo' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_lojaCabelo' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_lojaRoupa' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_mailcarrier' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_map_int' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_maps' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_mech' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_mechanic' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_medic' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_mensagens' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_mochila' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_models2' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_motobug' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_municoes' started
+[2026-02-18 00:37:52] WARNING: bgo_mysql\server.lua:31: Bad usage @ 'dbConnect' [Client does not support authentication protocol requested by server; consider upgrading MySQL client]
+[2026-02-18 00:37:52] INFO: [mysql]: Banco de dados n?o conectado
+[2026-02-18 00:37:52] Start up of resource bgo_mysql cancelled by script
+[2026-02-18 00:37:52] startResource: Failed to start resource 'bgo_mysql'
+[2026-02-18 00:37:52] startResource: Resource 'bgo_name' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_nameRadinho' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_nameSTAFF' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_noti' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_novidades' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_paintjob' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_parede2' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_passaporte' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_pedreiro' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_pegarmaca' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_pizzaDelivery' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_placadetran' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_placadetran2' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_placahosp' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_playerclick' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_portamalas' started
+[2026-02-18 00:37:52] ERROR: [FACTION]\bgo_portaocadeia\sMature.lua:185: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:52] startResource: Resource 'bgo_portaocadeia' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_porte' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_premiodia' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_premiumshop' started
+[2026-02-18 00:37:52] ERROR: [FACTION]\bgo_prisaoLV\sMature.lua:3: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:52] WARNING: [FACTION]\bgo_prisaoLV\sMature.lua:444: Bad argument @ 'addEventHandler' [Expected function at argument 3, got nil]
+[2026-02-18 00:37:52] startResource: Resource 'bgo_prisaoLV' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_progressbar' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_quebrarveiculo' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_realname' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_reload' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_rentalTable' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_rentals' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_resetcj' started
+[2026-02-18 00:37:52] ERROR: bgo_saveP\codeServer.lua:2: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:52] startResource: Resource 'bgo_saveP' started
+[2026-02-18 00:37:52] ERROR: [TESTES]\bgo_shop\sourceS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:52] WARNING: [TESTES]\bgo_shop\sourceS.lua:27: Bad argument @ 'dbQuery' [Expected db-connection at argument 2, got nil]
+[2026-02-18 00:37:52] startResource: Resource 'bgo_shop' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_shopmenu' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_siren' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_sistemaMecanico' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_sistemaMedico' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_sistemafacs' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_sombraoff' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_step' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_taser' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_taxiclock' started
+[2026-02-18 00:37:52] ERROR: [EMPREGOS]\bgo_trafi\sourceS.lua:4: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:52] startResource: Resource 'bgo_trafi' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_trainDriver' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_transportedegasolina' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_transportedevalores' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_trashCollector' started
+[2026-02-18 00:37:52] startResource: Resource 'bgo_trash[OFF]' started
+[2026-02-18 00:37:52] ERROR: [SHOPVEICULO]\bgo_tuning\exServer.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:52] startResource: Resource 'bgo_tuning' started
+[2026-02-18 00:37:53] startResource: Resource 'bgo_txdpscinao' started
+[2026-02-18 00:37:53] startResource: Resource 'bgo_util' started
+[2026-02-18 00:37:53] ERROR: [SHOPVEICULO]\bgo_vehicle\sourceS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:53] INFO: Carregamento de veículos em andamento...
+[2026-02-18 00:37:53] WARNING: [SHOPVEICULO]\bgo_vehicle\sourceS.lua:112: Bad argument @ 'dbQuery' [Expected db-connection at argument 1, got nil]
+[2026-02-18 00:37:53] WARNING: [SHOPVEICULO]\bgo_vehicle\sourceS.lua:113: Bad argument @ 'dbPoll' [Expected db-query at argument 1, got boolean]
+[2026-02-18 00:37:53] startResource: Resource 'bgo_vehicle' started
+[2026-02-18 00:37:53] startResource: Resource 'bgo_vehicle_radio' started
+[2026-02-18 00:37:53] startResource: Resource 'bgo_vehtrabalhos' started
+[2026-02-18 00:37:53] ERROR: bgo_vendas\sourceS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:53] startResource: Resource 'bgo_vendas' started
+[2026-02-18 00:37:53] startResource: Resource 'bgo_voice' started
+[2026-02-18 00:37:53] startResource: Resource 'bgo_wheels' started
+[2026-02-18 00:37:53] startResource: Resource 'bgo_wmods' started
+[2026-02-18 00:37:53] startResource: Resource 'bluescreen_prank' started
+[2026-02-18 00:37:53] startResource: Resource 'bone_attach' started
+[2026-02-18 00:37:53] startResource: Resource 'cadeira-rodas' started
+[2026-02-18 00:37:53] startResource: Resource 'camera-mira' started
+[2026-02-18 00:37:53] startResource: Resource 'caminhaogasolina' started
+[2026-02-18 00:37:53] startResource: Resource 'cargodmode' started
+[2026-02-18 00:37:53] startResource: Resource 'caverna' started
+[2026-02-18 00:37:53] startResource: Resource 'cena' started
+[2026-02-18 00:37:53] startResource: Resource 'crackpalace' started
+[2026-02-18 00:37:53] WARNING: dan/animations-client.lua [Client] is encoded in ANSI instead of UTF-8.  Please convert your file to UTF-8.
+[2026-02-18 00:37:53] WARNING: dan/animations-client.lua(Line 57) [Client] isPlayerDead is deprecated and may not work in future versions. Please replace with isPedDead.
+[2026-02-18 00:37:53] Some files in 'dan' use deprecated functions.
+[2026-02-18 00:37:53] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:37:53] startResource: Resource 'dan' started
+[2026-02-18 00:37:53] startResource: Resource 'dances' started
+[2026-02-18 00:37:53] startResource: Resource 'desmanche' started
+[2026-02-18 00:37:53] WARNING: startResources\server.lua:44: Failed to start resource 'dgs': Couldn't find script test.lua for resource dgs
+[2026-02-18 00:37:53] ERROR: [PASTA-MATURE]\discord\app.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:53] WARNING: bgo_mysql\server.lua:31: Bad usage @ 'dbConnect' [Client does not support authentication protocol requested by server; consider upgrading MySQL client]
+[2026-02-18 00:37:53] INFO: [mysql]: Banco de dados n?o conectado
+[2026-02-18 00:37:53] Start up of resource bgo_mysql cancelled by script
+[2026-02-18 00:37:53] startResource: Resource 'discord' started
+[2026-02-18 00:37:53] startResource: Resource 'furar-pneu' started
+[2026-02-18 00:37:53] startResource: Resource 'furgao' started
+[2026-02-18 00:37:53] startResource: Resource 'global' started
+[2026-02-18 00:37:53] startResource: Resource 'ipb' started
+[2026-02-18 00:37:53] startResource: Resource 'johncena-troll' started
+[2026-02-18 00:37:53] startResource: Resource 'logs' started
+[2026-02-18 00:37:53] startResource: Resource 'maleta' started
+[2026-02-18 00:37:53] INFO: Banco de dados do celular ligado com sucesso
+[2026-02-18 00:37:53] INFO: Banco de dados 2 do celular ligado com sucesso
+[2026-02-18 00:37:53] INFO: Banco de dados do BGOZAP ligado com sucesso
+[2026-02-18 00:37:53] startResource: Resource 'mta_phone' started
+[2026-02-18 00:37:53] startResource: Resource 'noite' started
+[2026-02-18 00:37:53] startResource: Resource 'norecoil' started
+[2026-02-18 00:37:53] startResource: Resource 'object_preview' started
+[2026-02-18 00:37:53] startResource: Resource 'painel-troll' started
+[2026-02-18 00:37:53] startResource: Resource 'parachute' started
+[2026-02-18 00:37:53] startResource: Resource 'performancebrowser' started
+[2026-02-18 00:37:53] ERROR: [TESTANDO]\placa\Server.lua:2: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:53] WARNING: bgo_mysql\server.lua:31: Bad usage @ 'dbConnect' [Client does not support authentication protocol requested by server; consider upgrading MySQL client]
+[2026-02-18 00:37:53] INFO: [mysql]: Banco de dados n?o conectado
+[2026-02-18 00:37:53] Start up of resource bgo_mysql cancelled by script
+[2026-02-18 00:37:53] startResource: Resource 'placa' started
+[2026-02-18 00:37:53] startResource: Resource 'pos' started
+[2026-02-18 00:37:53] startResource: Resource 'putas' started
+[2026-02-18 00:37:54] Please wait...
+[2026-02-18 00:37:54] Please wait...
+[2026-02-18 00:37:54] startResource: Resource 'radarNovo' started
+[2026-02-18 00:37:54] startResource: Resource 'radio-praca' started
+[2026-02-18 00:37:54] startResource: Resource 'rayos' started
+[2026-02-18 00:37:54] startResource: Resource 'render' started
+[2026-02-18 00:37:54] startResource: Resource 'rentalTableVIP' started
+[2026-02-18 00:37:54] startResource: Resource 'rentalsVIP' started
+[2026-02-18 00:37:54] startResource: Resource 'roupas' started
+[2026-02-18 00:37:54] startResource: Resource 'sangue' started
+[2026-02-18 00:37:54] WARNING: tempo\server.lua:102: Expected positive value, got negative. This warning may be an error in future versions.
+[2026-02-18 00:37:54] INFO: Hora Real: 0:37
+[2026-02-18 00:37:54] INFO: Servidor: : -2:37
+[2026-02-18 00:37:54] startResource: Resource 'tempo' started
+[2026-02-18 00:37:54] startResource: Resource 'trafi' started
+[2026-02-18 00:37:54] startResource: Resource 'trailer_fixed' started
+[2026-02-18 00:37:54] startResource: Resource 'trailer_mod' started
+[2026-02-18 00:37:54] startResource: Resource 'tubaroes' started
+[2026-02-18 00:37:54] startResource: Resource 'vansedex' started
+[2026-02-18 00:37:54] startResource: Resource 'velocimetro' started
+[2026-02-18 00:37:54] startResource: Resource 'voiceS' started
+[2026-02-18 00:37:54] startResource: Resource 'zoneedit' started
+[2026-02-18 00:37:54] Querying MTA master server... success! (Auto detected IP:191.8.231.146)
+[2026-02-18 00:37:54] Authorized serial account protection is DISABLED. See http://mtasa.com/authserial
+[2026-02-18 00:37:54] WARNING: <owner_email_address> not set
+[2026-02-18 00:37:54] Server started and is ready to accept connections!
+[2026-02-18 00:37:54] To stop the server, type 'shutdown' or press Ctrl-C
+[2026-02-18 00:37:54] Type 'help' for a list of commands.
+[2026-02-18 00:37:55] Stopping bgo_shop
+[2026-02-18 00:37:55] Starting bgo_shop
+[2026-02-18 00:37:55] ERROR: [TESTES]\bgo_shop\sourceS.lua:1: exports: Call to non-running server resource (bgo_mysql) [string "?"]
+[2026-02-18 00:37:55] WARNING: [TESTES]\bgo_shop\sourceS.lua:27: Bad argument @ 'dbQuery' [Expected db-connection at argument 2, got nil]
+[2026-02-18 00:37:55] bgo_shop restarted successfully
+[2026-02-18 00:38:59] CONNECT: PoliticalSky44 connected (IP: 127.0.0.1  Serial: A11FCEF6AFEE4BC6D0A43CEA52D5E05E  Version: 1.5.9-9.21652.0)
+[2026-02-18 00:39:00] JOIN: PoliticalSky44 joined the game (IP: 127.0.0.1)
+[2026-02-18 00:39:16] bgo_accounts\Szerver.lua:130: PoliticalSky44 Entrou na fila 1!
+[2026-02-18 00:39:20] WARNING: bgo_accounts\Szerver.lua:160: Bad argument @ 'dbQuery' [Expected db-connection at argument 2, got nil]
+[2026-02-18 00:39:20] bgo_accounts\Szerver.lua:69: Aviso: PoliticalSky44 acaba de sair da fila de espera!
+[2026-02-18 00:40:55] Resource 'dgs' changed, reloading
+[2026-02-18 00:40:55] ERROR: Couldn't find script test.lua for resource dgs
+[2026-02-18 00:40:55] Loading of resource 'dgs' failed
+[2026-02-18 00:40:55] ERROR: Problem with resource: dgs; Couldn't find script test.lua for resource dgs
+[2026-02-18 00:40:55] Resources: 410 loaded, 1 failed
+[2026-02-18 00:41:03] restart: Requested by Console
+[2026-02-18 00:41:03] restart: Resource is not running
+[2026-02-18 00:41:13] QUIT: PoliticalSky44 left the game [Quit]
+==================================================================
+= Multi Theft Auto: San Andreas v1.5.8
+==================================================================
+= Server name      : BGO RIO | Brasil Gaming Online ~ RPVP   EM BREVE! ~
+= Server IP address: auto
+= Server port      : 22003
+= 
+= Log file         : ..-rio/server/mods/deathmatch/logs/server.log
+= Maximum players  : 2021
+= HTTP port        : 22006
+= Voice Chat       : Quality [10];  Sample Rate: [16000Hz]
+= Bandwidth saving : Maximum with lightweight sync rate of 1500ms
+==================================================================
+[2026-02-18 00:41:23] ERROR: Couldn't find script test.lua for resource dgs
+[2026-02-18 00:41:23] Loading of resource 'dgs' failed
+[2026-02-18 00:41:24] ERROR: Problem with resource: dgs; Couldn't find script test.lua for resource dgs
+[2026-02-18 00:41:24] Resources: 410 loaded, 1 failed
+[2026-02-18 00:41:24] Starting resources...
+[2026-02-18 00:41:24] INFO: [mysql]: Banco de dados conectado RIO!
+[2026-02-18 00:41:24] Server minclientversion is now 1.5.9-9.21652.0
+[2026-02-18 00:41:24] startResource: Resource 'AtirarHeli' started
+[2026-02-18 00:41:24] startResource: Resource 'BGOBlur' started
+[2026-02-18 00:41:24] startResource: Resource 'Camera' started
+[2026-02-18 00:41:24] startResource: Resource 'CarrodosVIPS' started
+[2026-02-18 00:41:24] startResource: Resource 'DashBGO' started
+[2026-02-18 00:41:24] startResource: Resource 'Down-Animation' started
+[2026-02-18 00:41:24] startResource: Resource 'DriftSubaru' started
+[2026-02-18 00:41:24] startResource: Resource 'Ejetar' started
+[2026-02-18 00:41:24] startResource: Resource 'EstLS' started
+[2026-02-18 00:41:25] startResource: Resource 'HELIBLIN' started
+[2026-02-18 00:41:25] startResource: Resource 'HELIVIP' started
+[2026-02-18 00:41:25] WARNING: File 'Dodge.dff' in resource 'Johnny' contains errors.
+[2026-02-18 00:41:25] startResource: Resource 'Johnny' started
+[2026-02-18 00:41:25] startResource: Resource 'JoinQuitGtaV' started
+[2026-02-18 00:41:25] startResource: Resource 'Lombadas' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO01' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO02' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO03' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO04' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO05' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO06' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO07' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO08' started
+[2026-02-18 00:41:25] startResource: Resource 'MAP-FAVELA-BGO10' started
+[2026-02-18 00:41:25] startResource: Resource 'MAPA-Prisao' started
+[2026-02-18 00:41:25] startResource: Resource 'Map-Processador-de-cocaina' started
+[2026-02-18 00:41:25] startResource: Resource 'Mod-Remover_Objetos' started
+[2026-02-18 00:41:25] startResource: Resource 'MotodosVIPS' started
+[2026-02-18 00:41:25] startResource: Resource 'PagamentoSTAFF' started
+[2026-02-18 00:41:25] startResource: Resource 'QG' started
+[2026-02-18 00:41:25] startResource: Resource 'RAM' started
+[2026-02-18 00:41:25] startResource: Resource 'S10' started
+[2026-02-18 00:41:25] startResource: Resource 'STAFFHomem' started
+[2026-02-18 00:41:25] startResource: Resource 'STAFFMulher' started
+[2026-02-18 00:41:25] Resource 'Script_futeis' changed, reloading and starting
+[2026-02-18 00:41:25] startResource: Resource 'Script_futeis' started
+[2026-02-18 00:41:25] startResource: Resource 'TAXI-Mapa' started
+[2026-02-18 00:41:25] WARNING: TXD-PORTA/port1.lua [Client] is encoded in ANSI instead of UTF-8.  Please convert your file to UTF-8.
+[2026-02-18 00:41:25] Some files in 'TXD-PORTA' use deprecated functions.
+[2026-02-18 00:41:25] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:41:25] startResource: Resource 'TXD-PORTA' started
+[2026-02-18 00:41:25] startResource: Resource 'TXD-VIDROS-NAO-DESLIGAR' started
+[2026-02-18 00:41:25] startResource: Resource '[BANCO-BGO]MAP' started
+[2026-02-18 00:41:26] WARNING: [BANCO-BGO]TXD <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.5.6-9.18728 because of 'replace.luac')
+[2026-02-18 00:41:26] WARNING: [BANCO-BGO]TXD requires upgrade as <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.5.6-9.18728 because of 'replace.luac')
+[2026-02-18 00:41:26] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:41:26] startResource: Resource '[BANCO-BGO]TXD' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]BATALHAO-MAP' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]FAVELA-GRANDE' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]Galao' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]PEDBATALHAO' started
+[2026-02-18 00:41:26] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:73: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:41:26] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:113: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:41:26] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:358: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:41:26] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:362: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:41:26] startResource: Resource '[BGO]REMOVER-FAVELAS' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]REMOVER-OBJ' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]Shop_Open' started
+[2026-02-18 00:41:26] INFO: Sistema Inicado! (Achievements)
+[2026-02-18 00:41:26] INFO: * Database connected.
+[2026-02-18 00:41:26] startResource: Resource '[BGO]Shop_Skin' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]SkinFAC' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]Sniper' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]SpawnSkinBatalhao' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]portaoFAC' started
+[2026-02-18 00:41:26] startResource: Resource '[BGO]portaobatalhao' started
+[2026-02-18 00:41:26] startResource: Resource '[CRISTO]MAP' started
+[2026-02-18 00:41:26] startResource: Resource '[CRISTO]TXD' started
+[2026-02-18 00:41:26] startResource: Resource '[LOJA]Aero' started
+[2026-02-18 00:41:26] startResource: Resource '[LOJA]Heli' started
+[2026-02-18 00:41:26] startResource: Resource '[LOJA]Praia' started
+[2026-02-18 00:41:26] startResource: Resource '[LV]Banco' started
+[2026-02-18 00:41:26] startResource: Resource '[LV]FixMapLV' started
+[2026-02-18 00:41:26] startResource: Resource '[LV]Hospital' started
+[2026-02-18 00:41:26] startResource: Resource '[LV]Prefeitura' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]BancoLV' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]BaseDRVV' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]BaseResgLV' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]Cartorio' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]CentroComercial' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]Hospital' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]HospitalLV' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]Industria' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]MecETunning' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]NovoLixao' started
+[2026-02-18 00:41:26] WARNING: [FACTION]\[PF]\[MAPA]PF2\Skins.lua:4: Bad argument @ 'addEventHandler' [Expected element at argument 2, got nil]
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]PF2' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]ParqueBGO' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]PedreiroLV' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]PostoCJ' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]PostoCentral' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]PrefLV' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]Prefeitura' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]TrabTaxi' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]TrabalhoGas[off]' started
+[2026-02-18 00:41:26] startResource: Resource '[MAPA]delegacia' started
+[2026-02-18 00:41:26] startResource: Resource '[MTA]Samu' started
+[2026-02-18 00:41:26] startResource: Resource '[PMMG]Blitz' started
+[2026-02-18 00:41:26] startResource: Resource '[RESGATE]PontoBase' started
+[2026-02-18 00:41:26] startResource: Resource '[RESGATE]SpawRoupas' started
+[2026-02-18 00:41:26] startResource: Resource '[SKIN]FemininaPM' started
+[2026-02-18 00:41:26] startResource: Resource '[TESTE]Delegacia' started
+[2026-02-18 00:41:26] startResource: Resource '[TESTE]HOSPITAL' started
+[2026-02-18 00:41:26] startResource: Resource '[TESTE]HOSPITAL1' started
+[2026-02-18 00:41:26] startResource: Resource '[TESTE]HOSPITAL2' started
+[2026-02-18 00:41:26] startResource: Resource '[TESTE]HOSPITAL3' started
+[2026-02-18 00:41:26] startResource: Resource '[mapa]prisaoadmin' started
+[2026-02-18 00:41:26] startResource: Resource '[teste]bgo_traficos' started
+[2026-02-18 00:41:27] startResource: Resource 'admin' started
+[2026-02-18 00:41:27] startResource: Resource 'ajax' started
+[2026-02-18 00:41:27] startResource: Resource 'alek' started
+[2026-02-18 00:41:27] startResource: Resource 'ambu' started
+[2026-02-18 00:41:27] startResource: Resource 'amor_prank' started
+[2026-02-18 00:41:27] startResource: Resource 'atacar-bola' started
+[2026-02-18 00:41:27] startResource: Resource 'bgoMiner' started
+[2026-02-18 00:41:27] startResource: Resource 'bgoMinigame' started
+[2026-02-18 00:41:27] startResource: Resource 'bgoWalk' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Animation' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Anuncios' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Cdoor' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Event' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Event2' started
+[2026-02-18 00:41:27] Resource 'bgo_Level' changed, reloading and starting
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Level' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Logs' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Mapacrime' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Mask' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Painel-Musica' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Pedagio' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_PilotoAutomatico' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_Symbol' started
+[2026-02-18 00:41:27] startResource: Resource 'bgo_academia' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_accounts' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_admin' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_adminchat' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_ajuda' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_anims' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_anims2' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_assalto-itau' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_assalto-lojanovo' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_assalto-roupa' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_assaltos' started
+[2026-02-18 00:41:28] WARNING: bgo_bank\server\charS.lua:598: dbPoll failed; Table 's30_bgo.atms' doesn't exist
+[2026-02-18 00:41:28] ERROR: bgo_bank\server\charS.lua:599: bad argument #1 to 'ipairs' (table expected, got boolean)
+[2026-02-18 00:41:28] startResource: Resource 'bgo_bank' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_blips' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_blur' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_busdriver' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_busrodoviario' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_cadeira' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_caixa' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_caixaDourada' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_caixaPatriota' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_cardporte' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_carshop' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_casas' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_chamada' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_chat' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_color' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_consult' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_cont' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_core' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_dashboard' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_death' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_defaultstats' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_detran' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_dinheirosujo' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_discordlogs' started
+[2026-02-18 00:41:28] startResource: Resource 'bgo_dn' started
+[2026-02-18 00:41:31] Resource 'bgo_downloadcompac' changed, reloading and starting
+[2026-02-18 00:41:31] WARNING: File 'mods/vehicles/Outlander.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[CV]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[MLC]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[RODO]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[TCP]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[BOPE]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[UPP]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[FN]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[PC]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[RECOM]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[Correio]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[SKIN]Mulher13R.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] WARNING: File 'mods/skins/[SKIN]Mulher14R.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:1 - BRASILIAR!
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:2 - GOL QUADRADO!
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:3 - Chevete!
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:4 - Golf GTI!
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:5 - Toro!
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:6 - Jeep!
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:7 - Lamborghini!
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:8 - Outlander!
+[2026-02-18 00:41:31] INFO: Successfully loaded mod #1:9 - Mercedes!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:10 - Sonata!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:11 - Capitiva!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:12 - Dodge!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:13 - Camaro!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:14 - Ferrari!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:15 - BMWX6!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:16 - AudiR8!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:17 - Titan!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:18 - KOMBI!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:19 - Veloster!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:20 - H2R!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:21 - XJ6!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:22 - HELICOPTEROPOLICIA!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:23 - MOTOPOLICIA!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:24 - HSAMU!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:25 - VAN!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:26 - LIXEIROR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:27 - taxiR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #1:28 - mecanicoR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:1 - [ADA]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:2 - [BDM]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:3 - [BDM]SkinFR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:4 - [CV]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:5 - [FDN]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:6 - [MLC]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:7 - [MLC]SkinFR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:8 - [ODR]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:9 - [PCC]skinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:10 - [RODO]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:11 - [TCP]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:12 - [BOPE]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:13 - [CHOQUE]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:14 - [EB]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:15 - [UPP]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:16 - [GTM]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:17 - [FN]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:18 - [PC]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:19 - [RECOM]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:20 - [FUZ]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:21 - [RP1]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:22 - [RP2]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:23 - [RP3]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:24 - [SAMU]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:25 - [SAMUF]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:26 - [PF]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:27 - [DRVV]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:28 - [Correio]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:29 - [PIZZA]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:30 - [GAS]SkinR!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:31 - [SKIN]Mulher1!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:32 - [SKIN]Mulher2!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:33 - [SKIN]Mulher3!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:34 - [SKIN]Mulher4!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:35 - [SKIN]Mulher5!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:36 - [SKIN]Mulher6!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:37 - [SKIN]Mulher7!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:38 - [SKIN]Mulher8!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:39 - [SKIN]Mulher9!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:40 - [SKIN]Mulher10!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:41 - [SKIN]Mulher11!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:42 - [SKIN]Mulher12!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:43 - [SKIN]Mulher13!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:44 - [SKIN]Mulher14!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:45 - [SKIN]Mulher15!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:46 - [SKIN]Mulher16!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:47 - [SKIN]Mulher17!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:48 - [SKIN]Mulher18!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:49 - [SKIN]Mulher19!
+[2026-02-18 00:41:32] INFO: Successfully loaded mod #2:50 - [SKIN]Mulher20!
+[2026-02-18 00:41:33] startResource: Resource 'bgo_downloadcompac' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_droga' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_eletricista' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_empgaso' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_employTable' started
+[2026-02-18 00:41:33] Resource 'bgo_employment' changed, reloading and starting
+[2026-02-18 00:41:33] startResource: Resource 'bgo_employment' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_esgosto' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_factions' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_farmacia' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_fegyverPJ' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_fightstyle' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_fishing' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_freezeVeh' started
+[2026-02-18 00:41:33] WARNING: [GASOLINA]\bgo_fuel2\ex_Server.lua:518: dbPoll failed; Table 's30_bgo.fuels' doesn't exist
+[2026-02-18 00:41:33] ERROR: [GASOLINA]\bgo_fuel2\ex_Server.lua:519: bad argument #1 to 'ipairs' (table expected, got boolean)
+[2026-02-18 00:41:33] startResource: Resource 'bgo_fuel2' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_garagem' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_garagemHELI' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_gas' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_gasolina2' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_generatekey' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_handling' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_handvip' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_helishop' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_house' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_hud' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_identidade' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_info' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_infobox' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_informa' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_infos' started
+[2026-02-18 00:41:33] startResource: Resource 'bgo_int' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_items' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_jetdoor' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_jobs' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_jobs-especiais' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_jobsLS' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_jumplimit' started
+[2026-02-18 00:41:34] Resource 'bgo_km' changed, reloading and starting
+[2026-02-18 00:41:34] startResource: Resource 'bgo_km' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_levelup' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_liberarDRVV' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_license' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_limparchat' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_loadscream' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_localchat' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_lockpick' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_logo' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_lojaCabelo' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_lojaRoupa' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_mailcarrier' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_map_int' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_maps' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_mech' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_mechanic' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_medic' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_mensagens' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_mochila' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_models2' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_motobug' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_municoes' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_name' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_nameRadinho' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_nameSTAFF' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_noti' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_novidades' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_paintjob' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_parede2' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_passaporte' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_pedreiro' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_pegarmaca' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_pizzaDelivery' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_placadetran' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_placadetran2' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_placahosp' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_playerclick' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_portamalas' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_portaocadeia' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_porte' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_premiodia' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_premiumshop' started
+[2026-02-18 00:41:34] WARNING: [FACTION]\bgo_prisaoLV\sMature.lua:444: Bad argument @ 'addEventHandler' [Expected function at argument 3, got nil]
+[2026-02-18 00:41:34] startResource: Resource 'bgo_prisaoLV' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_progressbar' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_quebrarveiculo' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_realname' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_reload' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_rentalTable' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_rentals' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_resetcj' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_saveP' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_shop' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_shopmenu' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_siren' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_sistemaMecanico' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_sistemaMedico' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_sistemafacs' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_sombraoff' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_step' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_taser' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_taxiclock' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_trafi' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_trainDriver' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_transportedegasolina' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_transportedevalores' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_trashCollector' started
+[2026-02-18 00:41:34] startResource: Resource 'bgo_trash[OFF]' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_tuning' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_txdpscinao' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_util' started
+[2026-02-18 00:41:35] INFO: Carregamento de veículos em andamento...
+[2026-02-18 00:41:35] WARNING: [SHOPVEICULO]\bgo_vehicle\sourceS.lua:113: dbPoll failed; Table 's30_bgo.vehicle' doesn't exist
+[2026-02-18 00:41:35] startResource: Resource 'bgo_vehicle' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_vehicle_radio' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_vehtrabalhos' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_vendas' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_voice' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_wheels' started
+[2026-02-18 00:41:35] startResource: Resource 'bgo_wmods' started
+[2026-02-18 00:41:35] startResource: Resource 'bluescreen_prank' started
+[2026-02-18 00:41:35] startResource: Resource 'bone_attach' started
+[2026-02-18 00:41:35] startResource: Resource 'cadeira-rodas' started
+[2026-02-18 00:41:35] startResource: Resource 'camera-mira' started
+[2026-02-18 00:41:35] startResource: Resource 'caminhaogasolina' started
+[2026-02-18 00:41:35] startResource: Resource 'cargodmode' started
+[2026-02-18 00:41:35] startResource: Resource 'caverna' started
+[2026-02-18 00:41:35] startResource: Resource 'cena' started
+[2026-02-18 00:41:35] startResource: Resource 'crackpalace' started
+[2026-02-18 00:41:35] WARNING: dan/animations-client.lua [Client] is encoded in ANSI instead of UTF-8.  Please convert your file to UTF-8.
+[2026-02-18 00:41:35] WARNING: dan/animations-client.lua(Line 57) [Client] isPlayerDead is deprecated and may not work in future versions. Please replace with isPedDead.
+[2026-02-18 00:41:35] Some files in 'dan' use deprecated functions.
+[2026-02-18 00:41:35] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:41:35] startResource: Resource 'dan' started
+[2026-02-18 00:41:35] startResource: Resource 'dances' started
+[2026-02-18 00:41:35] startResource: Resource 'desmanche' started
+[2026-02-18 00:41:35] WARNING: startResources\server.lua:44: Failed to start resource 'dgs': Couldn't find script test.lua for resource dgs
+[2026-02-18 00:41:35] startResource: Resource 'discord' started
+[2026-02-18 00:41:35] startResource: Resource 'furar-pneu' started
+[2026-02-18 00:41:35] startResource: Resource 'furgao' started
+[2026-02-18 00:41:35] startResource: Resource 'global' started
+[2026-02-18 00:41:35] startResource: Resource 'ipb' started
+[2026-02-18 00:41:35] startResource: Resource 'johncena-troll' started
+[2026-02-18 00:41:35] startResource: Resource 'logs' started
+[2026-02-18 00:41:35] startResource: Resource 'maleta' started
+[2026-02-18 00:41:35] INFO: Banco de dados do celular ligado com sucesso
+[2026-02-18 00:41:35] INFO: Banco de dados 2 do celular ligado com sucesso
+[2026-02-18 00:41:35] INFO: Banco de dados do BGOZAP ligado com sucesso
+[2026-02-18 00:41:35] startResource: Resource 'mta_phone' started
+[2026-02-18 00:41:35] startResource: Resource 'noite' started
+[2026-02-18 00:41:35] startResource: Resource 'norecoil' started
+[2026-02-18 00:41:35] startResource: Resource 'object_preview' started
+[2026-02-18 00:41:35] startResource: Resource 'painel-troll' started
+[2026-02-18 00:41:35] startResource: Resource 'parachute' started
+[2026-02-18 00:41:35] startResource: Resource 'performancebrowser' started
+[2026-02-18 00:41:35] startResource: Resource 'placa' started
+[2026-02-18 00:41:35] startResource: Resource 'pos' started
+[2026-02-18 00:41:35] startResource: Resource 'putas' started
+[2026-02-18 00:41:36] Please wait...
+[2026-02-18 00:41:36] Please wait...
+[2026-02-18 00:41:36] startResource: Resource 'radarNovo' started
+[2026-02-18 00:41:36] startResource: Resource 'radio-praca' started
+[2026-02-18 00:41:36] startResource: Resource 'rayos' started
+[2026-02-18 00:41:36] startResource: Resource 'render' started
+[2026-02-18 00:41:36] startResource: Resource 'rentalTableVIP' started
+[2026-02-18 00:41:36] startResource: Resource 'rentalsVIP' started
+[2026-02-18 00:41:36] startResource: Resource 'roupas' started
+[2026-02-18 00:41:36] startResource: Resource 'sangue' started
+[2026-02-18 00:41:36] WARNING: tempo\server.lua:102: Expected positive value, got negative. This warning may be an error in future versions.
+[2026-02-18 00:41:36] INFO: Hora Real: 0:41
+[2026-02-18 00:41:36] INFO: Servidor: : -2:41
+[2026-02-18 00:41:36] startResource: Resource 'tempo' started
+[2026-02-18 00:41:36] startResource: Resource 'trafi' started
+[2026-02-18 00:41:36] startResource: Resource 'trailer_fixed' started
+[2026-02-18 00:41:36] startResource: Resource 'trailer_mod' started
+[2026-02-18 00:41:36] startResource: Resource 'tubaroes' started
+[2026-02-18 00:41:36] startResource: Resource 'vansedex' started
+[2026-02-18 00:41:36] startResource: Resource 'velocimetro' started
+[2026-02-18 00:41:36] startResource: Resource 'voiceS' started
+[2026-02-18 00:41:36] startResource: Resource 'zoneedit' started
+[2026-02-18 00:41:36] Querying MTA master server... success! (Auto detected IP:191.8.231.146)
+[2026-02-18 00:41:36] Authorized serial account protection is DISABLED. See http://mtasa.com/authserial
+[2026-02-18 00:41:36] WARNING: <owner_email_address> not set
+[2026-02-18 00:41:36] Server started and is ready to accept connections!
+[2026-02-18 00:41:36] To stop the server, type 'shutdown' or press Ctrl-C
+[2026-02-18 00:41:36] Type 'help' for a list of commands.
+[2026-02-18 00:41:36] WARNING: [MATURE]\[VOICE]\bgoMiner\sourceS.lua:96: dbPoll failed; Table 's30_bgo.miner' doesn't exist
+[2026-02-18 00:41:36] ERROR: [MATURE]\[VOICE]\bgoMiner\async.lua:308: [MATURE]\[VOICE]\bgoMiner\async.lua:405: bad argument #1 to 'ipairs' (table expected, got boolean) [string "?"]
+[2026-02-18 00:41:36] [MATURE]\[VOICE]\bgoMiner\sourceS.lua:106: Loaded Stone (1146 DB) (1 mp)
+[2026-02-18 00:41:36] WARNING: [FACTION]\bgo_dashboard\exServer.lua:549: dbPoll failed; Table 's30_bgo.groups' doesn't exist
+[2026-02-18 00:41:36] ERROR: [FACTION]\bgo_dashboard\exServer.lua:555: bad argument #1 to 'pairs' (table expected, got boolean)
+[2026-02-18 00:41:36] WARNING: [TESTES]\bgo_items\sourceS.lua:33: dbPoll failed; Table 's30_bgo.items' doesn't exist
+[2026-02-18 00:41:36] ERROR: [TESTES]\bgo_items\async.lua:308: [TESTES]\bgo_items\async.lua:405: bad argument #1 to 'ipairs' (table expected, got boolean) [string "?"]
+[2026-02-18 00:41:36] [TESTES]\bgo_items\sourceS.lua:66: Loaded Item (1146 DB) (1 mp)
+[2026-02-18 00:41:36] WARNING: [TESTES]\bgo_items\sourceS.lua:798: dbPoll failed; Table 's30_bgo.bins' doesn't exist
+[2026-02-18 00:41:36] [TESTES]\bgo_items\sourceS.lua:810: Loaded Trash (1146 DB) (1 mp)
+[2026-02-18 00:41:36] WARNING: [TESTES]\bgo_items\sourceS.lua:1236: dbPoll failed; Table 's30_bgo.safe' doesn't exist
+[2026-02-18 00:41:36] ERROR: [TESTES]\bgo_items\async.lua:308: [TESTES]\bgo_items\async.lua:405: bad argument #1 to 'ipairs' (table expected, got boolean) [string "?"]
+[2026-02-18 00:41:36] ERROR: [TESTES]\bgo_items\async.lua:308: [TESTES]\bgo_items\async.lua:405: bad argument #1 to 'ipairs' (table expected, got boolean) [string "?"]
+[2026-02-18 00:41:36] [TESTES]\bgo_items\sourceS.lua:1249: Loaded safe (1146 DB) (1 mp)
+[2026-02-18 00:41:36] WARNING: [TESTES]\bgo_shop\sourceS.lua:28: dbPoll failed; Table 's30_bgo.shops' doesn't exist
+[2026-02-18 00:41:36] ERROR: [TESTES]\bgo_shop\async.lua:308: [TESTES]\bgo_shop\async.lua:405: bad argument #1 to 'ipairs' (table expected, got boolean) [string "?"]
+[2026-02-18 00:41:36] [TESTES]\bgo_shop\sourceS.lua:50: Loaded Shop (1146 DB) (1 mp)
+==================================================================
+= Multi Theft Auto: San Andreas v1.5.8
+==================================================================
+= Server name      : BGO RIO | Brasil Gaming Online ~ RPVP   EM BREVE! ~
+= Server IP address: auto
+= Server port      : 22003
+= 
+= Log file         : ..-rio/server/mods/deathmatch/logs/server.log
+= Maximum players  : 2021
+= HTTP port        : 22006
+= Voice Chat       : Quality [10];  Sample Rate: [16000Hz]
+= Bandwidth saving : Maximum with lightweight sync rate of 1500ms
+==================================================================
+[2026-02-18 00:42:23] ERROR: Couldn't find script test.lua for resource dgs
+[2026-02-18 00:42:23] Loading of resource 'dgs' failed
+[2026-02-18 00:42:24] ERROR: Problem with resource: dgs; Couldn't find script test.lua for resource dgs
+[2026-02-18 00:42:24] Resources: 410 loaded, 1 failed
+[2026-02-18 00:42:24] Starting resources...
+[2026-02-18 00:42:24] INFO: [mysql]: Banco de dados conectado RIO!
+[2026-02-18 00:42:24] Server minclientversion is now 1.5.9-9.21652.0
+[2026-02-18 00:42:24] startResource: Resource 'AtirarHeli' started
+[2026-02-18 00:42:24] startResource: Resource 'BGOBlur' started
+[2026-02-18 00:42:24] startResource: Resource 'Camera' started
+[2026-02-18 00:42:24] startResource: Resource 'CarrodosVIPS' started
+[2026-02-18 00:42:24] startResource: Resource 'DashBGO' started
+[2026-02-18 00:42:24] startResource: Resource 'Down-Animation' started
+[2026-02-18 00:42:24] startResource: Resource 'DriftSubaru' started
+[2026-02-18 00:42:24] startResource: Resource 'Ejetar' started
+[2026-02-18 00:42:24] startResource: Resource 'EstLS' started
+[2026-02-18 00:42:25] startResource: Resource 'HELIBLIN' started
+[2026-02-18 00:42:25] startResource: Resource 'HELIVIP' started
+[2026-02-18 00:42:25] WARNING: File 'Dodge.dff' in resource 'Johnny' contains errors.
+[2026-02-18 00:42:25] startResource: Resource 'Johnny' started
+[2026-02-18 00:42:25] startResource: Resource 'JoinQuitGtaV' started
+[2026-02-18 00:42:25] startResource: Resource 'Lombadas' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO01' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO02' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO03' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO04' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO05' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO06' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO07' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO08' started
+[2026-02-18 00:42:25] startResource: Resource 'MAP-FAVELA-BGO10' started
+[2026-02-18 00:42:25] startResource: Resource 'MAPA-Prisao' started
+[2026-02-18 00:42:25] startResource: Resource 'Map-Processador-de-cocaina' started
+[2026-02-18 00:42:25] startResource: Resource 'Mod-Remover_Objetos' started
+[2026-02-18 00:42:25] startResource: Resource 'MotodosVIPS' started
+[2026-02-18 00:42:25] startResource: Resource 'PagamentoSTAFF' started
+[2026-02-18 00:42:25] startResource: Resource 'QG' started
+[2026-02-18 00:42:25] startResource: Resource 'RAM' started
+[2026-02-18 00:42:25] startResource: Resource 'S10' started
+[2026-02-18 00:42:25] startResource: Resource 'STAFFHomem' started
+[2026-02-18 00:42:25] startResource: Resource 'STAFFMulher' started
+[2026-02-18 00:42:25] Resource 'Script_futeis' changed, reloading and starting
+[2026-02-18 00:42:25] startResource: Resource 'Script_futeis' started
+[2026-02-18 00:42:25] startResource: Resource 'TAXI-Mapa' started
+[2026-02-18 00:42:25] WARNING: TXD-PORTA/port1.lua [Client] is encoded in ANSI instead of UTF-8.  Please convert your file to UTF-8.
+[2026-02-18 00:42:25] Some files in 'TXD-PORTA' use deprecated functions.
+[2026-02-18 00:42:25] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:42:25] startResource: Resource 'TXD-PORTA' started
+[2026-02-18 00:42:25] startResource: Resource 'TXD-VIDROS-NAO-DESLIGAR' started
+[2026-02-18 00:42:25] startResource: Resource '[BANCO-BGO]MAP' started
+[2026-02-18 00:42:25] WARNING: [BANCO-BGO]TXD <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.5.6-9.18728 because of 'replace.luac')
+[2026-02-18 00:42:25] WARNING: [BANCO-BGO]TXD requires upgrade as <min_mta_version> section in the meta.xml is incorrect or missing (expected at least client 1.5.6-9.18728 because of 'replace.luac')
+[2026-02-18 00:42:25] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:42:25] startResource: Resource '[BANCO-BGO]TXD' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]BATALHAO-MAP' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]FAVELA-GRANDE' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]Galao' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]PEDBATALHAO' started
+[2026-02-18 00:42:26] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:73: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:42:26] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:113: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:42:26] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:358: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:42:26] WARNING: [FACTION]\[BGO]REMOVER-FAVELAS\remover.lua:362: Bad argument @ 'removeWorldModel' [Expected number at argument 5, got none]
+[2026-02-18 00:42:26] startResource: Resource '[BGO]REMOVER-FAVELAS' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]REMOVER-OBJ' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]Shop_Open' started
+[2026-02-18 00:42:26] INFO: Sistema Inicado! (Achievements)
+[2026-02-18 00:42:26] INFO: * Database connected.
+[2026-02-18 00:42:26] startResource: Resource '[BGO]Shop_Skin' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]SkinFAC' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]Sniper' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]SpawnSkinBatalhao' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]portaoFAC' started
+[2026-02-18 00:42:26] startResource: Resource '[BGO]portaobatalhao' started
+[2026-02-18 00:42:26] startResource: Resource '[CRISTO]MAP' started
+[2026-02-18 00:42:26] startResource: Resource '[CRISTO]TXD' started
+[2026-02-18 00:42:26] startResource: Resource '[LOJA]Aero' started
+[2026-02-18 00:42:26] startResource: Resource '[LOJA]Heli' started
+[2026-02-18 00:42:26] startResource: Resource '[LOJA]Praia' started
+[2026-02-18 00:42:26] startResource: Resource '[LV]Banco' started
+[2026-02-18 00:42:26] startResource: Resource '[LV]FixMapLV' started
+[2026-02-18 00:42:26] startResource: Resource '[LV]Hospital' started
+[2026-02-18 00:42:26] startResource: Resource '[LV]Prefeitura' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]BancoLV' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]BaseDRVV' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]BaseResgLV' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]Cartorio' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]CentroComercial' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]Hospital' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]HospitalLV' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]Industria' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]MecETunning' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]NovoLixao' started
+[2026-02-18 00:42:26] WARNING: [FACTION]\[PF]\[MAPA]PF2\Skins.lua:4: Bad argument @ 'addEventHandler' [Expected element at argument 2, got nil]
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]PF2' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]ParqueBGO' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]PedreiroLV' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]PostoCJ' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]PostoCentral' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]PrefLV' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]Prefeitura' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]TrabTaxi' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]TrabalhoGas[off]' started
+[2026-02-18 00:42:26] startResource: Resource '[MAPA]delegacia' started
+[2026-02-18 00:42:26] startResource: Resource '[MTA]Samu' started
+[2026-02-18 00:42:26] startResource: Resource '[PMMG]Blitz' started
+[2026-02-18 00:42:26] startResource: Resource '[RESGATE]PontoBase' started
+[2026-02-18 00:42:26] startResource: Resource '[RESGATE]SpawRoupas' started
+[2026-02-18 00:42:26] startResource: Resource '[SKIN]FemininaPM' started
+[2026-02-18 00:42:26] startResource: Resource '[TESTE]Delegacia' started
+[2026-02-18 00:42:26] startResource: Resource '[TESTE]HOSPITAL' started
+[2026-02-18 00:42:26] startResource: Resource '[TESTE]HOSPITAL1' started
+[2026-02-18 00:42:26] startResource: Resource '[TESTE]HOSPITAL2' started
+[2026-02-18 00:42:26] startResource: Resource '[TESTE]HOSPITAL3' started
+[2026-02-18 00:42:26] startResource: Resource '[mapa]prisaoadmin' started
+[2026-02-18 00:42:26] startResource: Resource '[teste]bgo_traficos' started
+[2026-02-18 00:42:26] startResource: Resource 'admin' started
+[2026-02-18 00:42:26] startResource: Resource 'ajax' started
+[2026-02-18 00:42:26] startResource: Resource 'alek' started
+[2026-02-18 00:42:26] startResource: Resource 'ambu' started
+[2026-02-18 00:42:26] startResource: Resource 'amor_prank' started
+[2026-02-18 00:42:26] startResource: Resource 'atacar-bola' started
+[2026-02-18 00:42:26] startResource: Resource 'bgoMiner' started
+[2026-02-18 00:42:26] startResource: Resource 'bgoMinigame' started
+[2026-02-18 00:42:26] startResource: Resource 'bgoWalk' started
+[2026-02-18 00:42:26] startResource: Resource 'bgo_Animation' started
+[2026-02-18 00:42:26] startResource: Resource 'bgo_Anuncios' started
+[2026-02-18 00:42:26] startResource: Resource 'bgo_Cdoor' started
+[2026-02-18 00:42:26] startResource: Resource 'bgo_Event' started
+[2026-02-18 00:42:26] startResource: Resource 'bgo_Event2' started
+[2026-02-18 00:42:26] Resource 'bgo_Level' changed, reloading and starting
+[2026-02-18 00:42:26] startResource: Resource 'bgo_Level' started
+[2026-02-18 00:42:26] startResource: Resource 'bgo_Logs' started
+[2026-02-18 00:42:26] startResource: Resource 'bgo_Mapacrime' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_Mask' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_Painel-Musica' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_Pedagio' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_PilotoAutomatico' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_Symbol' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_academia' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_accounts' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_admin' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_adminchat' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_ajuda' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_anims' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_anims2' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_assalto-itau' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_assalto-lojanovo' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_assalto-roupa' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_assaltos' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_bank' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_blips' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_blur' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_busdriver' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_busrodoviario' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_cadeira' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_caixa' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_caixaDourada' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_caixaPatriota' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_cardporte' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_carshop' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_casas' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_chamada' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_chat' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_color' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_consult' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_cont' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_core' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_dashboard' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_death' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_defaultstats' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_detran' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_dinheirosujo' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_discordlogs' started
+[2026-02-18 00:42:27] startResource: Resource 'bgo_dn' started
+[2026-02-18 00:42:29] Resource 'bgo_downloadcompac' changed, reloading and starting
+[2026-02-18 00:42:30] WARNING: File 'mods/vehicles/Outlander.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[CV]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[MLC]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[RODO]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[TCP]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[BOPE]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[UPP]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[FN]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[PC]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[RECOM]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[Correio]SkinR.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[SKIN]Mulher13R.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] WARNING: File 'mods/skins/[SKIN]Mulher14R.dff' in resource 'bgo_downloadcompac' contains errors.
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:1 - BRASILIAR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:2 - GOL QUADRADO!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:3 - Chevete!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:4 - Golf GTI!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:5 - Toro!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:6 - Jeep!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:7 - Lamborghini!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:8 - Outlander!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:9 - Mercedes!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:10 - Sonata!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:11 - Capitiva!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:12 - Dodge!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:13 - Camaro!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:14 - Ferrari!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:15 - BMWX6!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:16 - AudiR8!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:17 - Titan!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:18 - KOMBI!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:19 - Veloster!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:20 - H2R!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:21 - XJ6!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:22 - HELICOPTEROPOLICIA!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:23 - MOTOPOLICIA!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:24 - HSAMU!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:25 - VAN!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:26 - LIXEIROR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:27 - taxiR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #1:28 - mecanicoR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #2:1 - [ADA]SkinR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #2:2 - [BDM]SkinR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #2:3 - [BDM]SkinFR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #2:4 - [CV]SkinR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #2:5 - [FDN]SkinR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #2:6 - [MLC]SkinR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #2:7 - [MLC]SkinFR!
+[2026-02-18 00:42:30] INFO: Successfully loaded mod #2:8 - [ODR]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:9 - [PCC]skinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:10 - [RODO]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:11 - [TCP]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:12 - [BOPE]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:13 - [CHOQUE]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:14 - [EB]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:15 - [UPP]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:16 - [GTM]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:17 - [FN]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:18 - [PC]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:19 - [RECOM]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:20 - [FUZ]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:21 - [RP1]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:22 - [RP2]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:23 - [RP3]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:24 - [SAMU]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:25 - [SAMUF]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:26 - [PF]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:27 - [DRVV]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:28 - [Correio]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:29 - [PIZZA]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:30 - [GAS]SkinR!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:31 - [SKIN]Mulher1!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:32 - [SKIN]Mulher2!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:33 - [SKIN]Mulher3!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:34 - [SKIN]Mulher4!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:35 - [SKIN]Mulher5!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:36 - [SKIN]Mulher6!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:37 - [SKIN]Mulher7!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:38 - [SKIN]Mulher8!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:39 - [SKIN]Mulher9!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:40 - [SKIN]Mulher10!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:41 - [SKIN]Mulher11!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:42 - [SKIN]Mulher12!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:43 - [SKIN]Mulher13!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:44 - [SKIN]Mulher14!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:45 - [SKIN]Mulher15!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:46 - [SKIN]Mulher16!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:47 - [SKIN]Mulher17!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:48 - [SKIN]Mulher18!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:49 - [SKIN]Mulher19!
+[2026-02-18 00:42:31] INFO: Successfully loaded mod #2:50 - [SKIN]Mulher20!
+[2026-02-18 00:42:31] startResource: Resource 'bgo_downloadcompac' started
+[2026-02-18 00:42:31] startResource: Resource 'bgo_droga' started
+[2026-02-18 00:42:31] startResource: Resource 'bgo_eletricista' started
+[2026-02-18 00:42:31] startResource: Resource 'bgo_empgaso' started
+[2026-02-18 00:42:31] startResource: Resource 'bgo_employTable' started
+[2026-02-18 00:42:31] Resource 'bgo_employment' changed, reloading and starting
+[2026-02-18 00:42:31] startResource: Resource 'bgo_employment' started
+[2026-02-18 00:42:31] startResource: Resource 'bgo_esgosto' started
+[2026-02-18 00:42:31] startResource: Resource 'bgo_factions' started
+[2026-02-18 00:42:31] startResource: Resource 'bgo_farmacia' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_fegyverPJ' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_fightstyle' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_fishing' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_freezeVeh' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_fuel2' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_garagem' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_garagemHELI' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_gas' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_gasolina2' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_generatekey' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_handling' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_handvip' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_helishop' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_house' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_hud' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_identidade' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_info' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_infobox' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_informa' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_infos' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_int' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_items' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_jetdoor' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_jobs' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_jobs-especiais' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_jobsLS' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_jumplimit' started
+[2026-02-18 00:42:32] Resource 'bgo_km' changed, reloading and starting
+[2026-02-18 00:42:32] startResource: Resource 'bgo_km' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_levelup' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_liberarDRVV' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_license' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_limparchat' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_loadscream' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_localchat' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_lockpick' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_logo' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_lojaCabelo' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_lojaRoupa' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_mailcarrier' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_map_int' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_maps' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_mech' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_mechanic' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_medic' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_mensagens' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_mochila' started
+[2026-02-18 00:42:32] startResource: Resource 'bgo_models2' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_motobug' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_municoes' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_name' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_nameRadinho' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_nameSTAFF' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_noti' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_novidades' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_paintjob' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_parede2' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_passaporte' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_pedreiro' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_pegarmaca' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_pizzaDelivery' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_placadetran' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_placadetran2' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_placahosp' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_playerclick' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_portamalas' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_portaocadeia' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_porte' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_premiodia' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_premiumshop' started
+[2026-02-18 00:42:33] WARNING: [FACTION]\bgo_prisaoLV\sMature.lua:444: Bad argument @ 'addEventHandler' [Expected function at argument 3, got nil]
+[2026-02-18 00:42:33] startResource: Resource 'bgo_prisaoLV' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_progressbar' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_quebrarveiculo' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_realname' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_reload' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_rentalTable' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_rentals' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_resetcj' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_saveP' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_shop' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_shopmenu' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_siren' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_sistemaMecanico' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_sistemaMedico' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_sistemafacs' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_sombraoff' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_step' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_taser' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_taxiclock' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_trafi' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_trainDriver' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_transportedegasolina' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_transportedevalores' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_trashCollector' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_trash[OFF]' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_tuning' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_txdpscinao' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_util' started
+[2026-02-18 00:42:33] INFO: Carregamento de veículos em andamento...
+[2026-02-18 00:42:33] ERROR: [TESTANDO]\[2021]\[vtrs]\bgo_paintjob\exServer.lua:2: attempt to compare number with nil
+[2026-02-18 00:42:33] ERROR: [TESTANDO]\[2021]\[vtrs]\bgo_paintjob\exServer.lua:2: attempt to compare number with nil  [DUP x5]
+[2026-02-18 00:42:33] [SHOPVEICULO]\bgo_vehicle\sourceS.lua:287: Falha ao carregar: ID:10
+[2026-02-18 00:42:33] ERROR: [TESTANDO]\[2021]\[vtrs]\bgo_paintjob\exServer.lua:2: attempt to compare number with nil
+[2026-02-18 00:42:33] INFO: Número de veículos: 7/8
+[2026-02-18 00:42:33] startResource: Resource 'bgo_vehicle' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_vehicle_radio' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_vehtrabalhos' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_vendas' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_voice' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_wheels' started
+[2026-02-18 00:42:33] startResource: Resource 'bgo_wmods' started
+[2026-02-18 00:42:33] startResource: Resource 'bluescreen_prank' started
+[2026-02-18 00:42:33] startResource: Resource 'bone_attach' started
+[2026-02-18 00:42:33] startResource: Resource 'cadeira-rodas' started
+[2026-02-18 00:42:33] startResource: Resource 'camera-mira' started
+[2026-02-18 00:42:34] startResource: Resource 'caminhaogasolina' started
+[2026-02-18 00:42:34] startResource: Resource 'cargodmode' started
+[2026-02-18 00:42:34] startResource: Resource 'caverna' started
+[2026-02-18 00:42:34] startResource: Resource 'cena' started
+[2026-02-18 00:42:34] startResource: Resource 'crackpalace' started
+[2026-02-18 00:42:34] WARNING: dan/animations-client.lua [Client] is encoded in ANSI instead of UTF-8.  Please convert your file to UTF-8.
+[2026-02-18 00:42:34] WARNING: dan/animations-client.lua(Line 57) [Client] isPlayerDead is deprecated and may not work in future versions. Please replace with isPedDead.
+[2026-02-18 00:42:34] Some files in 'dan' use deprecated functions.
+[2026-02-18 00:42:34] Use the 'upgrade' command to perform a basic upgrade of resources.
+[2026-02-18 00:42:34] startResource: Resource 'dan' started
+[2026-02-18 00:42:34] startResource: Resource 'dances' started
+[2026-02-18 00:42:34] startResource: Resource 'desmanche' started
+[2026-02-18 00:42:34] WARNING: startResources\server.lua:44: Failed to start resource 'dgs': Couldn't find script test.lua for resource dgs
+[2026-02-18 00:42:34] startResource: Resource 'discord' started
+[2026-02-18 00:42:34] startResource: Resource 'furar-pneu' started
+[2026-02-18 00:42:34] startResource: Resource 'furgao' started
+[2026-02-18 00:42:34] startResource: Resource 'global' started
+[2026-02-18 00:42:34] startResource: Resource 'ipb' started
+[2026-02-18 00:42:34] startResource: Resource 'johncena-troll' started
+[2026-02-18 00:42:34] startResource: Resource 'logs' started
+[2026-02-18 00:42:34] startResource: Resource 'maleta' started
+[2026-02-18 00:42:34] INFO: Banco de dados do celular ligado com sucesso
+[2026-02-18 00:42:34] INFO: Banco de dados 2 do celular ligado com sucesso
+[2026-02-18 00:42:34] INFO: Banco de dados do BGOZAP ligado com sucesso
+[2026-02-18 00:42:34] startResource: Resource 'mta_phone' started
+[2026-02-18 00:42:34] startResource: Resource 'noite' started
+[2026-02-18 00:42:34] startResource: Resource 'norecoil' started
+[2026-02-18 00:42:34] startResource: Resource 'object_preview' started
+[2026-02-18 00:42:34] startResource: Resource 'painel-troll' started
+[2026-02-18 00:42:34] startResource: Resource 'parachute' started
+[2026-02-18 00:42:34] startResource: Resource 'performancebrowser' started
+[2026-02-18 00:42:34] startResource: Resource 'placa' started
+[2026-02-18 00:42:34] startResource: Resource 'pos' started
+[2026-02-18 00:42:34] startResource: Resource 'putas' started
+[2026-02-18 00:42:34] Please wait...
+[2026-02-18 00:42:34] Please wait...
+[2026-02-18 00:42:35] startResource: Resource 'radarNovo' started
+[2026-02-18 00:42:35] startResource: Resource 'radio-praca' started
+[2026-02-18 00:42:35] startResource: Resource 'rayos' started
+[2026-02-18 00:42:35] startResource: Resource 'render' started
+[2026-02-18 00:42:35] startResource: Resource 'rentalTableVIP' started
+[2026-02-18 00:42:35] startResource: Resource 'rentalsVIP' started
+[2026-02-18 00:42:35] startResource: Resource 'roupas' started
+[2026-02-18 00:42:35] startResource: Resource 'sangue' started
+[2026-02-18 00:42:35] WARNING: tempo\server.lua:102: Expected positive value, got negative. This warning may be an error in future versions.
+[2026-02-18 00:42:35] INFO: Hora Real: 0:42
+[2026-02-18 00:42:35] INFO: Servidor: : -2:42
+[2026-02-18 00:42:35] startResource: Resource 'tempo' started
+[2026-02-18 00:42:35] startResource: Resource 'trafi' started
+[2026-02-18 00:42:35] startResource: Resource 'trailer_fixed' started
+[2026-02-18 00:42:35] startResource: Resource 'trailer_mod' started
+[2026-02-18 00:42:35] startResource: Resource 'tubaroes' started
+[2026-02-18 00:42:35] startResource: Resource 'vansedex' started
+[2026-02-18 00:42:35] startResource: Resource 'velocimetro' started
+[2026-02-18 00:42:35] startResource: Resource 'voiceS' started
+[2026-02-18 00:42:35] startResource: Resource 'zoneedit' started
+[2026-02-18 00:42:35] Querying MTA master server... success! (Auto detected IP:191.8.231.146)
+[2026-02-18 00:42:35] Authorized serial account protection is DISABLED. See http://mtasa.com/authserial
+[2026-02-18 00:42:35] WARNING: <owner_email_address> not set
+[2026-02-18 00:42:35] Server started and is ready to accept connections!
+[2026-02-18 00:42:35] To stop the server, type 'shutdown' or press Ctrl-C
+[2026-02-18 00:42:35] Type 'help' for a list of commands.
+[2026-02-18 00:42:35] INFO: 5 group(s) loaded
+[2026-02-18 00:42:35] INFO: [DEBUG]Async foreach: 0ms
+[2026-02-18 00:42:35] [TESTES]\bgo_items\sourceS.lua:66: Loaded Item (35 DB) (0 mp)
+[2026-02-18 00:42:35] [TESTES]\bgo_items\sourceS.lua:810: Loaded Trash (2 DB) (0 mp)
+[2026-02-18 00:42:35] INFO: [DEBUG]Async foreach: 0ms
+[2026-02-18 00:42:35] INFO: [DEBUG]Async foreach: 0ms
+[2026-02-18 00:42:35] [TESTES]\bgo_items\sourceS.lua:1249: Loaded safe (1 DB) (0 mp)
+[2026-02-18 00:42:35] INFO: [DEBUG]Async foreach: 0ms
+[2026-02-18 00:42:35] [TESTES]\bgo_shop\sourceS.lua:50: Loaded Shop (2 DB) (0 mp)
+[2026-02-18 00:42:41] CONNECT: PoliticalSky44 connected (IP: 192.168.15.10  Serial: A11FCEF6AFEE4BC6D0A43CEA52D5E05E  Version: 1.5.9-9.21652.0)
+[2026-02-18 00:42:41] JOIN: PoliticalSky44 joined the game (IP: 192.168.15.10)
+[2026-02-18 00:42:52] bgo_accounts\Szerver.lua:130: PoliticalSky44 Entrou na fila 1!
+[2026-02-18 00:42:55] bgo_accounts\Szerver.lua:69: Aviso: PoliticalSky44 acaba de sair da fila de espera!
+[2026-02-18 00:43:07] LOGIN: (Everyone) PoliticalSky44 successfully logged in as 'wavestwt' (IP: 192.168.15.10  Serial: A11FCEF6AFEE4BC6D0A43CEA52D5E05E)
+[2026-02-18 00:43:07] NICK: PoliticalSky44 is now known as Vitor_Martins
+[2026-02-18 00:47:20] QUIT: Vitor_Martins left the game [Quit]
+[2026-02-18 00:47:20] INFO: Vitor_Martins Ele saiu da cidade e sua conta foi guardada!
