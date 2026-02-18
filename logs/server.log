@@ -11320,3 +11320,5 @@
 [2026-02-18 01:24:56] WARNING: bgo_saveP\codeServer.lua:168: Bad argument @ 'split' [Expected string at argument 1, got boolean]
 [2026-02-18 01:24:56] WARNING: bgo_saveP\codeServer.lua:169: Bad argument @ 'split' [Expected string at argument 1, got boolean]
 [2026-02-18 01:24:56] ERROR: bgo_saveP\codeServer.lua:171: attempt to index local 'textures' (a number value)
+[2026-02-18 01:33:39] QUIT: Vitor_Martins_Alves left the game [Quit] 
+[2026-02-18 01:33:39] INFO: Vitor_Martins_Alves Ele saiu da cidade e sua conta foi guardada!

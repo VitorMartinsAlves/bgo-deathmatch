@@ -88,3 +88,9 @@
 [2026-02-18 00:42:35] [TESTES]\bgo_shop\sourceS.lua:50: Loaded Shop (2 DB) (0 mp)
 [2026-02-18 00:42:52] bgo_accounts\Szerver.lua:130: PoliticalSky44 Entrou na fila 1!
 [2026-02-18 00:42:55] bgo_accounts\Szerver.lua:69: Aviso: PoliticalSky44 acaba de sair da fila de espera!
+[2026-02-18 01:22:39] [TESTES]\bgo_items\sourceS.lua:66: Loaded Item (35 DB) (0 mp)
+[2026-02-18 01:22:39] [TESTES]\bgo_items\sourceS.lua:810: Loaded Trash (2 DB) (0 mp)
+[2026-02-18 01:22:39] [TESTES]\bgo_items\sourceS.lua:1249: Loaded safe (1 DB) (0 mp)
+[2026-02-18 01:22:39] [TESTES]\bgo_shop\sourceS.lua:50: Loaded Shop (2 DB) (0 mp)
+[2026-02-18 01:24:03] bgo_accounts\Szerver.lua:130: PoliticalSky44 Entrou na fila 1!
+[2026-02-18 01:24:05] bgo_accounts\Szerver.lua:69: Aviso: PoliticalSky44 acaba de sair da fila de espera!
