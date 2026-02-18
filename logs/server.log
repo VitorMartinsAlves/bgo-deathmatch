@@ -11322,3 +11322,45 @@
 [2026-02-18 01:24:56] ERROR: bgo_saveP\codeServer.lua:171: attempt to index local 'textures' (a number value)
 [2026-02-18 01:33:39] QUIT: Vitor_Martins_Alves left the game [Quit] 
 [2026-02-18 01:33:39] INFO: Vitor_Martins_Alves Ele saiu da cidade e sua conta foi guardada!
+==================================================================
+= Multi Theft Auto: San Andreas v1.6
+==================================================================
+= Server name      : BGO RIO | Brasil Gaming Online ~ RPVP   EM BREVE! ~
+= Server IP address: auto
+= Server port      : 25565
+= 
+= Log file         : .. 1.6/server/mods/deathmatch/logs/server.log
+= Maximum players  : 2021
+= HTTP port        : 25565
+= Voice Chat       : Quality [10];  Sample Rate: [16000Hz]
+= Bandwidth saving : Maximum with lightweight sync rate of 1500ms
+==================================================================
+[2026-02-18 01:46:12] ERROR: Couldn't find file(s) meta.xml for resource dgs
+[2026-02-18 01:46:12] Loading of resource 'dgs' failed
+[2026-02-18 01:46:12] ERROR: Problem with resource: dgs; Couldn't find file(s) meta.xml for resource dgs
+[2026-02-18 01:46:12] Resources: 409 loaded, 1 failed
+[2026-02-18 01:46:13] ERROR: Could not bind the server on interface '' and port '25565'!
+[2026-02-18 01:46:13] Server stopped!
+[2026-02-18 01:46:13] Stopping resources...
+[2026-02-18 01:46:13] Closing SQLite3 database
+==================================================================
+= Multi Theft Auto: San Andreas v1.6
+==================================================================
+= Server name      : BGO RIO | Brasil Gaming Online ~ RPVP   EM BREVE! ~
+= Server IP address: auto
+= Server port      : 25565
+= 
+= Log file         : .. 1.6/server/mods/deathmatch/logs/server.log
+= Maximum players  : 2021
+= HTTP port        : 25565
+= Voice Chat       : Quality [10];  Sample Rate: [16000Hz]
+= Bandwidth saving : Maximum with lightweight sync rate of 1500ms
+==================================================================
+[2026-02-18 01:46:20] ERROR: Couldn't find file(s) meta.xml for resource dgs
+[2026-02-18 01:46:20] Loading of resource 'dgs' failed
+[2026-02-18 01:46:21] ERROR: Problem with resource: dgs; Couldn't find file(s) meta.xml for resource dgs
+[2026-02-18 01:46:21] Resources: 409 loaded, 1 failed
+[2026-02-18 01:46:21] ERROR: Could not bind the server on interface '' and port '25565'!
+[2026-02-18 01:46:22] Server stopped!
+[2026-02-18 01:46:22] Stopping resources...
+[2026-02-18 01:46:22] Closing SQLite3 database
